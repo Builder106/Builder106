@@ -22,8 +22,8 @@ Welcome to my GitHub profile! I'm passionate about coding and love to work on va
 
 Here are some of my favorite projects:
 
-- [Project 1](https://github.com/Builder106/JobJotter): React-based job app tracker.
-- [Project 2](https://github.com/Builder106/GlobalEconomica): Global economic insights via the World Bank API.
+- [JobJotter](https://github.com/Builder106/JobJotter): React-based job app tracker.
+- [GlobalEconomica](https://github.com/Builder106/GlobalEconomica): Global economic insights via the World Bank API.
 
 ## Get in Touch
 
