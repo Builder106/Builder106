@@ -4,12 +4,11 @@ Welcome to my GitHub profile! I'm passionate about coding and love to work on va
 
 ## About Me
 
-- 🔭 Currently working on: [Current Project Name or Description]
-- 🌱 Currently learning: [Topics or Technologies you're learning]
-- 👯 Looking to collaborate on: [Types of projects or technologies]
-- 💬 Ask me about: [Your areas of expertise or interests]
-- 📫 How to reach me: [Your contact information]
-- ⚡ Fun fact: [A fun fact about you]
+- 🔭 Currently working on: [LinuxBenchHub]
+- 🌱 Currently learning: [Ruby-on-Rails]
+- 👯 Looking to collaborate on: [APIs]
+- 💬 Ask me about: [📚Reading, 🎮gaming and 🍳cooking]
+- ⚡ Fun fact: [🎲I'm a Scrabble champion]
 
 ## My GitHub Stats
 
