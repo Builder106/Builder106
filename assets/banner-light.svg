@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="Olayinka Vaughan — systems, quant, web">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbfaf6"/>
+      <stop offset="100%" stop-color="#f1ede4"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.8" cy="0.45" r="0.55">
+      <stop offset="0%" stop-color="#6b46c1" stop-opacity="0.10"/>
+      <stop offset="60%" stop-color="#6b46c1" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#6b46c1" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1.2" fill="#e6e1d4"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="420" fill="url(#bg)"/>
+  <rect width="1200" height="420" fill="url(#dots)"/>
+  <rect width="1200" height="420" fill="url(#glow)"/>
+
+  <!-- Soft top/bottom hairlines -->
+  <line x1="0" y1="0.5" x2="1200" y2="0.5" stroke="#e6e1d4" stroke-width="1"/>
+  <line x1="0" y1="419.5" x2="1200" y2="419.5" stroke="#e6e1d4" stroke-width="1"/>
+
+  <!-- Faint monogram on right: 106 -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, 'Liberation Mono', monospace" font-weight="200" fill="#ebe5d6" text-anchor="middle">
+    <text x="980" y="135" font-size="170">1</text>
+    <text x="980" y="280" font-size="170">0</text>
+    <text x="980" y="395" font-size="170">6</text>
+  </g>
+
+  <!-- Eyebrow -->
+  <text x="80" y="130" font-family="ui-monospace, SFMono-Regular, Menlo, 'Liberation Mono', monospace" font-size="15" fill="#6e6a5c" letter-spacing="3">@BUILDER106  ·  CS @ WESLEYAN</text>
+
+  <!-- Wordmark -->
+  <text x="80" y="222" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', system-ui, sans-serif" font-size="72" font-weight="700" fill="#1a1a1a" letter-spacing="-2">Olayinka Vaughan</text>
+
+  <!-- Accent rule -->
+  <rect x="80" y="248" width="64" height="3" rx="1.5" fill="#6b46c1"/>
+
+  <!-- Tagline -->
+  <text x="80" y="298" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', system-ui, sans-serif" font-size="26" font-weight="500" fill="#6b46c1">systems · quant · web</text>
+
+  <!-- Footer line -->
+  <text x="80" y="350" font-family="ui-monospace, SFMono-Regular, Menlo, 'Liberation Mono', monospace" font-size="13" fill="#8a8576">middletown, ct  ·  yinkavaughan.me</text>
+</svg>
