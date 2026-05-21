@@ -59,13 +59,32 @@ def cell_svg(theme, num, symbol, lang, project, disc):
     cardbg = "#0d1117" if is_dark else "#ffffff"
     accent = DISC[disc][1 if is_dark else 2]
 
+    # Reveal cells in sequence: 80ms stagger by atomic number
+    reveal_delay = (num - 1) * 0.08
+    # Desync the ambient pulse so the table shimmers organically
+    pulse_offset = -((num * 0.21) % 4)
+
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130" role="img" aria-label="{num:02d} {symbol} {lang} {project}">
-  <rect x="0.5" y="0.5" width="129" height="129" rx="6" fill="{cardbg}" stroke="{border}" stroke-width="1"/>
-  <rect x="0.5" y="0.5" width="129" height="4" rx="2" fill="{accent}"/>
-  <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="{accent}">{num:02d}</text>
-  <text x="65" y="70" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="42" font-weight="700" fill="{fg}" text-anchor="middle">{symbol}</text>
-  <text x="65" y="93" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" fill="{muted}" text-anchor="middle">{lang}</text>
-  <text x="65" y="113" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="{faded}" text-anchor="middle">{project}</text>
+  <style>
+    .card   {{ transform-origin: 65px 65px; transform-box: fill-box; animation: appear .55s cubic-bezier(.2,.7,.2,1) {reveal_delay:.2f}s both; }}
+    .stripe {{ animation: pulse 4s ease-in-out infinite {pulse_offset:.2f}s; transform-origin: 0 0; }}
+    @keyframes appear {{
+      from {{ opacity: 0; transform: scale(.94); }}
+      to   {{ opacity: 1; transform: scale(1); }}
+    }}
+    @keyframes pulse {{
+      0%, 100% {{ opacity: 1; }}
+      50%      {{ opacity: .45; }}
+    }}
+  </style>
+  <g class="card">
+    <rect x="0.5" y="0.5" width="129" height="129" rx="6" fill="{cardbg}" stroke="{border}" stroke-width="1"/>
+    <rect class="stripe" x="0.5" y="0.5" width="129" height="4" rx="2" fill="{accent}"/>
+    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="{accent}">{num:02d}</text>
+    <text x="65" y="70" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="42" font-weight="700" fill="{fg}" text-anchor="middle">{symbol}</text>
+    <text x="65" y="93" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" fill="{muted}" text-anchor="middle">{lang}</text>
+    <text x="65" y="113" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="{faded}" text-anchor="middle">{project}</text>
+  </g>
 </svg>
 '''
 
