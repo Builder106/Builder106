@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-label="Olayinka Vaughan — SWE, Cybersec, Analyst, Quant">
+  <defs>
+    <style>
+      @keyframes breathe {
+        0%, 100% { opacity: 0.05; }
+        50%      { opacity: 0.18; }
+      }
+      @keyframes draw {
+        0%   { width: 0px; }
+        100% { width: 220px; }
+      }
+      @keyframes c1 {
+        0%, 22%   { fill: #6b46c1; }
+        25%, 100% { fill: #a78bfa; }
+      }
+      @keyframes c2 {
+        0%, 22%   { fill: #a78bfa; }
+        25%, 47%  { fill: #6b46c1; }
+        50%, 100% { fill: #a78bfa; }
+      }
+      @keyframes c3 {
+        0%, 47%   { fill: #a78bfa; }
+        50%, 72%  { fill: #6b46c1; }
+        75%, 100% { fill: #a78bfa; }
+      }
+      @keyframes c4 {
+        0%, 72%   { fill: #a78bfa; }
+        75%, 97%  { fill: #6b46c1; }
+        100%      { fill: #a78bfa; }
+      }
+      .breath { animation: breathe 9s ease-in-out infinite; }
+      .bar    { animation: draw 1.6s cubic-bezier(.2,.7,.2,1) .3s both; }
+      .w1     { animation: c1 9s linear infinite; }
+      .w2     { animation: c2 9s linear infinite; }
+      .w3     { animation: c3 9s linear infinite; }
+      .w4     { animation: c4 9s linear infinite; }
+    </style>
+
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#fbfaf6"/>
+      <stop offset="100%" stop-color="#f1ede4"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.75" cy="0.45" r="0.55">
+      <stop offset="0%"   stop-color="#6b46c1"/>
+      <stop offset="100%" stop-color="#6b46c1" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1.4" cy="1.4" r="1.4" fill="#e6e1d4"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bg)"/>
+  <rect width="1200" height="600" fill="url(#dots)"/>
+  <rect class="breath" width="1200" height="600" fill="url(#glow)" opacity="0.15"/>
+
+  <!-- Faint vertical 106 on the right -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="200" fill="#ebe5d6" text-anchor="middle">
+    <text x="1020" y="180" font-size="220">1</text>
+    <text x="1020" y="370" font-size="220">0</text>
+    <text x="1020" y="560" font-size="220">6</text>
+  </g>
+
+  <!-- Hairlines -->
+  <line x1="0" y1="0.5"   x2="1200" y2="0.5"   stroke="#e6e1d4" stroke-width="1"/>
+  <line x1="0" y1="599.5" x2="1200" y2="599.5" stroke="#e6e1d4" stroke-width="1"/>
+
+  <!-- Eyebrow -->
+  <text x="80" y="170" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" fill="#6e6a5c" letter-spacing="3">@BUILDER106  ·  CS @ WESLEYAN</text>
+
+  <!-- Massive wordmark -->
+  <text x="80" y="320" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', system-ui, sans-serif" font-size="98" font-weight="700" fill="#1a1a1a" letter-spacing="-3">Olayinka Vaughan</text>
+
+  <!-- Animated accent bar (draws in on load) -->
+  <rect class="bar" x="80" y="348" width="220" height="4" rx="2" fill="#6b46c1"/>
+
+  <!-- Discipline cycle -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', system-ui, sans-serif" font-size="34" font-weight="600">
+    <text class="w1" x="80"  y="425" fill="#6b46c1">SWE</text>
+    <text         x="180" y="425" fill="#c4b5fd">·</text>
+    <text class="w2" x="208" y="425" fill="#a78bfa">Cybersec</text>
+    <text         x="392" y="425" fill="#c4b5fd">·</text>
+    <text class="w3" x="420" y="425" fill="#a78bfa">Analyst</text>
+    <text         x="582" y="425" fill="#c4b5fd">·</text>
+    <text class="w4" x="610" y="425" fill="#a78bfa">Quant</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="80" y="530" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#8a8576">middletown, ct  ·  yinkavaughan.me  ·  building across four tracks</text>
+</svg>
