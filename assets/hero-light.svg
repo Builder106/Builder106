@@ -37,15 +37,15 @@
     </style>
 
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%"   stop-color="#fbfaf6"/>
-      <stop offset="100%" stop-color="#f1ede4"/>
+      <stop offset="0%"   stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f0f3f6"/>
     </linearGradient>
     <radialGradient id="glow" cx="0.75" cy="0.45" r="0.55">
       <stop offset="0%"   stop-color="#6b46c1"/>
       <stop offset="100%" stop-color="#6b46c1" stop-opacity="0"/>
     </radialGradient>
     <pattern id="dots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
-      <circle cx="1.4" cy="1.4" r="1.4" fill="#e6e1d4"/>
+      <circle cx="1.4" cy="1.4" r="1.4" fill="#d0d7de"/>
     </pattern>
   </defs>
 
@@ -54,21 +54,21 @@
   <rect class="breath" width="1200" height="600" fill="url(#glow)" opacity="0.15"/>
 
   <!-- Faint vertical 106 on the right -->
-  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="200" fill="#ebe5d6" text-anchor="middle">
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="200" fill="#d0d7de" text-anchor="middle">
     <text x="1020" y="180" font-size="220">1</text>
     <text x="1020" y="370" font-size="220">0</text>
     <text x="1020" y="560" font-size="220">6</text>
   </g>
 
   <!-- Hairlines -->
-  <line x1="0" y1="0.5"   x2="1200" y2="0.5"   stroke="#e6e1d4" stroke-width="1"/>
-  <line x1="0" y1="599.5" x2="1200" y2="599.5" stroke="#e6e1d4" stroke-width="1"/>
+  <line x1="0" y1="0.5"   x2="1200" y2="0.5"   stroke="#d0d7de" stroke-width="1"/>
+  <line x1="0" y1="599.5" x2="1200" y2="599.5" stroke="#d0d7de" stroke-width="1"/>
 
   <!-- Eyebrow -->
-  <text x="80" y="170" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" fill="#6e6a5c" letter-spacing="3">@BUILDER106  ·  CS @ WESLEYAN</text>
+  <text x="80" y="170" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" fill="#656d76" letter-spacing="3">@BUILDER106  ·  CS @ WESLEYAN</text>
 
   <!-- Massive wordmark -->
-  <text x="80" y="320" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', system-ui, sans-serif" font-size="98" font-weight="700" fill="#1a1a1a" letter-spacing="-3">Olayinka Vaughan</text>
+  <text x="80" y="320" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', system-ui, sans-serif" font-size="98" font-weight="700" fill="#1f2328" letter-spacing="-3">Olayinka Vaughan</text>
 
   <!-- Animated accent bar (draws in on load) -->
   <rect class="bar" x="80" y="348" width="220" height="4" rx="2" fill="#6b46c1"/>
@@ -85,5 +85,5 @@
   </g>
 
   <!-- Footer -->
-  <text x="80" y="530" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#8a8576">middletown, ct  ·  yinkavaughan.me  ·  building across four tracks</text>
+  <text x="80" y="530" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#8c959f">middletown, ct  ·  yinkavaughan.me  ·  building across four tracks</text>
 </svg>

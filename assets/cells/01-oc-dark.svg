@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130" role="img" aria-label="01 Oc OCaml ocaml_limit">
+  <rect x="0.5" y="0.5" width="129" height="129" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
+  <rect x="0.5" y="0.5" width="129" height="4" rx="2" fill="#3fb950"/>
+  <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#3fb950">01</text>
+  <text x="65" y="70" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="42" font-weight="700" fill="#e6edf3" text-anchor="middle">Oc</text>
+  <text x="65" y="93" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">OCaml</text>
+  <text x="65" y="113" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">ocaml_limit</text>
+</svg>

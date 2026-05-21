@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130" role="img" aria-label="13 Py Python IMC_Prosperity">
+  <rect x="0.5" y="0.5" width="129" height="129" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+  <rect x="0.5" y="0.5" width="129" height="4" rx="2" fill="#1a7f37"/>
+  <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#1a7f37">13</text>
+  <text x="65" y="70" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="42" font-weight="700" fill="#1f2328" text-anchor="middle">Py</text>
+  <text x="65" y="93" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" fill="#656d76" text-anchor="middle">Python</text>
+  <text x="65" y="113" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#8c959f" text-anchor="middle">IMC_Prosperity</text>
+</svg>
