@@ -64,22 +64,17 @@ def cell_svg(theme, num, symbol, lang, project, disc):
     # Desync the ambient pulse so the table shimmers organically
     pulse_offset = -((num * 0.21) % 4)
 
+    # SMIL animations — survive GitHub's Camo proxy where CSS keyframes don't.
+    # Group starts at opacity=1 as a fallback if SMIL fails; <set> snaps it to
+    # 0 immediately when SMIL fires, then <animate> fades it back in.
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130" role="img" aria-label="{num:02d} {symbol} {lang} {project}">
-  <style>
-    .card   {{ transform-origin: 65px 65px; transform-box: fill-box; animation: appear .55s cubic-bezier(.2,.7,.2,1) {reveal_delay:.2f}s both; }}
-    .stripe {{ animation: pulse 4s ease-in-out infinite {pulse_offset:.2f}s; transform-origin: 0 0; }}
-    @keyframes appear {{
-      from {{ opacity: 0; transform: scale(.94); }}
-      to   {{ opacity: 1; transform: scale(1); }}
-    }}
-    @keyframes pulse {{
-      0%, 100% {{ opacity: 1; }}
-      50%      {{ opacity: .45; }}
-    }}
-  </style>
-  <g class="card">
+  <g opacity="1">
+    <set attributeName="opacity" to="0" begin="0s"/>
+    <animate attributeName="opacity" from="0" to="1" begin="{reveal_delay:.2f}s" dur="0.55s" fill="freeze"/>
     <rect x="0.5" y="0.5" width="129" height="129" rx="6" fill="{cardbg}" stroke="{border}" stroke-width="1"/>
-    <rect class="stripe" x="0.5" y="0.5" width="129" height="4" rx="2" fill="{accent}"/>
+    <rect x="0.5" y="0.5" width="129" height="4" rx="2" fill="{accent}">
+      <animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="{pulse_offset:.2f}s" repeatCount="indefinite"/>
+    </rect>
     <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="{accent}">{num:02d}</text>
     <text x="65" y="70" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="42" font-weight="700" fill="{fg}" text-anchor="middle">{symbol}</text>
     <text x="65" y="93" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" fill="{muted}" text-anchor="middle">{lang}</text>
