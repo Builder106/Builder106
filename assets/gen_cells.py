@@ -39,6 +39,9 @@ REPO_NAME = {  # project_id -> actual repo name (slug)
     "portfolio": "builder106.github.io",
 }
 
+# Currently-active project: gets a "NOW" indicator
+NOW_PROJECT = "LinuxBenchHub"
+
 # (label, dark_hex, light_hex)
 DISC = {
     "Q": ("Quant",    "#3fb950", "#1a7f37"),
@@ -55,30 +58,39 @@ def cell_svg(theme, num, symbol, lang, project, disc):
     fg     = "#e6edf3" if is_dark else "#1f2328"
     muted  = "#8b949e" if is_dark else "#656d76"
     faded  = "#6e7681" if is_dark else "#8c959f"
-    border = "#21262d" if is_dark else "#d0d7de"
+    border = "#30363d" if is_dark else "#d0d7de"
     cardbg = "#0d1117" if is_dark else "#ffffff"
     accent = DISC[disc][1 if is_dark else 2]
 
-    # Reveal cells in sequence: 80ms stagger by atomic number
     reveal_delay = (num - 1) * 0.08
-    # Desync the ambient pulse so the table shimmers organically
     pulse_offset = -((num * 0.21) % 4)
+    is_now = project == NOW_PROJECT
 
-    # SMIL animations — survive GitHub's Camo proxy where CSS keyframes don't.
-    # Group starts at opacity=1 as a fallback if SMIL fails; <set> snaps it to
-    # 0 immediately when SMIL fires, then <animate> fades it back in.
+    now_marker = ""
+    if is_now:
+        now_marker = f'''
+    <g transform="translate(118, 14)">
+      <circle r="4" fill="{accent}">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="4" fill="{accent}" opacity="0.4">
+        <animate attributeName="r" values="4;9;4" dur="1.6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.5;0;0.5" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+    </g>'''
+
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130" role="img" aria-label="{num:02d} {symbol} {lang} {project}">
   <g opacity="1">
     <set attributeName="opacity" to="0" begin="0s"/>
     <animate attributeName="opacity" from="0" to="1" begin="{reveal_delay:.2f}s" dur="0.55s" fill="freeze"/>
-    <rect x="0.5" y="0.5" width="129" height="129" rx="6" fill="{cardbg}" stroke="{border}" stroke-width="1"/>
-    <rect x="0.5" y="0.5" width="129" height="4" rx="2" fill="{accent}">
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="{cardbg}" stroke="{border}" stroke-width="1"/>
+    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="{accent}">
       <animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="{pulse_offset:.2f}s" repeatCount="indefinite"/>
     </rect>
-    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="{accent}">{num:02d}</text>
-    <text x="65" y="70" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="42" font-weight="700" fill="{fg}" text-anchor="middle">{symbol}</text>
-    <text x="65" y="93" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" fill="{muted}" text-anchor="middle">{lang}</text>
-    <text x="65" y="113" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="{faded}" text-anchor="middle">{project}</text>
+    <text x="10" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="500" fill="{accent}">{num:02d}</text>{now_marker}
+    <text x="65" y="74" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="{fg}" text-anchor="middle" letter-spacing="-1">{symbol}</text>
+    <text x="65" y="98" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="{muted}" text-anchor="middle">{lang}</text>
+    <text x="65" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="{faded}" text-anchor="middle">{project}</text>
   </g>
 </svg>
 '''
@@ -95,18 +107,26 @@ def write_svgs(out_dir):
 
 def print_table():
     by_pos = {(p, s): (num, symbol, project) for p, s, num, symbol, _, project, _ in CELLS}
-    print('<table>')
+    print('<table cellspacing="2" cellpadding="0" border="0">')
+    # Column header: group numbers
+    print('  <tr>')
+    print('    <td width="28"></td>')
+    for g in range(1, 9):
+        print(f'    <td width="132" align="center"><sub><code>{g}</code></sub></td>')
+    print('  </tr>')
     for period in range(4):
         print('  <tr>')
+        # Row header: period number
+        print(f'    <td width="28" align="right" valign="middle"><sub><code>{period + 1}</code></sub></td>')
         for slot in range(8):
             if (period, slot) in by_pos:
                 num, symbol, project = by_pos[(period, slot)]
                 repo = REPO_NAME.get(project, project)
                 stem = f"{num:02d}-{symbol.lower()}"
                 url = f"https://github.com/Builder106/{repo}"
-                print(f'    <td width="140" align="center"><a href="{url}" title="{project}"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/{stem}-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/{stem}-light.svg"><img alt="{num:02d} {symbol} {project}" src="assets/cells/{stem}-dark.svg" width="130" height="130"></picture></a></td>')
+                print(f'    <td width="132" align="center"><a href="{url}" title="{project}"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/{stem}-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/{stem}-light.svg"><img alt="{num:02d} {symbol} {project}" src="assets/cells/{stem}-dark.svg" width="130" height="130"></picture></a></td>')
             else:
-                print(f'    <td width="140"></td>')
+                print(f'    <td width="132"></td>')
         print('  </tr>')
     print('</table>')
 

@@ -2,13 +2,13 @@
   <g opacity="1">
     <set attributeName="opacity" to="0" begin="0s"/>
     <animate attributeName="opacity" from="0" to="1" begin="0.32s" dur="0.55s" fill="freeze"/>
-    <rect x="0.5" y="0.5" width="129" height="129" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
-    <rect x="0.5" y="0.5" width="129" height="4" rx="2" fill="#9a6700">
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#9a6700">
       <animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-1.05s" repeatCount="indefinite"/>
     </rect>
-    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#9a6700">05</text>
-    <text x="65" y="70" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="42" font-weight="700" fill="#1f2328" text-anchor="middle">R</text>
-    <text x="65" y="93" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" fill="#656d76" text-anchor="middle">R</text>
-    <text x="65" y="113" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#8c959f" text-anchor="middle">datafest-2026</text>
+    <text x="10" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="500" fill="#9a6700">05</text>
+    <text x="65" y="74" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="#1f2328" text-anchor="middle" letter-spacing="-1">R</text>
+    <text x="65" y="98" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#656d76" text-anchor="middle">R</text>
+    <text x="65" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#8c959f" text-anchor="middle">datafest-2026</text>
   </g>
 </svg>

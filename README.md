@@ -14,46 +14,61 @@ CS student at Wesleyan. 19 projects across 12 languages and 4 disciplines. Every
 
 ## The Elements
 
-<table>
+<table cellspacing="2" cellpadding="0" border="0">
   <tr>
-    <td width="140" align="center"><a href="https://github.com/Builder106/ocaml_limit" title="ocaml_limit"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/01-oc-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/01-oc-light.svg"><img alt="01 Oc ocaml_limit" src="assets/cells/01-oc-dark.svg" width="130" height="130"></picture></a></td>
-    <td width="140"></td>
-    <td width="140"></td>
-    <td width="140"></td>
-    <td width="140"></td>
-    <td width="140"></td>
-    <td width="140"></td>
-    <td width="140" align="center"><a href="https://github.com/Builder106/qforge" title="qforge"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/02-c-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/02-c-light.svg"><img alt="02 C qforge" src="assets/cells/02-c-dark.svg" width="130" height="130"></picture></a></td>
+    <td width="28"></td>
+    <td width="132" align="center"><sub><code>1</code></sub></td>
+    <td width="132" align="center"><sub><code>2</code></sub></td>
+    <td width="132" align="center"><sub><code>3</code></sub></td>
+    <td width="132" align="center"><sub><code>4</code></sub></td>
+    <td width="132" align="center"><sub><code>5</code></sub></td>
+    <td width="132" align="center"><sub><code>6</code></sub></td>
+    <td width="132" align="center"><sub><code>7</code></sub></td>
+    <td width="132" align="center"><sub><code>8</code></sub></td>
   </tr>
   <tr>
-    <td width="140" align="center"><a href="https://github.com/Builder106/ClearHash" title="ClearHash"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/03-rs-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/03-rs-light.svg"><img alt="03 Rs ClearHash" src="assets/cells/03-rs-dark.svg" width="130" height="130"></picture></a></td>
-    <td width="140" align="center"><a href="https://github.com/Builder106/CapitolAlpha" title="CapitolAlpha"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/04-py-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/04-py-light.svg"><img alt="04 Py CapitolAlpha" src="assets/cells/04-py-dark.svg" width="130" height="130"></picture></a></td>
-    <td width="140"></td>
-    <td width="140"></td>
-    <td width="140"></td>
-    <td width="140"></td>
-    <td width="140" align="center"><a href="https://github.com/Builder106/datafest-2026" title="datafest-2026"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/05-r-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/05-r-light.svg"><img alt="05 R datafest-2026" src="assets/cells/05-r-dark.svg" width="130" height="130"></picture></a></td>
-    <td width="140" align="center"><a href="https://github.com/Builder106/EconOS" title="EconOS"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/06-js-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/06-js-light.svg"><img alt="06 Js EconOS" src="assets/cells/06-js-dark.svg" width="130" height="130"></picture></a></td>
+    <td width="28" align="right" valign="middle"><sub><code>1</code></sub></td>
+    <td width="132" align="center"><a href="https://github.com/Builder106/ocaml_limit" title="ocaml_limit"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/01-oc-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/01-oc-light.svg"><img alt="01 Oc ocaml_limit" src="assets/cells/01-oc-dark.svg" width="130" height="130"></picture></a></td>
+    <td width="132"></td>
+    <td width="132"></td>
+    <td width="132"></td>
+    <td width="132"></td>
+    <td width="132"></td>
+    <td width="132"></td>
+    <td width="132" align="center"><a href="https://github.com/Builder106/qforge" title="qforge"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/02-c-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/02-c-light.svg"><img alt="02 C qforge" src="assets/cells/02-c-dark.svg" width="130" height="130"></picture></a></td>
   </tr>
   <tr>
-    <td width="140" align="center"><a href="https://github.com/Builder106/LinuxBenchHub" title="LinuxBenchHub"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/07-rb-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/07-rb-light.svg"><img alt="07 Rb LinuxBenchHub" src="assets/cells/07-rb-dark.svg" width="130" height="130"></picture></a></td>
-    <td width="140" align="center"><a href="https://github.com/Builder106/STAIJA" title="STAIJA"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/08-ts-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/08-ts-light.svg"><img alt="08 Ts STAIJA" src="assets/cells/08-ts-dark.svg" width="130" height="130"></picture></a></td>
-    <td width="140" align="center"><a href="https://github.com/Builder106/StudySprint" title="StudySprint"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/09-ts-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/09-ts-light.svg"><img alt="09 Ts StudySprint" src="assets/cells/09-ts-dark.svg" width="130" height="130"></picture></a></td>
-    <td width="140" align="center"><a href="https://github.com/Builder106/MicroMatch" title="MicroMatch"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/10-sv-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/10-sv-light.svg"><img alt="10 Sv MicroMatch" src="assets/cells/10-sv-dark.svg" width="130" height="130"></picture></a></td>
-    <td width="140" align="center"><a href="https://github.com/Builder106/MedCore" title="MedCore"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/11-ts-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/11-ts-light.svg"><img alt="11 Ts MedCore" src="assets/cells/11-ts-dark.svg" width="130" height="130"></picture></a></td>
-    <td width="140" align="center"><a href="https://github.com/Builder106/builder106.github.io" title="portfolio"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/12-ts-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/12-ts-light.svg"><img alt="12 Ts portfolio" src="assets/cells/12-ts-dark.svg" width="130" height="130"></picture></a></td>
-    <td width="140" align="center"><a href="https://github.com/Builder106/IMC_Prosperity" title="IMC_Prosperity"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/13-py-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/13-py-light.svg"><img alt="13 Py IMC_Prosperity" src="assets/cells/13-py-dark.svg" width="130" height="130"></picture></a></td>
-    <td width="140" align="center"><a href="https://github.com/Builder106/HackHelper" title="HackHelper"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/14-py-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/14-py-light.svg"><img alt="14 Py HackHelper" src="assets/cells/14-py-dark.svg" width="130" height="130"></picture></a></td>
+    <td width="28" align="right" valign="middle"><sub><code>2</code></sub></td>
+    <td width="132" align="center"><a href="https://github.com/Builder106/ClearHash" title="ClearHash"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/03-rs-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/03-rs-light.svg"><img alt="03 Rs ClearHash" src="assets/cells/03-rs-dark.svg" width="130" height="130"></picture></a></td>
+    <td width="132" align="center"><a href="https://github.com/Builder106/CapitolAlpha" title="CapitolAlpha"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/04-py-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/04-py-light.svg"><img alt="04 Py CapitolAlpha" src="assets/cells/04-py-dark.svg" width="130" height="130"></picture></a></td>
+    <td width="132"></td>
+    <td width="132"></td>
+    <td width="132"></td>
+    <td width="132"></td>
+    <td width="132" align="center"><a href="https://github.com/Builder106/datafest-2026" title="datafest-2026"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/05-r-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/05-r-light.svg"><img alt="05 R datafest-2026" src="assets/cells/05-r-dark.svg" width="130" height="130"></picture></a></td>
+    <td width="132" align="center"><a href="https://github.com/Builder106/EconOS" title="EconOS"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/06-js-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/06-js-light.svg"><img alt="06 Js EconOS" src="assets/cells/06-js-dark.svg" width="130" height="130"></picture></a></td>
   </tr>
   <tr>
-    <td width="140" align="center"><a href="https://github.com/Builder106/donut" title="donut"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/15-sw-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/15-sw-light.svg"><img alt="15 Sw donut" src="assets/cells/15-sw-dark.svg" width="130" height="130"></picture></a></td>
-    <td width="140" align="center"><a href="https://github.com/Builder106/DOOM" title="DOOM"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/16-sw-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/16-sw-light.svg"><img alt="16 Sw DOOM" src="assets/cells/16-sw-dark.svg" width="130" height="130"></picture></a></td>
-    <td width="140" align="center"><a href="https://github.com/Builder106/MetaHelper" title="MetaHelper"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/17-kt-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/17-kt-light.svg"><img alt="17 Kt MetaHelper" src="assets/cells/17-kt-dark.svg" width="130" height="130"></picture></a></td>
-    <td width="140" align="center"><a href="https://github.com/Builder106/PocketStyle" title="PocketStyle"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/18-sh-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/18-sh-light.svg"><img alt="18 Sh PocketStyle" src="assets/cells/18-sh-dark.svg" width="130" height="130"></picture></a></td>
-    <td width="140" align="center"><a href="https://github.com/Builder106/terminal" title="terminal"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/19-py-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/19-py-light.svg"><img alt="19 Py terminal" src="assets/cells/19-py-dark.svg" width="130" height="130"></picture></a></td>
-    <td width="140"></td>
-    <td width="140"></td>
-    <td width="140"></td>
+    <td width="28" align="right" valign="middle"><sub><code>3</code></sub></td>
+    <td width="132" align="center"><a href="https://github.com/Builder106/LinuxBenchHub" title="LinuxBenchHub"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/07-rb-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/07-rb-light.svg"><img alt="07 Rb LinuxBenchHub" src="assets/cells/07-rb-dark.svg" width="130" height="130"></picture></a></td>
+    <td width="132" align="center"><a href="https://github.com/Builder106/STAIJA" title="STAIJA"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/08-ts-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/08-ts-light.svg"><img alt="08 Ts STAIJA" src="assets/cells/08-ts-dark.svg" width="130" height="130"></picture></a></td>
+    <td width="132" align="center"><a href="https://github.com/Builder106/StudySprint" title="StudySprint"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/09-ts-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/09-ts-light.svg"><img alt="09 Ts StudySprint" src="assets/cells/09-ts-dark.svg" width="130" height="130"></picture></a></td>
+    <td width="132" align="center"><a href="https://github.com/Builder106/MicroMatch" title="MicroMatch"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/10-sv-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/10-sv-light.svg"><img alt="10 Sv MicroMatch" src="assets/cells/10-sv-dark.svg" width="130" height="130"></picture></a></td>
+    <td width="132" align="center"><a href="https://github.com/Builder106/MedCore" title="MedCore"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/11-ts-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/11-ts-light.svg"><img alt="11 Ts MedCore" src="assets/cells/11-ts-dark.svg" width="130" height="130"></picture></a></td>
+    <td width="132" align="center"><a href="https://github.com/Builder106/builder106.github.io" title="portfolio"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/12-ts-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/12-ts-light.svg"><img alt="12 Ts portfolio" src="assets/cells/12-ts-dark.svg" width="130" height="130"></picture></a></td>
+    <td width="132" align="center"><a href="https://github.com/Builder106/IMC_Prosperity" title="IMC_Prosperity"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/13-py-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/13-py-light.svg"><img alt="13 Py IMC_Prosperity" src="assets/cells/13-py-dark.svg" width="130" height="130"></picture></a></td>
+    <td width="132" align="center"><a href="https://github.com/Builder106/HackHelper" title="HackHelper"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/14-py-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/14-py-light.svg"><img alt="14 Py HackHelper" src="assets/cells/14-py-dark.svg" width="130" height="130"></picture></a></td>
+  </tr>
+  <tr>
+    <td width="28" align="right" valign="middle"><sub><code>4</code></sub></td>
+    <td width="132" align="center"><a href="https://github.com/Builder106/donut" title="donut"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/15-sw-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/15-sw-light.svg"><img alt="15 Sw donut" src="assets/cells/15-sw-dark.svg" width="130" height="130"></picture></a></td>
+    <td width="132" align="center"><a href="https://github.com/Builder106/DOOM" title="DOOM"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/16-sw-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/16-sw-light.svg"><img alt="16 Sw DOOM" src="assets/cells/16-sw-dark.svg" width="130" height="130"></picture></a></td>
+    <td width="132" align="center"><a href="https://github.com/Builder106/MetaHelper" title="MetaHelper"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/17-kt-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/17-kt-light.svg"><img alt="17 Kt MetaHelper" src="assets/cells/17-kt-dark.svg" width="130" height="130"></picture></a></td>
+    <td width="132" align="center"><a href="https://github.com/Builder106/PocketStyle" title="PocketStyle"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/18-sh-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/18-sh-light.svg"><img alt="18 Sh PocketStyle" src="assets/cells/18-sh-dark.svg" width="130" height="130"></picture></a></td>
+    <td width="132" align="center"><a href="https://github.com/Builder106/terminal" title="terminal"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/19-py-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/19-py-light.svg"><img alt="19 Py terminal" src="assets/cells/19-py-dark.svg" width="130" height="130"></picture></a></td>
+    <td width="132"></td>
+    <td width="132"></td>
+    <td width="132"></td>
   </tr>
 </table>
 
