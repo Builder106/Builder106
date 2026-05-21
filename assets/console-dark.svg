@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Builder106 operator console — SWE, Cybersec, Analyst, Quant">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0f15"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1.2" fill="#1f2630"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <rect width="1200" height="700" fill="url(#dots)"/>
+
+  <!-- Header band -->
+  <text x="40" y="40" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#7d8590" letter-spacing="2">BUILDER106  //  OPERATOR CONSOLE</text>
+  <text x="1160" y="40" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#3fb950" letter-spacing="2" text-anchor="end">&#x25cf;  ALL SYSTEMS GREEN</text>
+  <line x1="40" y1="60" x2="1160" y2="60" stroke="#262d36" stroke-width="1"/>
+
+  <!-- ============ TL: SWE (blue) ============ -->
+  <g transform="translate(40, 80)">
+    <rect x="0" y="0" width="560" height="290" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
+    <rect x="0" y="0" width="4" height="290" rx="2" fill="#58a6ff"/>
+    <text x="24" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" fill="#58a6ff" letter-spacing="3">[ SWE ]</text>
+    <circle cx="536" cy="30" r="4" fill="#3fb950"/>
+    <text x="24" y="86" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="32" font-weight="700" fill="#e6edf3">LinuxBenchHub</text>
+    <rect x="24" y="100" width="76" height="22" rx="3" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="62" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#8b949e" text-anchor="middle">Rails 8</text>
+    <text x="24" y="160" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="15" fill="#c9d1d9">VM benchmarking across Ubuntu, Fedora,</text>
+    <text x="24" y="182" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="15" fill="#c9d1d9">and Debian under identical virtual hardware.</text>
+    <text x="24" y="204" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="15" fill="#c9d1d9">Phoronix + Rails dashboard + noVNC live view.</text>
+    <line x1="24" y1="238" x2="536" y2="238" stroke="#21262d" stroke-width="1"/>
+    <text x="24" y="262" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#6e7681">also &#x2192; STAIJA &#x2022; MicroMatch &#x2022; StudySprint &#x2022; portfolio</text>
+  </g>
+
+  <!-- ============ TR: CYBERSEC (red-orange) ============ -->
+  <g transform="translate(620, 80)">
+    <rect x="0" y="0" width="560" height="290" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
+    <rect x="0" y="0" width="4" height="290" rx="2" fill="#ff7b72"/>
+    <text x="24" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" fill="#ff7b72" letter-spacing="3">[ CYBERSEC ]</text>
+    <circle cx="536" cy="30" r="4" fill="#3fb950"/>
+    <text x="24" y="86" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="32" font-weight="700" fill="#e6edf3">ClearHash</text>
+    <rect x="24" y="100" width="62" height="22" rx="3" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="55" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#8b949e" text-anchor="middle">Rust</text>
+    <text x="24" y="160" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="15" fill="#c9d1d9">Rebuild every package, compare every byte,</text>
+    <text x="24" y="182" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="15" fill="#c9d1d9">block every tamper. A supply-chain integrity</text>
+    <text x="24" y="204" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="15" fill="#c9d1d9">verifier driven by Sigstore + SLSA.</text>
+    <line x1="24" y1="238" x2="536" y2="238" stroke="#21262d" stroke-width="1"/>
+    <text x="24" y="262" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#6e7681">also &#x2192; HackHelper &#x2022; security review tooling</text>
+  </g>
+
+  <!-- ============ BL: ANALYST (amber) ============ -->
+  <g transform="translate(40, 390)">
+    <rect x="0" y="0" width="560" height="290" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
+    <rect x="0" y="0" width="4" height="290" rx="2" fill="#d29922"/>
+    <text x="24" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" fill="#d29922" letter-spacing="3">[ ANALYST ]</text>
+    <circle cx="536" cy="30" r="4" fill="#3fb950"/>
+    <text x="24" y="86" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="32" font-weight="700" fill="#e6edf3">datafest-2026</text>
+    <rect x="24" y="100" width="100" height="22" rx="3" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="74" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#8b949e" text-anchor="middle">R · DuckDB</text>
+    <text x="24" y="160" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="15" fill="#c9d1d9">Wesleyan DataFest 2026 (Team 13).</text>
+    <text x="24" y="182" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="15" fill="#c9d1d9">Transportation barriers in EHR data drive</text>
+    <text x="24" y="204" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="15" fill="#c9d1d9">3&#xd7; emergency-department visits. 7.6M encounters.</text>
+    <line x1="24" y1="238" x2="536" y2="238" stroke="#21262d" stroke-width="1"/>
+    <text x="24" y="262" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#6e7681">also &#x2192; MedCore &#x2022; QAC coursework</text>
+  </g>
+
+  <!-- ============ BR: QUANT (green) ============ -->
+  <g transform="translate(620, 390)">
+    <rect x="0" y="0" width="560" height="290" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
+    <rect x="0" y="0" width="4" height="290" rx="2" fill="#3fb950"/>
+    <text x="24" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" fill="#3fb950" letter-spacing="3">[ QUANT ]</text>
+    <circle cx="536" cy="30" r="4" fill="#3fb950"/>
+    <text x="24" y="86" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="32" font-weight="700" fill="#e6edf3">ocaml_limit</text>
+    <rect x="24" y="100" width="82" height="22" rx="3" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="65" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#8b949e" text-anchor="middle">OCaml 5</text>
+    <text x="24" y="160" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="15" fill="#c9d1d9">Zero-allocation limit-order-book matching</text>
+    <text x="24" y="182" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="15" fill="#c9d1d9">engine. ~18M ops/sec, p99 &lt; 1&#xb5;s. Bloomberg-</text>
+    <text x="24" y="204" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="15" fill="#c9d1d9">terminal&#x2013;styled live dashboard.</text>
+    <line x1="24" y1="238" x2="536" y2="238" stroke="#21262d" stroke-width="1"/>
+    <text x="24" y="262" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#6e7681">also &#x2192; CapitolAlpha &#x2022; qforge &#x2022; EconOS &#x2022; IMC_Prosperity</text>
+  </g>
+</svg>
