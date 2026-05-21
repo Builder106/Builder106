@@ -10,33 +10,54 @@
 [![Devpost](https://img.shields.io/badge/Devpost-olayinkav-003e54?logo=devpost&logoColor=white)](https://devpost.com/olayinkav)
 [![Email](https://img.shields.io/badge/email-vaughanolayinka-555?logo=gmail&logoColor=white)](mailto:vaughanolayinka@gmail.com)
 
-CS student at Wesleyan. Four tracks below — every flagship is a live repo, every claim is in its README.
+CS student at Wesleyan. The table below is my work, arranged by the language that wrote it and the discipline that motivated it. Every cell links to a live repo.
 
-## SWE
+## Periodic Table of Self
 
-- **[LinuxBenchHub](https://github.com/Builder106/LinuxBenchHub)** · `Rails 8` — VM benchmarking across Ubuntu, Fedora, and Debian under identical virtual hardware. Phoronix + Rails dashboard + noVNC live view. ([demo](https://linuxbenchhub.vercel.app/))
-- **[STAIJA](https://github.com/Builder106/STAIJA)** · `Next.js` — STEM mentorship + applications + LMS for STAIJA's StepUp Scholars and Dynamerge programs. ([live](https://staija.org))
-- **[StudySprint](https://github.com/Builder106/StudySprint)** · `React · Express` — Study session tracker with focus timer, streaks, AI syllabus parser, and co-study rooms. ([demo](https://getstudysprint.vercel.app))
-- **[MicroMatch](https://github.com/Builder106/MicroMatch)** · `SvelteKit · Appwrite` — Micro-volunteering marketplace pairing NGOs with volunteers for skill-building tasks. ([demo](https://trymicromatch.vercel.app))
-- **[builder106.github.io](https://github.com/Builder106/builder106.github.io)** · `React Three Fiber` — Interactive 3D portfolio. ([live](https://yinkavaughan.me/))
+<table>
+<tr>
+  <td><a href="https://github.com/Builder106/ocaml_limit"><img alt="Oc · ocaml_limit" src="https://img.shields.io/badge/Oc-ocaml__limit-3fb950?style=for-the-badge"></a></td>
+  <td></td><td></td><td></td><td></td><td></td><td></td>
+  <td><a href="https://github.com/Builder106/qforge"><img alt="C · qforge" src="https://img.shields.io/badge/C-qforge-3fb950?style=for-the-badge"></a></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Builder106/ClearHash"><img alt="Rs · ClearHash" src="https://img.shields.io/badge/Rs-ClearHash-cf222e?style=for-the-badge"></a></td>
+  <td><a href="https://github.com/Builder106/CapitolAlpha"><img alt="Py · CapitolAlpha" src="https://img.shields.io/badge/Py-CapitolAlpha-3fb950?style=for-the-badge"></a></td>
+  <td></td><td></td><td></td><td></td>
+  <td><a href="https://github.com/Builder106/datafest-2026"><img alt="R · datafest-2026" src="https://img.shields.io/badge/R-datafest--2026-d29922?style=for-the-badge"></a></td>
+  <td><a href="https://github.com/Builder106/EconOS"><img alt="Js · EconOS" src="https://img.shields.io/badge/Js-EconOS-3fb950?style=for-the-badge"></a></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Builder106/LinuxBenchHub"><img alt="Rb · LinuxBenchHub" src="https://img.shields.io/badge/Rb-LinuxBenchHub-a78bfa?style=for-the-badge"></a></td>
+  <td><a href="https://github.com/Builder106/STAIJA"><img alt="Ts · STAIJA" src="https://img.shields.io/badge/Ts-STAIJA-a78bfa?style=for-the-badge"></a></td>
+  <td><a href="https://github.com/Builder106/StudySprint"><img alt="Ts · StudySprint" src="https://img.shields.io/badge/Ts-StudySprint-a78bfa?style=for-the-badge"></a></td>
+  <td><a href="https://github.com/Builder106/MicroMatch"><img alt="Sv · MicroMatch" src="https://img.shields.io/badge/Sv-MicroMatch-a78bfa?style=for-the-badge"></a></td>
+  <td><a href="https://github.com/Builder106/MedCore"><img alt="Ts · MedCore" src="https://img.shields.io/badge/Ts-MedCore-d29922?style=for-the-badge"></a></td>
+  <td><a href="https://github.com/Builder106/builder106.github.io"><img alt="Ts · portfolio" src="https://img.shields.io/badge/Ts-portfolio-a78bfa?style=for-the-badge"></a></td>
+  <td><a href="https://github.com/Builder106/IMC_Prosperity"><img alt="Py · IMC_Prosperity" src="https://img.shields.io/badge/Py-IMC__Prosperity-3fb950?style=for-the-badge"></a></td>
+  <td><a href="https://github.com/Builder106/HackHelper"><img alt="Py · HackHelper" src="https://img.shields.io/badge/Py-HackHelper-cf222e?style=for-the-badge"></a></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Builder106/donut"><img alt="Sw · donut" src="https://img.shields.io/badge/Sw-donut-1f6feb?style=for-the-badge"></a></td>
+  <td><a href="https://github.com/Builder106/DOOM"><img alt="Sw · DOOM" src="https://img.shields.io/badge/Sw-DOOM-1f6feb?style=for-the-badge"></a></td>
+  <td><a href="https://github.com/Builder106/MetaHelper"><img alt="Kt · MetaHelper" src="https://img.shields.io/badge/Kt-MetaHelper-1f6feb?style=for-the-badge"></a></td>
+  <td><a href="https://github.com/Builder106/PocketStyle"><img alt="Sh · PocketStyle" src="https://img.shields.io/badge/Sh-PocketStyle-6e7681?style=for-the-badge"></a></td>
+  <td><a href="https://github.com/Builder106/terminal"><img alt="Py · terminal" src="https://img.shields.io/badge/Py-terminal-6e7681?style=for-the-badge"></a></td>
+  <td></td><td></td><td></td>
+</tr>
+</table>
 
-## Cybersec
+**Groups** &nbsp; ![Quant](https://img.shields.io/badge/-Quant-3fb950?style=flat-square) &nbsp; ![SWE](https://img.shields.io/badge/-SWE-a78bfa?style=flat-square) &nbsp; ![Cybersec](https://img.shields.io/badge/-Cybersec-cf222e?style=flat-square) &nbsp; ![Analyst](https://img.shields.io/badge/-Analyst-d29922?style=flat-square) &nbsp; ![Mobile](https://img.shields.io/badge/-Mobile-1f6feb?style=flat-square) &nbsp; ![Tooling](https://img.shields.io/badge/-Tooling-6e7681?style=flat-square)
 
-- **[ClearHash](https://github.com/Builder106/ClearHash)** · `Rust` — Rebuild every package, compare every byte, block every tamper. A supply-chain integrity verifier driven by Sigstore + SLSA. ([demo](https://clearhash.vercel.app/))
-- **[HackHelper](https://github.com/Builder106/HackHelper)** · `Python` — Tooling for security-flavored hackathon workflows.
+**Symbols** &nbsp; `Oc` OCaml &nbsp; `Rs` Rust &nbsp; `C` C99 &nbsp; `Py` Python &nbsp; `R` R &nbsp; `Rb` Ruby &nbsp; `Ts` TypeScript &nbsp; `Js` JavaScript &nbsp; `Sv` Svelte &nbsp; `Sw` Swift &nbsp; `Kt` Kotlin &nbsp; `Sh` Shell
 
-## Analyst
+## Flagships
 
-- **[datafest-2026](https://github.com/Builder106/datafest-2026)** · `R · DuckDB` — Wesleyan DataFest 2026 (Team 13). Transportation barriers in Stormont Vail EHR data drive 3× higher emergency-department use. 7.6M encounters, 947K patients. ([demo](https://datafest-2026.vercel.app/))
-- **[MedCore](https://github.com/Builder106/MedCore)** · `TypeScript` — African health site exploring continental medical data.
-
-## Quant
-
-- **[ocaml_limit](https://github.com/Builder106/ocaml_limit)** · `OCaml 5` — Zero-allocation limit-order-book matching engine. ~18M ops/sec, p99 < 1µs. Bloomberg-terminal–styled live dashboard. ([demo](https://ocaml-lob.vercel.app/))
-- **[CapitolAlpha](https://github.com/Builder106/CapitolAlpha)** · `Python · Jupyter` — Found a **+2.58% Jensen's α** (p<0.05) across 16,203 disclosed Congressional trades, 2020–2024. ([demo](https://capitolalpha.vercel.app/))
-- **[qforge](https://github.com/Builder106/qforge)** · `C99` — Zero-dependency neural network engine + DQN trading agent + synthetic market data generator. ([demo](https://qforge-neural.vercel.app/))
-- **[EconOS](https://github.com/Builder106/EconOS)** · `Python · PettingZoo · SB3` — MARL macroeconomic sandbox with a desktop-style telemetry UI for live policy intervention. ([demo](https://econ-os.vercel.app/))
-- **[IMC_Prosperity](https://github.com/Builder106/IMC_Prosperity)** · `Python` — Trading assistant from the IMC Prosperity competition.
+- **[ocaml_limit](https://github.com/Builder106/ocaml_limit)** &nbsp;·&nbsp; Zero-allocation limit-order-book matching engine. ~18M ops/sec, p99 < 1µs. Bloomberg-terminal–styled live dashboard. → [demo](https://ocaml-lob.vercel.app/)
+- **[ClearHash](https://github.com/Builder106/ClearHash)** &nbsp;·&nbsp; Rebuild every package, compare every byte, block every tamper. A supply-chain integrity verifier driven by Sigstore + SLSA. → [demo](https://clearhash.vercel.app/)
+- **[CapitolAlpha](https://github.com/Builder106/CapitolAlpha)** &nbsp;·&nbsp; Found a **+2.58% Jensen's α** (p<0.05) across 16,203 disclosed Congressional trades, 2020–2024. → [demo](https://capitolalpha.vercel.app/)
+- **[datafest-2026](https://github.com/Builder106/datafest-2026)** &nbsp;·&nbsp; Wesleyan DataFest 2026 (Team 13). Transportation barriers in EHR data drive 3× emergency-department visits. 7.6M encounters. → [demo](https://datafest-2026.vercel.app/)
+- **[LinuxBenchHub](https://github.com/Builder106/LinuxBenchHub)** &nbsp;·&nbsp; VM benchmarking across Ubuntu, Fedora, Debian under identical virtual hardware. Phoronix + Rails 8 + noVNC live view. → [demo](https://linuxbenchhub.vercel.app/)
 
 ## Stack
 
