@@ -10,13 +10,7 @@
 [![Devpost](https://img.shields.io/badge/Devpost-olayinkav-003e54?logo=devpost&logoColor=white)](https://devpost.com/olayinkav)
 [![Email](https://img.shields.io/badge/email-vaughanolayinka-555?logo=gmail&logoColor=white)](mailto:vaughanolayinka@gmail.com)
 
-CS student at Wesleyan. I build across four tracks. Console below is the manifest — every flagship is a live repo, every claim is in its README.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="assets/console-dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="assets/console-light.png">
-  <img alt="Operator console — SWE: LinuxBenchHub · Cybersec: ClearHash · Analyst: datafest-2026 · Quant: ocaml_limit" src="assets/console-dark.png">
-</picture>
+CS student at Wesleyan. Four tracks below — every flagship is a live repo, every claim is in its README.
 
 ## SWE
 
