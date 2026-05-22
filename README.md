@@ -10,7 +10,7 @@
 [![Devpost](https://img.shields.io/badge/Devpost-olayinkav-003e54?logo=devpost&logoColor=white)](https://devpost.com/olayinkav)
 [![Email](https://img.shields.io/badge/email-vaughanolayinka-555?logo=gmail&logoColor=white)](mailto:vaughanolayinka@gmail.com)
 
-CS and Econ student at Wesleyan.
+Hi, I'm Olayinka — CS and Econ at Wesleyan. Everything I've built so far is below, arranged by language and discipline.
 
 ## The Elements
 
@@ -50,13 +50,7 @@ CS and Econ student at Wesleyan.
 
 **Web** &nbsp; ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![SvelteKit](https://img.shields.io/badge/SvelteKit-FF3E00?style=flat-square&logo=svelte&logoColor=white) ![Rails](https://img.shields.io/badge/Rails-CC0000?style=flat-square&logo=rubyonrails&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white) ![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 
-**Data** &nbsp; ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white) ![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black) ![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![PettingZoo](https://img.shields.io/badge/PettingZoo-2C2C2C?style=flat-square) ![Stable--Baselines3](https://img.shields.io/badge/Stable--Baselines3-2C2C2C?style=flat-square)
+**Data** &nbsp; ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white) ![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black) ![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
 
 **Infra** &nbsp; ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![GitHub_Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white) ![Caddy](https://img.shields.io/badge/Caddy-1F88C0?style=flat-square&logo=caddy&logoColor=white) ![Oracle_Cloud](https://img.shields.io/badge/Oracle_Cloud-F80000?style=flat-square&logo=oracle&logoColor=white) ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
 
-## Elsewhere
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-yinkavaughan.me-1f6feb?style=for-the-badge&logo=vercel&logoColor=white)](https://yinkavaughan.me/) &nbsp;
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-yinka_vaughan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yinka-vaughan) &nbsp;
-[![Devpost](https://img.shields.io/badge/Devpost-olayinkav-003E54?style=for-the-badge&logo=devpost&logoColor=white)](https://devpost.com/olayinkav) &nbsp;
-[![Email](https://img.shields.io/badge/Email-vaughanolayinka%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vaughanolayinka@gmail.com)
