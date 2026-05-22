@@ -18,7 +18,7 @@ Hi, I'm Olayinka — CS and Econ at Wesleyan. Everything I've built so far is be
   <picture>
     <source media="(prefers-color-scheme: dark)"  srcset="assets/table-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/table-light.svg">
-    <img alt="Periodic table of self — 19 projects, 12 languages, 6 disciplines" src="assets/table-dark.png" width="1200">
+    <img alt="Periodic table of self — 19 projects, 12 languages, 6 disciplines" src="assets/table-dark.png" width="1200" loading="lazy">
   </picture>
 </a>
 
