@@ -1,208 +1,287 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="830" viewBox="0 0 1200 830" role="img" aria-label="Periodic table of self — 19 projects across 12 languages and 6 disciplines">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="880" viewBox="0 0 1200 880" role="img" aria-label="Periodic table of self — 19 projects across 12 languages and 6 disciplines">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0b0f15"/><stop offset="100%" stop-color="#161b22"/></linearGradient>
+    <linearGradient id="canvasBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0b0f15"/><stop offset="100%" stop-color="#161b22"/></linearGradient>
     <pattern id="dots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="1.4" cy="1.4" r="1.4" fill="#1f2630"/></pattern>
+    <linearGradient id="grad-Q" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#3fb950" stop-opacity="0.45"/><stop offset="60%" stop-color="#3fb950" stop-opacity="0"/></linearGradient>
+    <linearGradient id="grad-Y" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f85149" stop-opacity="0.45"/><stop offset="60%" stop-color="#f85149" stop-opacity="0"/></linearGradient>
+    <linearGradient id="grad-A" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#d29922" stop-opacity="0.45"/><stop offset="60%" stop-color="#d29922" stop-opacity="0"/></linearGradient>
+    <linearGradient id="grad-W" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#a78bfa" stop-opacity="0.45"/><stop offset="60%" stop-color="#a78bfa" stop-opacity="0"/></linearGradient>
+    <linearGradient id="grad-M" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#58a6ff" stop-opacity="0.45"/><stop offset="60%" stop-color="#58a6ff" stop-opacity="0"/></linearGradient>
+    <linearGradient id="grad-T" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#8b949e" stop-opacity="0.45"/><stop offset="60%" stop-color="#8b949e" stop-opacity="0"/></linearGradient>
   </defs>
-  <rect width="1200" height="830" fill="url(#bg)"/>
-  <rect width="1200" height="830" fill="url(#dots)"/>
-  <text x="60" y="56" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="#7d8590" letter-spacing="3">BUILDER106  //  THE ELEMENTS</text>
-  <text x="60" y="92" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="13" fill="#6e7681">19 projects  ·  12 languages  ·  6 disciplines  ·  every cell is a live repo</text>
-  <line x1="60" y1="108" x2="1140" y2="108" stroke="#21262d" stroke-width="1"/>
-  <g transform="translate(45, 130)">
-    <rect x="0" y="0" width="130" height="130" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
-    <rect x="0" y="0" width="130" height="4" rx="2" fill="#3fb950"/>
-    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#3fb950">01</text>
-    <text x="65" y="70" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="42" font-weight="700" fill="#e6edf3" text-anchor="middle">Oc</text>
-    <text x="65" y="93" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" fill="#7d8590" text-anchor="middle">OCaml</text>
-    <text x="65" y="113" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">ocaml_limit</text>
+  <rect width="1200" height="880" fill="url(#canvasBg)"/>
+  <rect width="1200" height="880" fill="url(#dots)"/>
+  <text x="52" y="50" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#7d8590" letter-spacing="3">BUILDER106  //  THE ELEMENTS</text>
+  <text x="52" y="80" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="13" fill="#6e7681">19 projects  ·  12 languages  ·  6 disciplines  ·  arranged by language &amp; track</text>
+  <line x1="52" y1="100" x2="1153" y2="100" stroke="#262d36" stroke-width="1"/>
+    <text x="117" y="120" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#7d8590" text-anchor="middle">1</text>
+    <text x="256" y="120" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#7d8590" text-anchor="middle">2</text>
+    <text x="395" y="120" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#7d8590" text-anchor="middle">3</text>
+    <text x="534" y="120" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#7d8590" text-anchor="middle">4</text>
+    <text x="673" y="120" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#7d8590" text-anchor="middle">5</text>
+    <text x="812" y="120" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#7d8590" text-anchor="middle">6</text>
+    <text x="951" y="120" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#7d8590" text-anchor="middle">7</text>
+    <text x="1090" y="120" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#7d8590" text-anchor="middle">8</text>
+    <text x="36" y="199" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#7d8590" text-anchor="end">1</text>
+    <text x="36" y="344" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#7d8590" text-anchor="end">2</text>
+    <text x="36" y="489" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#7d8590" text-anchor="end">3</text>
+    <text x="36" y="634" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#7d8590" text-anchor="end">4</text>
+  <g opacity="1" transform="translate(52, 130)">
+    <set attributeName="opacity" to="0" begin="0s"/>
+    <animate attributeName="opacity" from="0" to="1" begin="0.00s" dur="0.55s" fill="freeze"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#0d2a17" stroke="#30363d" stroke-width="1"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-Q)"/>
+    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#3fb950"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-0.21s" repeatCount="indefinite"/></rect>
+    <text x="10" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="500" fill="#3fb950">01</text>
+    <text x="65" y="74" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="-1">Oc</text>
+    <text x="65" y="98" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e" text-anchor="middle">OCaml</text>
+    <text x="65" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">ocaml_limit</text>
   </g>
-  <g transform="translate(1025, 130)">
-    <rect x="0" y="0" width="130" height="130" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
-    <rect x="0" y="0" width="130" height="4" rx="2" fill="#3fb950"/>
-    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#3fb950">02</text>
-    <text x="65" y="70" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="42" font-weight="700" fill="#e6edf3" text-anchor="middle">C</text>
-    <text x="65" y="93" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" fill="#7d8590" text-anchor="middle">C99</text>
-    <text x="65" y="113" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">qforge</text>
+  <g opacity="1" transform="translate(1025, 130)">
+    <set attributeName="opacity" to="0" begin="0s"/>
+    <animate attributeName="opacity" from="0" to="1" begin="0.06s" dur="0.55s" fill="freeze"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#0d2a17" stroke="#30363d" stroke-width="1"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-Q)"/>
+    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#3fb950"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-0.42s" repeatCount="indefinite"/></rect>
+    <text x="10" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="500" fill="#3fb950">02</text>
+    <text x="65" y="74" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="-1">C</text>
+    <text x="65" y="98" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e" text-anchor="middle">C99</text>
+    <text x="65" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">qforge</text>
   </g>
-  <g transform="translate(45, 280)">
-    <rect x="0" y="0" width="130" height="130" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
-    <rect x="0" y="0" width="130" height="4" rx="2" fill="#cf222e"/>
-    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#cf222e">03</text>
-    <text x="65" y="70" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="42" font-weight="700" fill="#e6edf3" text-anchor="middle">Rs</text>
-    <text x="65" y="93" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" fill="#7d8590" text-anchor="middle">Rust</text>
-    <text x="65" y="113" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">ClearHash</text>
+  <g opacity="1" transform="translate(52, 275)">
+    <set attributeName="opacity" to="0" begin="0s"/>
+    <animate attributeName="opacity" from="0" to="1" begin="0.12s" dur="0.55s" fill="freeze"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#2e1416" stroke="#30363d" stroke-width="1"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-Y)"/>
+    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#f85149"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-0.63s" repeatCount="indefinite"/></rect>
+    <text x="10" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="500" fill="#f85149">03</text>
+    <text x="65" y="74" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="-1">Rs</text>
+    <text x="65" y="98" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e" text-anchor="middle">Rust</text>
+    <text x="65" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">ClearHash</text>
   </g>
-  <g transform="translate(185, 280)">
-    <rect x="0" y="0" width="130" height="130" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
-    <rect x="0" y="0" width="130" height="4" rx="2" fill="#3fb950"/>
-    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#3fb950">04</text>
-    <text x="65" y="70" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="42" font-weight="700" fill="#e6edf3" text-anchor="middle">Py</text>
-    <text x="65" y="93" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" fill="#7d8590" text-anchor="middle">Python</text>
-    <text x="65" y="113" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">CapitolAlpha</text>
+  <g opacity="1" transform="translate(191, 275)">
+    <set attributeName="opacity" to="0" begin="0s"/>
+    <animate attributeName="opacity" from="0" to="1" begin="0.18s" dur="0.55s" fill="freeze"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#0d2a17" stroke="#30363d" stroke-width="1"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-Q)"/>
+    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#3fb950"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-0.84s" repeatCount="indefinite"/></rect>
+    <text x="10" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="500" fill="#3fb950">04</text>
+    <text x="65" y="74" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="-1">Py</text>
+    <text x="65" y="98" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e" text-anchor="middle">Python</text>
+    <text x="65" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">CapitolAlpha</text>
   </g>
-  <g transform="translate(885, 280)">
-    <rect x="0" y="0" width="130" height="130" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
-    <rect x="0" y="0" width="130" height="4" rx="2" fill="#d29922"/>
-    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#d29922">05</text>
-    <text x="65" y="70" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="42" font-weight="700" fill="#e6edf3" text-anchor="middle">R</text>
-    <text x="65" y="93" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" fill="#7d8590" text-anchor="middle">R</text>
-    <text x="65" y="113" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">datafest-2026</text>
+  <g opacity="1" transform="translate(886, 275)">
+    <set attributeName="opacity" to="0" begin="0s"/>
+    <animate attributeName="opacity" from="0" to="1" begin="0.24s" dur="0.55s" fill="freeze"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#2e2208" stroke="#30363d" stroke-width="1"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-A)"/>
+    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#d29922"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-1.05s" repeatCount="indefinite"/></rect>
+    <text x="10" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="500" fill="#d29922">05</text>
+    <text x="65" y="74" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="-1">R</text>
+    <text x="65" y="98" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e" text-anchor="middle">R</text>
+    <text x="65" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">datafest-2026</text>
   </g>
-  <g transform="translate(1025, 280)">
-    <rect x="0" y="0" width="130" height="130" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
-    <rect x="0" y="0" width="130" height="4" rx="2" fill="#3fb950"/>
-    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#3fb950">06</text>
-    <text x="65" y="70" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="42" font-weight="700" fill="#e6edf3" text-anchor="middle">Js</text>
-    <text x="65" y="93" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" fill="#7d8590" text-anchor="middle">JavaScript</text>
-    <text x="65" y="113" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">EconOS</text>
+  <g opacity="1" transform="translate(1025, 275)">
+    <set attributeName="opacity" to="0" begin="0s"/>
+    <animate attributeName="opacity" from="0" to="1" begin="0.30s" dur="0.55s" fill="freeze"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#0d2a17" stroke="#30363d" stroke-width="1"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-Q)"/>
+    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#3fb950"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-1.26s" repeatCount="indefinite"/></rect>
+    <text x="10" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="500" fill="#3fb950">06</text>
+    <text x="65" y="74" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="-1">Js</text>
+    <text x="65" y="98" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e" text-anchor="middle">JavaScript</text>
+    <text x="65" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">EconOS</text>
   </g>
-  <g transform="translate(45, 430)">
-    <rect x="0" y="0" width="130" height="130" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
-    <rect x="0" y="0" width="130" height="4" rx="2" fill="#a78bfa"/>
-    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#a78bfa">07</text>
-    <text x="65" y="70" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="42" font-weight="700" fill="#e6edf3" text-anchor="middle">Rb</text>
-    <text x="65" y="93" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" fill="#7d8590" text-anchor="middle">Ruby</text>
-    <text x="65" y="113" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">LinuxBenchHub</text>
+  <g opacity="1" transform="translate(52, 420)">
+    <set attributeName="opacity" to="0" begin="0s"/>
+    <animate attributeName="opacity" from="0" to="1" begin="0.36s" dur="0.55s" fill="freeze"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#1c1340" stroke="#30363d" stroke-width="1"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-W)"/>
+    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#a78bfa"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-1.47s" repeatCount="indefinite"/></rect>
+    <text x="10" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="500" fill="#a78bfa">07</text>
+    <g transform="translate(118, 14)">
+      <circle r="4" fill="#a78bfa"><animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite"/></circle>
+      <circle r="4" fill="#a78bfa" opacity="0.4"><animate attributeName="r" values="4;9;4" dur="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.5;0;0.5" dur="1.6s" repeatCount="indefinite"/></circle>
+    </g>
+    <text x="65" y="74" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="-1">Rb</text>
+    <text x="65" y="98" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e" text-anchor="middle">Ruby</text>
+    <text x="65" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">LinuxBenchHub</text>
   </g>
-  <g transform="translate(185, 430)">
-    <rect x="0" y="0" width="130" height="130" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
-    <rect x="0" y="0" width="130" height="4" rx="2" fill="#a78bfa"/>
-    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#a78bfa">08</text>
-    <text x="65" y="70" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="42" font-weight="700" fill="#e6edf3" text-anchor="middle">Ts</text>
-    <text x="65" y="93" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" fill="#7d8590" text-anchor="middle">TypeScript</text>
-    <text x="65" y="113" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">STAIJA</text>
+  <g opacity="1" transform="translate(191, 420)">
+    <set attributeName="opacity" to="0" begin="0s"/>
+    <animate attributeName="opacity" from="0" to="1" begin="0.42s" dur="0.55s" fill="freeze"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#1c1340" stroke="#30363d" stroke-width="1"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-W)"/>
+    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#a78bfa"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-1.68s" repeatCount="indefinite"/></rect>
+    <text x="10" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="500" fill="#a78bfa">08</text>
+    <text x="65" y="74" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="-1">Ts</text>
+    <text x="65" y="98" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e" text-anchor="middle">TypeScript</text>
+    <text x="65" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">STAIJA</text>
   </g>
-  <g transform="translate(325, 430)">
-    <rect x="0" y="0" width="130" height="130" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
-    <rect x="0" y="0" width="130" height="4" rx="2" fill="#a78bfa"/>
-    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#a78bfa">09</text>
-    <text x="65" y="70" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="42" font-weight="700" fill="#e6edf3" text-anchor="middle">Ts</text>
-    <text x="65" y="93" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" fill="#7d8590" text-anchor="middle">TypeScript</text>
-    <text x="65" y="113" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">StudySprint</text>
+  <g opacity="1" transform="translate(330, 420)">
+    <set attributeName="opacity" to="0" begin="0s"/>
+    <animate attributeName="opacity" from="0" to="1" begin="0.48s" dur="0.55s" fill="freeze"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#1c1340" stroke="#30363d" stroke-width="1"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-W)"/>
+    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#a78bfa"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-1.89s" repeatCount="indefinite"/></rect>
+    <text x="10" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="500" fill="#a78bfa">09</text>
+    <text x="65" y="74" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="-1">Ts</text>
+    <text x="65" y="98" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e" text-anchor="middle">TypeScript</text>
+    <text x="65" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">StudySprint</text>
   </g>
-  <g transform="translate(465, 430)">
-    <rect x="0" y="0" width="130" height="130" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
-    <rect x="0" y="0" width="130" height="4" rx="2" fill="#a78bfa"/>
-    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#a78bfa">10</text>
-    <text x="65" y="70" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="42" font-weight="700" fill="#e6edf3" text-anchor="middle">Sv</text>
-    <text x="65" y="93" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" fill="#7d8590" text-anchor="middle">Svelte</text>
-    <text x="65" y="113" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">MicroMatch</text>
+  <g opacity="1" transform="translate(469, 420)">
+    <set attributeName="opacity" to="0" begin="0s"/>
+    <animate attributeName="opacity" from="0" to="1" begin="0.54s" dur="0.55s" fill="freeze"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#1c1340" stroke="#30363d" stroke-width="1"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-W)"/>
+    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#a78bfa"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-2.10s" repeatCount="indefinite"/></rect>
+    <text x="10" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="500" fill="#a78bfa">10</text>
+    <text x="65" y="74" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="-1">Sv</text>
+    <text x="65" y="98" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e" text-anchor="middle">Svelte</text>
+    <text x="65" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">MicroMatch</text>
   </g>
-  <g transform="translate(605, 430)">
-    <rect x="0" y="0" width="130" height="130" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
-    <rect x="0" y="0" width="130" height="4" rx="2" fill="#d29922"/>
-    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#d29922">11</text>
-    <text x="65" y="70" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="42" font-weight="700" fill="#e6edf3" text-anchor="middle">Ts</text>
-    <text x="65" y="93" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" fill="#7d8590" text-anchor="middle">TypeScript</text>
-    <text x="65" y="113" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">MedCore</text>
+  <g opacity="1" transform="translate(608, 420)">
+    <set attributeName="opacity" to="0" begin="0s"/>
+    <animate attributeName="opacity" from="0" to="1" begin="0.60s" dur="0.55s" fill="freeze"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#2e2208" stroke="#30363d" stroke-width="1"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-A)"/>
+    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#d29922"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-2.31s" repeatCount="indefinite"/></rect>
+    <text x="10" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="500" fill="#d29922">11</text>
+    <text x="65" y="74" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="-1">Ts</text>
+    <text x="65" y="98" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e" text-anchor="middle">TypeScript</text>
+    <text x="65" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">MedCore</text>
   </g>
-  <g transform="translate(745, 430)">
-    <rect x="0" y="0" width="130" height="130" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
-    <rect x="0" y="0" width="130" height="4" rx="2" fill="#a78bfa"/>
-    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#a78bfa">12</text>
-    <text x="65" y="70" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="42" font-weight="700" fill="#e6edf3" text-anchor="middle">Ts</text>
-    <text x="65" y="93" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" fill="#7d8590" text-anchor="middle">TypeScript</text>
-    <text x="65" y="113" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">portfolio</text>
+  <g opacity="1" transform="translate(747, 420)">
+    <set attributeName="opacity" to="0" begin="0s"/>
+    <animate attributeName="opacity" from="0" to="1" begin="0.66s" dur="0.55s" fill="freeze"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#1c1340" stroke="#30363d" stroke-width="1"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-W)"/>
+    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#a78bfa"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-2.52s" repeatCount="indefinite"/></rect>
+    <text x="10" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="500" fill="#a78bfa">12</text>
+    <text x="65" y="74" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="-1">Ts</text>
+    <text x="65" y="98" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e" text-anchor="middle">TypeScript</text>
+    <text x="65" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">portfolio</text>
   </g>
-  <g transform="translate(885, 430)">
-    <rect x="0" y="0" width="130" height="130" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
-    <rect x="0" y="0" width="130" height="4" rx="2" fill="#3fb950"/>
-    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#3fb950">13</text>
-    <text x="65" y="70" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="42" font-weight="700" fill="#e6edf3" text-anchor="middle">Py</text>
-    <text x="65" y="93" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" fill="#7d8590" text-anchor="middle">Python</text>
-    <text x="65" y="113" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">IMC_Prosperity</text>
+  <g opacity="1" transform="translate(886, 420)">
+    <set attributeName="opacity" to="0" begin="0s"/>
+    <animate attributeName="opacity" from="0" to="1" begin="0.72s" dur="0.55s" fill="freeze"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#0d2a17" stroke="#30363d" stroke-width="1"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-Q)"/>
+    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#3fb950"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-2.73s" repeatCount="indefinite"/></rect>
+    <text x="10" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="500" fill="#3fb950">13</text>
+    <text x="65" y="74" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="-1">Py</text>
+    <text x="65" y="98" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e" text-anchor="middle">Python</text>
+    <text x="65" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">IMC_Prosperity</text>
   </g>
-  <g transform="translate(1025, 430)">
-    <rect x="0" y="0" width="130" height="130" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
-    <rect x="0" y="0" width="130" height="4" rx="2" fill="#cf222e"/>
-    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#cf222e">14</text>
-    <text x="65" y="70" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="42" font-weight="700" fill="#e6edf3" text-anchor="middle">Py</text>
-    <text x="65" y="93" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" fill="#7d8590" text-anchor="middle">Python</text>
-    <text x="65" y="113" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">HackHelper</text>
+  <g opacity="1" transform="translate(1025, 420)">
+    <set attributeName="opacity" to="0" begin="0s"/>
+    <animate attributeName="opacity" from="0" to="1" begin="0.78s" dur="0.55s" fill="freeze"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#2e1416" stroke="#30363d" stroke-width="1"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-Y)"/>
+    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#f85149"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-2.94s" repeatCount="indefinite"/></rect>
+    <text x="10" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="500" fill="#f85149">14</text>
+    <text x="65" y="74" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="-1">Py</text>
+    <text x="65" y="98" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e" text-anchor="middle">Python</text>
+    <text x="65" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">HackHelper</text>
   </g>
-  <g transform="translate(45, 580)">
-    <rect x="0" y="0" width="130" height="130" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
-    <rect x="0" y="0" width="130" height="4" rx="2" fill="#58a6ff"/>
-    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#58a6ff">15</text>
-    <text x="65" y="70" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="42" font-weight="700" fill="#e6edf3" text-anchor="middle">Sw</text>
-    <text x="65" y="93" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" fill="#7d8590" text-anchor="middle">Swift</text>
-    <text x="65" y="113" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">donut</text>
+  <g opacity="1" transform="translate(52, 565)">
+    <set attributeName="opacity" to="0" begin="0s"/>
+    <animate attributeName="opacity" from="0" to="1" begin="0.84s" dur="0.55s" fill="freeze"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#0f1f3a" stroke="#30363d" stroke-width="1"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-M)"/>
+    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#58a6ff"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-3.15s" repeatCount="indefinite"/></rect>
+    <text x="10" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="500" fill="#58a6ff">15</text>
+    <text x="65" y="74" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="-1">Sw</text>
+    <text x="65" y="98" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e" text-anchor="middle">Swift</text>
+    <text x="65" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">donut</text>
   </g>
-  <g transform="translate(185, 580)">
-    <rect x="0" y="0" width="130" height="130" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
-    <rect x="0" y="0" width="130" height="4" rx="2" fill="#58a6ff"/>
-    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#58a6ff">16</text>
-    <text x="65" y="70" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="42" font-weight="700" fill="#e6edf3" text-anchor="middle">Sw</text>
-    <text x="65" y="93" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" fill="#7d8590" text-anchor="middle">Swift</text>
-    <text x="65" y="113" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">DOOM</text>
+  <g opacity="1" transform="translate(191, 565)">
+    <set attributeName="opacity" to="0" begin="0s"/>
+    <animate attributeName="opacity" from="0" to="1" begin="0.90s" dur="0.55s" fill="freeze"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#0f1f3a" stroke="#30363d" stroke-width="1"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-M)"/>
+    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#58a6ff"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-3.36s" repeatCount="indefinite"/></rect>
+    <text x="10" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="500" fill="#58a6ff">16</text>
+    <text x="65" y="74" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="-1">Sw</text>
+    <text x="65" y="98" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e" text-anchor="middle">Swift</text>
+    <text x="65" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">DOOM</text>
   </g>
-  <g transform="translate(325, 580)">
-    <rect x="0" y="0" width="130" height="130" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
-    <rect x="0" y="0" width="130" height="4" rx="2" fill="#58a6ff"/>
-    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#58a6ff">17</text>
-    <text x="65" y="70" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="42" font-weight="700" fill="#e6edf3" text-anchor="middle">Kt</text>
-    <text x="65" y="93" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" fill="#7d8590" text-anchor="middle">Kotlin</text>
-    <text x="65" y="113" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">MetaHelper</text>
+  <g opacity="1" transform="translate(330, 565)">
+    <set attributeName="opacity" to="0" begin="0s"/>
+    <animate attributeName="opacity" from="0" to="1" begin="0.96s" dur="0.55s" fill="freeze"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#0f1f3a" stroke="#30363d" stroke-width="1"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-M)"/>
+    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#58a6ff"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-3.57s" repeatCount="indefinite"/></rect>
+    <text x="10" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="500" fill="#58a6ff">17</text>
+    <text x="65" y="74" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="-1">Kt</text>
+    <text x="65" y="98" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e" text-anchor="middle">Kotlin</text>
+    <text x="65" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">MetaHelper</text>
   </g>
-  <g transform="translate(465, 580)">
-    <rect x="0" y="0" width="130" height="130" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
-    <rect x="0" y="0" width="130" height="4" rx="2" fill="#6e7681"/>
-    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#6e7681">18</text>
-    <text x="65" y="70" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="42" font-weight="700" fill="#e6edf3" text-anchor="middle">Sh</text>
-    <text x="65" y="93" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" fill="#7d8590" text-anchor="middle">Shell</text>
-    <text x="65" y="113" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">PocketStyle</text>
+  <g opacity="1" transform="translate(469, 565)">
+    <set attributeName="opacity" to="0" begin="0s"/>
+    <animate attributeName="opacity" from="0" to="1" begin="1.02s" dur="0.55s" fill="freeze"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#1a1e23" stroke="#30363d" stroke-width="1"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-T)"/>
+    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#8b949e"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-3.78s" repeatCount="indefinite"/></rect>
+    <text x="10" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="500" fill="#8b949e">18</text>
+    <text x="65" y="74" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="-1">Sh</text>
+    <text x="65" y="98" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e" text-anchor="middle">Shell</text>
+    <text x="65" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">PocketStyle</text>
   </g>
-  <g transform="translate(605, 580)">
-    <rect x="0" y="0" width="130" height="130" rx="6" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
-    <rect x="0" y="0" width="130" height="4" rx="2" fill="#6e7681"/>
-    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#6e7681">19</text>
-    <text x="65" y="70" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="42" font-weight="700" fill="#e6edf3" text-anchor="middle">Py</text>
-    <text x="65" y="93" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" fill="#7d8590" text-anchor="middle">Python</text>
-    <text x="65" y="113" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">terminal</text>
+  <g opacity="1" transform="translate(608, 565)">
+    <set attributeName="opacity" to="0" begin="0s"/>
+    <animate attributeName="opacity" from="0" to="1" begin="1.08s" dur="0.55s" fill="freeze"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#1a1e23" stroke="#30363d" stroke-width="1"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-T)"/>
+    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#8b949e"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-3.99s" repeatCount="indefinite"/></rect>
+    <text x="10" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="500" fill="#8b949e">19</text>
+    <text x="65" y="74" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="-1">Py</text>
+    <text x="65" y="98" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e" text-anchor="middle">Python</text>
+    <text x="65" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#6e7681" text-anchor="middle">terminal</text>
   </g>
-  <line x1="60" y1="738" x2="1140" y2="738" stroke="#21262d" stroke-width="1"/>
-  <text x="60" y="760" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#7d8590" letter-spacing="2">GROUPS</text>
-  <g transform="translate(150, 744)">
-    <rect x="0" y="0" width="118" height="22" rx="3" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <line x1="52" y1="718" x2="1153" y2="718" stroke="#262d36" stroke-width="1"/>
+  <text x="52" y="744" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#7d8590" letter-spacing="2">GROUPS</text>
+  <g transform="translate(140, 730)">
+    <rect x="0" y="0" width="118" height="22" rx="3" fill="#0d2a17" stroke="#30363d" stroke-width="1"/>
     <rect x="0" y="0" width="4" height="22" rx="2" fill="#3fb950"/>
     <text x="14" y="15" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#7d8590">Quant</text>
   </g>
-  <g transform="translate(280, 744)">
-    <rect x="0" y="0" width="118" height="22" rx="3" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <g transform="translate(270, 730)">
+    <rect x="0" y="0" width="118" height="22" rx="3" fill="#1c1340" stroke="#30363d" stroke-width="1"/>
     <rect x="0" y="0" width="4" height="22" rx="2" fill="#a78bfa"/>
     <text x="14" y="15" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#7d8590">SWE</text>
   </g>
-  <g transform="translate(410, 744)">
-    <rect x="0" y="0" width="118" height="22" rx="3" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-    <rect x="0" y="0" width="4" height="22" rx="2" fill="#cf222e"/>
+  <g transform="translate(400, 730)">
+    <rect x="0" y="0" width="118" height="22" rx="3" fill="#2e1416" stroke="#30363d" stroke-width="1"/>
+    <rect x="0" y="0" width="4" height="22" rx="2" fill="#f85149"/>
     <text x="14" y="15" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#7d8590">Cybersec</text>
   </g>
-  <g transform="translate(540, 744)">
-    <rect x="0" y="0" width="118" height="22" rx="3" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <g transform="translate(530, 730)">
+    <rect x="0" y="0" width="118" height="22" rx="3" fill="#2e2208" stroke="#30363d" stroke-width="1"/>
     <rect x="0" y="0" width="4" height="22" rx="2" fill="#d29922"/>
     <text x="14" y="15" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#7d8590">Analyst</text>
   </g>
-  <g transform="translate(670, 744)">
-    <rect x="0" y="0" width="118" height="22" rx="3" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <g transform="translate(660, 730)">
+    <rect x="0" y="0" width="118" height="22" rx="3" fill="#0f1f3a" stroke="#30363d" stroke-width="1"/>
     <rect x="0" y="0" width="4" height="22" rx="2" fill="#58a6ff"/>
     <text x="14" y="15" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#7d8590">Mobile</text>
   </g>
-  <g transform="translate(800, 744)">
-    <rect x="0" y="0" width="118" height="22" rx="3" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-    <rect x="0" y="0" width="4" height="22" rx="2" fill="#6e7681"/>
+  <g transform="translate(790, 730)">
+    <rect x="0" y="0" width="118" height="22" rx="3" fill="#1a1e23" stroke="#30363d" stroke-width="1"/>
+    <rect x="0" y="0" width="4" height="22" rx="2" fill="#8b949e"/>
     <text x="14" y="15" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#7d8590">Tooling</text>
   </g>
-  <text x="60" y="798" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#7d8590" letter-spacing="2">SYMBOLS</text>
-  <text x="150" y="798" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Oc</tspan> OCaml</text>
-  <text x="235" y="798" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Rs</tspan> Rust</text>
-  <text x="320" y="798" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">C</tspan> C99</text>
-  <text x="405" y="798" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Py</tspan> Python</text>
-  <text x="490" y="798" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">R</tspan> R</text>
-  <text x="575" y="798" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Rb</tspan> Ruby</text>
-  <text x="660" y="798" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Ts</tspan> TypeScript</text>
-  <text x="745" y="798" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Js</tspan> JavaScript</text>
-  <text x="830" y="798" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Sv</tspan> Svelte</text>
-  <text x="915" y="798" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Sw</tspan> Swift</text>
-  <text x="1000" y="798" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Kt</tspan> Kotlin</text>
-  <text x="1085" y="798" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Sh</tspan> Shell</text>
+  <text x="52" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#7d8590" letter-spacing="2">SYMBOLS</text>
+  <text x="140" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Oc</tspan> OCaml</text>
+  <text x="226" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Rs</tspan> Rust</text>
+  <text x="312" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">C</tspan> C99</text>
+  <text x="398" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Py</tspan> Python</text>
+  <text x="484" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">R</tspan> R</text>
+  <text x="570" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Rb</tspan> Ruby</text>
+  <text x="656" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Ts</tspan> TypeScript</text>
+  <text x="742" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Js</tspan> JavaScript</text>
+  <text x="828" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Sv</tspan> Svelte</text>
+  <text x="914" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Sw</tspan> Swift</text>
+  <text x="1000" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Kt</tspan> Kotlin</text>
+  <text x="1086" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Sh</tspan> Shell</text>
 </svg>
