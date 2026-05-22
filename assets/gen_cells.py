@@ -157,7 +157,7 @@ def unified_svg(theme):
     cell_text_faded = "#6e7681" if is_dark else "#8c959f"
     chrome_rule = "#262d36" if is_dark else "#e6eaef"
 
-    W, H = 1200, 910
+    W, H = 1200, 830
     MARGIN_L, MARGIN_TOP = 52, 130
     CELL_W, CELL_H = 130, 130
     COL_STRIDE, ROW_STRIDE = 139, 145
