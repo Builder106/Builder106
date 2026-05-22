@@ -10,7 +10,7 @@
 [![Devpost](https://img.shields.io/badge/Devpost-olayinkav-003e54?logo=devpost&logoColor=white)](https://devpost.com/olayinkav)
 [![Email](https://img.shields.io/badge/email-vaughanolayinka-555?logo=gmail&logoColor=white)](mailto:vaughanolayinka@gmail.com)
 
-CS student at Wesleyan. 19 projects across 12 languages and 4 disciplines, laid out below by language and track.
+CS and Econ student at Wesleyan.
 
 ## The Elements
 
