@@ -97,10 +97,10 @@ def cell_svg(theme, num, symbol, lang, project, disc):
     <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="{accent}">
       <animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="{pulse_offset:.2f}s" repeatCount="indefinite"/>
     </rect>
-    <text x="10" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="500" fill="{accent}">{num:02d}</text>{now_marker}
-    <text x="65" y="74" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="{fg}" text-anchor="middle" letter-spacing="-1">{symbol}</text>
-    <text x="65" y="98" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="{muted}" text-anchor="middle">{lang}</text>
-    <text x="65" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="{faded}" text-anchor="middle">{project}</text>
+    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="500" fill="{accent}">{num:02d}</text>{now_marker}
+    <text x="65" y="76" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="{fg}" text-anchor="middle" letter-spacing="-1">{symbol}</text>
+    <text x="65" y="101" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="{muted}" text-anchor="middle">{lang}</text>
+    <text x="65" y="120" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="{faded}" text-anchor="middle">{project}</text>
   </g>
 </svg>
 '''
@@ -157,7 +157,7 @@ def unified_svg(theme):
     cell_text_faded = "#6e7681" if is_dark else "#8c959f"
     chrome_rule = "#262d36" if is_dark else "#e6eaef"
 
-    W, H = 1200, 880
+    W, H = 1200, 910
     MARGIN_L, MARGIN_TOP = 52, 130
     CELL_W, CELL_H = 130, 130
     COL_STRIDE, ROW_STRIDE = 139, 145
@@ -182,19 +182,19 @@ def unified_svg(theme):
     out.append(f'  <rect width="{W}" height="{H}" fill="url(#dots)"/>')
 
     # Header
-    out.append(f'  <text x="52" y="50" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="{muted}" letter-spacing="3">BUILDER106  //  THE ELEMENTS</text>')
-    out.append(f'  <text x="52" y="80" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="13" fill="{faded}">19 projects  ·  12 languages  ·  6 disciplines  ·  arranged by language &amp; track</text>')
-    out.append(f'  <line x1="52" y1="100" x2="{W - 47}" y2="100" stroke="{chrome_rule}" stroke-width="1"/>')
+    out.append(f'  <text x="52" y="52" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="{muted}" letter-spacing="3">BUILDER106  //  THE ELEMENTS</text>')
+    out.append(f'  <text x="52" y="82" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="14" fill="{faded}">19 projects  ·  12 languages  ·  6 disciplines  ·  arranged by language &amp; track</text>')
+    out.append(f'  <line x1="52" y1="102" x2="{W - 47}" y2="102" stroke="{chrome_rule}" stroke-width="1"/>')
 
     # Group labels (1..8 across the top of cell columns)
     for g in range(8):
         cx = MARGIN_L + g * COL_STRIDE + CELL_W // 2
-        out.append(f'    <text x="{cx}" y="120" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="{muted}" text-anchor="middle">{g + 1}</text>')
+        out.append(f'    <text x="{cx}" y="122" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="500" fill="{muted}" text-anchor="middle">{g + 1}</text>')
 
     # Period labels (1..4 down the left side)
     for p in range(4):
-        cy = MARGIN_TOP + p * ROW_STRIDE + CELL_H // 2 + 4
-        out.append(f'    <text x="36" y="{cy}" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="{muted}" text-anchor="end">{p + 1}</text>')
+        cy = MARGIN_TOP + p * ROW_STRIDE + CELL_H // 2 + 5
+        out.append(f'    <text x="36" y="{cy}" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="500" fill="{muted}" text-anchor="end">{p + 1}</text>')
 
     # Cells
     for (p, s), (num, symbol, lang, project, disc) in sorted(by_pos.items()):
@@ -212,44 +212,44 @@ def unified_svg(theme):
         out.append(f'    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="{cardbg}" stroke="{border}" stroke-width="1"/>')
         out.append(f'    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-{disc})"/>')
         out.append(f'    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="{accent}"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="{pulse_offset:.2f}s" repeatCount="indefinite"/></rect>')
-        out.append(f'    <text x="10" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="500" fill="{accent}">{num:02d}</text>')
+        out.append(f'    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="500" fill="{accent}">{num:02d}</text>')
         if is_now:
             out.append(f'    <g transform="translate(118, 14)">')
             out.append(f'      <circle r="4" fill="{accent}"><animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite"/></circle>')
             out.append(f'      <circle r="4" fill="{accent}" opacity="0.4"><animate attributeName="r" values="4;9;4" dur="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.5;0;0.5" dur="1.6s" repeatCount="indefinite"/></circle>')
             out.append(f'    </g>')
-        out.append(f'    <text x="65" y="74" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="{fg}" text-anchor="middle" letter-spacing="-1">{symbol}</text>')
-        out.append(f'    <text x="65" y="98" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="{cell_text_muted}" text-anchor="middle">{lang}</text>')
-        out.append(f'    <text x="65" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="{cell_text_faded}" text-anchor="middle">{project}</text>')
+        out.append(f'    <text x="65" y="76" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="{fg}" text-anchor="middle" letter-spacing="-1">{symbol}</text>')
+        out.append(f'    <text x="65" y="101" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="{cell_text_muted}" text-anchor="middle">{lang}</text>')
+        out.append(f'    <text x="65" y="120" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="{cell_text_faded}" text-anchor="middle">{project}</text>')
         out.append(f'  </g>')
 
     # Legend area
-    legend_y = MARGIN_TOP + 4 * ROW_STRIDE + 8
+    legend_y = MARGIN_TOP + 4 * ROW_STRIDE + 12
     out.append(f'  <line x1="52" y1="{legend_y}" x2="{W - 47}" y2="{legend_y}" stroke="{chrome_rule}" stroke-width="1"/>')
-    out.append(f'  <text x="52" y="{legend_y + 26}" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="{muted}" letter-spacing="2">GROUPS</text>')
+    out.append(f'  <text x="52" y="{legend_y + 30}" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="{muted}" letter-spacing="2">GROUPS</text>')
 
-    chip_x, chip_y = 140, legend_y + 12
+    chip_x, chip_y = 150, legend_y + 14
     order = ["Q", "W", "Y", "A", "M", "T"]
     for code in order:
         name, da, la, dbg, lbg = DISC[code]
         accent = da if is_dark else la
         chip_bg = dbg if is_dark else lbg
         out.append(f'  <g transform="translate({chip_x}, {chip_y})">')
-        out.append(f'    <rect x="0" y="0" width="118" height="22" rx="3" fill="{chip_bg}" stroke="{border}" stroke-width="1"/>')
-        out.append(f'    <rect x="0" y="0" width="4" height="22" rx="2" fill="{accent}"/>')
-        out.append(f'    <text x="14" y="15" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="{muted}">{name}</text>')
+        out.append(f'    <rect x="0" y="0" width="126" height="26" rx="3" fill="{chip_bg}" stroke="{border}" stroke-width="1"/>')
+        out.append(f'    <rect x="0" y="0" width="4" height="26" rx="2" fill="{accent}"/>')
+        out.append(f'    <text x="16" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="{muted}">{name}</text>')
         out.append(f'  </g>')
-        chip_x += 130
+        chip_x += 138
 
-    sym_y = legend_y + 64
-    out.append(f'  <text x="52" y="{sym_y}" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="{muted}" letter-spacing="2">SYMBOLS</text>')
+    sym_y = legend_y + 76
+    out.append(f'  <text x="52" y="{sym_y}" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="{muted}" letter-spacing="2">SYMBOLS</text>')
     syms = [("Oc","OCaml"),("Rs","Rust"),("C","C99"),("Py","Python"),("R","R"),("Rb","Ruby"),("Ts","TypeScript"),("Js","JavaScript"),("Sv","Svelte"),("Sw","Swift"),("Kt","Kotlin"),("Sh","Shell")]
-    # Monospace at 11px ≈ 6.6 px/char; "Sym Name" = len(sym) + 1 space + len(name)
-    char_w = 6.6
-    gap = 18
-    sx = 140
+    # Monospace at 12px ≈ 7.2 px/char; "Sym Name" = len(sym) + 1 space + len(name)
+    char_w = 7.2
+    gap = 22
+    sx = 150
     for sym, name in syms:
-        out.append(f'  <text x="{sx}" y="{sym_y}" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="{faded}"><tspan font-weight="700" fill="{fg}">{sym}</tspan> {name}</text>')
+        out.append(f'  <text x="{sx}" y="{sym_y}" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="{faded}"><tspan font-weight="700" fill="{fg}">{sym}</tspan> {name}</text>')
         sx += int((len(sym) + 1 + len(name)) * char_w + gap)
 
     out.append('</svg>')
