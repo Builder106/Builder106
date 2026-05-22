@@ -18,7 +18,7 @@ CS student at Wesleyan. 19 projects across 12 languages and 4 disciplines, laid 
   <picture>
     <source media="(prefers-color-scheme: dark)"  srcset="assets/table-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/table-light.svg">
-    <img alt="Periodic table of self — 19 projects, 12 languages, 6 disciplines" src="assets/table-dark.png">
+    <img alt="Periodic table of self — 19 projects, 12 languages, 6 disciplines" src="assets/table-dark.png" width="1200">
   </picture>
 </a>
 

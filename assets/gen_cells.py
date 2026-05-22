@@ -244,10 +244,13 @@ def unified_svg(theme):
     sym_y = legend_y + 64
     out.append(f'  <text x="52" y="{sym_y}" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="{muted}" letter-spacing="2">SYMBOLS</text>')
     syms = [("Oc","OCaml"),("Rs","Rust"),("C","C99"),("Py","Python"),("R","R"),("Rb","Ruby"),("Ts","TypeScript"),("Js","JavaScript"),("Sv","Svelte"),("Sw","Swift"),("Kt","Kotlin"),("Sh","Shell")]
+    # Monospace at 11px ≈ 6.6 px/char; "Sym Name" = len(sym) + 1 space + len(name)
+    char_w = 6.6
+    gap = 18
     sx = 140
     for sym, name in syms:
         out.append(f'  <text x="{sx}" y="{sym_y}" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="{faded}"><tspan font-weight="700" fill="{fg}">{sym}</tspan> {name}</text>')
-        sx += 86
+        sx += int((len(sym) + 1 + len(name)) * char_w + gap)
 
     out.append('</svg>')
     return "\n".join(out)

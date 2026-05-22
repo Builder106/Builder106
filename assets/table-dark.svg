@@ -273,15 +273,15 @@
   </g>
   <text x="52" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#7d8590" letter-spacing="2">SYMBOLS</text>
   <text x="140" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Oc</tspan> OCaml</text>
-  <text x="226" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Rs</tspan> Rust</text>
-  <text x="312" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">C</tspan> C99</text>
-  <text x="398" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Py</tspan> Python</text>
-  <text x="484" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">R</tspan> R</text>
-  <text x="570" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Rb</tspan> Ruby</text>
-  <text x="656" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Ts</tspan> TypeScript</text>
-  <text x="742" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Js</tspan> JavaScript</text>
-  <text x="828" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Sv</tspan> Svelte</text>
-  <text x="914" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Sw</tspan> Swift</text>
-  <text x="1000" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Kt</tspan> Kotlin</text>
-  <text x="1086" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Sh</tspan> Shell</text>
+  <text x="210" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Rs</tspan> Rust</text>
+  <text x="274" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">C</tspan> C99</text>
+  <text x="325" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Py</tspan> Python</text>
+  <text x="402" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">R</tspan> R</text>
+  <text x="439" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Rb</tspan> Ruby</text>
+  <text x="503" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Ts</tspan> TypeScript</text>
+  <text x="606" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Js</tspan> JavaScript</text>
+  <text x="709" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Sv</tspan> Svelte</text>
+  <text x="786" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Sw</tspan> Swift</text>
+  <text x="856" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Kt</tspan> Kotlin</text>
+  <text x="933" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681"><tspan font-weight="700" fill="#e6edf3">Sh</tspan> Shell</text>
 </svg>
