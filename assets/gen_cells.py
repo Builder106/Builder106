@@ -61,6 +61,9 @@ def cell_svg(theme, num, symbol, lang, project, disc):
     border = "#30363d" if is_dark else "#d0d7de"
     cardbg = "#0d1117" if is_dark else "#ffffff"
     accent = DISC[disc][1 if is_dark else 2]
+    # Higher tint opacity in dark mode (dark backgrounds need more saturation to read)
+    tint_opacity_top = 0.30 if is_dark else 0.20
+    grad_id = f"g{num}"
 
     reveal_delay = (num - 1) * 0.08
     pulse_offset = -((num * 0.21) % 4)
@@ -80,10 +83,17 @@ def cell_svg(theme, num, symbol, lang, project, disc):
     </g>'''
 
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130" role="img" aria-label="{num:02d} {symbol} {lang} {project}">
+  <defs>
+    <linearGradient id="{grad_id}" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="{accent}" stop-opacity="{tint_opacity_top}"/>
+      <stop offset="60%" stop-color="{accent}" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
   <g opacity="1">
     <set attributeName="opacity" to="0" begin="0s"/>
     <animate attributeName="opacity" from="0" to="1" begin="{reveal_delay:.2f}s" dur="0.55s" fill="freeze"/>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="{cardbg}" stroke="{border}" stroke-width="1"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#{grad_id})"/>
     <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="{accent}">
       <animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="{pulse_offset:.2f}s" repeatCount="indefinite"/>
     </rect>
