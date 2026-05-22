@@ -198,15 +198,25 @@ def unified_svg(theme):
         y = MARGIN_TOP + p * ROW_STRIDE
         reveal_delay = (num - 1) * 0.06
         pulse_offset = -((num * 0.21) % 4)
-        breath_offset = -((num * 0.53) % 12)
+        # Brightness wave: each cell phase-shifted by atomic number, 5s cycle
+        wave_offset = -(((num - 1) * 0.25) % 5)
+        # Discipline spotlight: 6 disciplines × 2s slot in a 12s cycle
+        slot_map = {"Q": 0, "W": 1, "Y": 2, "A": 3, "M": 4, "T": 5}
+        slot = slot_map[disc]
         is_now = project == NOW_PROJECT
 
         out.append(f'  <g opacity="1" transform="translate({x}, {y})">')
         out.append(f'    <set attributeName="opacity" to="0" begin="0s"/>')
         out.append(f'    <animate attributeName="opacity" from="0" to="1" begin="{reveal_delay:.2f}s" dur="0.55s" fill="freeze"/>')
+        # Spotlight halo — sits behind the card, glows during this discipline's slot
+        out.append(f'    <rect x="-4" y="-4" width="138" height="138" rx="8" fill="{accent}" opacity="0">')
+        out.append(f'      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="12s" begin="{slot * 2}s" repeatCount="indefinite"/>')
+        out.append(f'    </rect>')
+        # Card
         out.append(f'    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="{cardbg}" stroke="{border}" stroke-width="1"/>')
+        # Gradient overlay with brightness wave
         out.append(f'    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-{disc})">')
-        out.append(f'      <animate attributeName="opacity" values="1;0.5;1" dur="12s" begin="{breath_offset:.2f}s" repeatCount="indefinite"/>')
+        out.append(f'      <animate attributeName="opacity" values="0.4;1;1;0.4;0.4" keyTimes="0;0.1;0.2;0.3;1" dur="5s" begin="{wave_offset:.2f}s" repeatCount="indefinite"/>')
         out.append(f'    </rect>')
         out.append(f'    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="{accent}"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="{pulse_offset:.2f}s" repeatCount="indefinite"/></rect>')
         out.append(f'    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="500" fill="{accent}">{num:02d}</text>')
