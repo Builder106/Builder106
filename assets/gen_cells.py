@@ -196,7 +196,7 @@ def unified_svg(theme):
         cardbg = DISC[disc][3 if is_dark else 4]
         x = MARGIN_L + s * COL_STRIDE
         y = MARGIN_TOP + p * ROW_STRIDE
-        reveal_delay = (num - 1) * 0.06
+        reveal_delay = (num - 1) * 0.25
         pulse_offset = -((num * 0.21) % 4)
         # Brightness wave: each cell phase-shifted by atomic number, 5s cycle
         wave_offset = -(((num - 1) * 0.25) % 5)
