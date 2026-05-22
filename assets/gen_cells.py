@@ -167,19 +167,13 @@ def unified_svg(theme):
 
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Periodic table of self — 19 projects across 12 languages and 6 disciplines">']
 
-    # Defs: bg gradient, dots, per-discipline cell gradients
+    # Defs: per-discipline cell gradients only (no canvas bg — blends into page)
     out.append('  <defs>')
-    out.append(f'    <linearGradient id="canvasBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="{bg_start}"/><stop offset="100%" stop-color="{bg_end}"/></linearGradient>')
-    out.append(f'    <pattern id="dots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="1.4" cy="1.4" r="1.4" fill="{dots_fill}"/></pattern>')
     for code, (_, da, la, _, _) in DISC.items():
         accent = da if is_dark else la
         tint_opacity = 0.45 if is_dark else 0.35
         out.append(f'    <linearGradient id="grad-{code}" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="{accent}" stop-opacity="{tint_opacity}"/><stop offset="60%" stop-color="{accent}" stop-opacity="0"/></linearGradient>')
     out.append('  </defs>')
-
-    # Canvas
-    out.append(f'  <rect width="{W}" height="{H}" fill="url(#canvasBg)"/>')
-    out.append(f'  <rect width="{W}" height="{H}" fill="url(#dots)"/>')
 
     # Header
     out.append(f'  <text x="52" y="52" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="{muted}" letter-spacing="3">BUILDER106  //  THE ELEMENTS</text>')
@@ -204,13 +198,16 @@ def unified_svg(theme):
         y = MARGIN_TOP + p * ROW_STRIDE
         reveal_delay = (num - 1) * 0.06
         pulse_offset = -((num * 0.21) % 4)
+        breath_offset = -((num * 0.53) % 12)
         is_now = project == NOW_PROJECT
 
         out.append(f'  <g opacity="1" transform="translate({x}, {y})">')
         out.append(f'    <set attributeName="opacity" to="0" begin="0s"/>')
         out.append(f'    <animate attributeName="opacity" from="0" to="1" begin="{reveal_delay:.2f}s" dur="0.55s" fill="freeze"/>')
         out.append(f'    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="{cardbg}" stroke="{border}" stroke-width="1"/>')
-        out.append(f'    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-{disc})"/>')
+        out.append(f'    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-{disc})">')
+        out.append(f'      <animate attributeName="opacity" values="1;0.5;1" dur="12s" begin="{breath_offset:.2f}s" repeatCount="indefinite"/>')
+        out.append(f'    </rect>')
         out.append(f'    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="{accent}"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="{pulse_offset:.2f}s" repeatCount="indefinite"/></rect>')
         out.append(f'    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="500" fill="{accent}">{num:02d}</text>')
         if is_now:
