@@ -12,6 +12,14 @@
 
 Hi, I'm Olayinka — CS and Econ at Wesleyan. Everything I've built so far is below, arranged by language and discipline.
 
+## Competitive Programming
+
+[![Codeforces](https://img.shields.io/badge/Codeforces-Builder106-blue?logo=codeforces)](https://codeforces.com/profile/Builder106)
+
+- **Handle:** Builder106
+- **Current Rating:** 1300 (Pupil)
+- **Max Rating:** 1300
+
 ## The Elements
 
 <a href="https://github.com/Builder106?tab=repositories">
