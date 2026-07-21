@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <style>
+    @keyframes drawChart { 0%, 15% { stroke-dashoffset: 130; } 45%, 80% { stroke-dashoffset: 0; } 90%, 100% { stroke-dashoffset: -130; } }
+    @keyframes popNode { 0%, 20% { opacity: 0; transform: scale(0); } 35%, 85% { opacity: 1; transform: scale(1); } 95%, 100% { opacity: 0; transform: scale(0); } }
+    @keyframes bracketGlow { 0%, 100% { filter: drop-shadow(0 0 3px rgba(88, 166, 255, 0.4)); } 50% { filter: drop-shadow(0 0 10px rgba(88, 166, 255, 1)); } }
+    
+    .bg { fill: #0D1117; }
+    .bracket { fill: none; stroke: #58A6FF; stroke-width: 12; stroke-linecap: round; stroke-linejoin: round; animation: bracketGlow 4s ease-in-out infinite; }
+    .chart-line { fill: none; stroke: #3FB950; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 130; animation: drawChart 4s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+    .chart-node { fill: #FFFFFF; transform-origin: center; transform-box: fill-box; }
+  </style>
+
+  <rect class="bg" width="256" height="256" />
+
+  <g transform="translate(28, 28)">
+    <g stroke="#21262D" stroke-width="2" stroke-dasharray="2 6" stroke-linecap="round">
+      <line x1="60" y1="70" x2="140" y2="70" />
+      <line x1="60" y1="100" x2="140" y2="100" />
+      <line x1="60" y1="130" x2="140" y2="130" />
+    </g>
+
+    <path class="bracket" d="M 45 70 L 25 100 L 45 130" />
+    <path class="bracket" d="M 155 70 L 175 100 L 155 130" />
+    <path class="chart-line" d="M 65 125 L 90 90 L 115 105 L 138 68" />
+
+    <circle class="chart-node" cx="65" cy="125" r="4.5" style="animation: popNode 4s infinite; animation-delay: 0.2s;" />
+    <circle class="chart-node" cx="90" cy="90" r="4.5" style="animation: popNode 4s infinite; animation-delay: 0.6s;" />
+    <circle class="chart-node" cx="115" cy="105" r="4.5" style="animation: popNode 4s infinite; animation-delay: 1.0s;" />
+    <circle class="chart-node" cx="138" cy="68" r="4.5" style="animation: popNode 4s infinite; animation-delay: 1.4s;" />
+  </g>
+</svg>
