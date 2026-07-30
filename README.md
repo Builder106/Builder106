@@ -32,25 +32,25 @@ Hi, I'm Olayinka — CS and Econ at Wesleyan. Everything I've built so far is be
 
 ## Repos
 
-![Quant](https://img.shields.io/badge/Quant-3fb950?style=flat-square) &nbsp; [ocaml_limit](https://github.com/Builder106/ocaml_limit) · [qforge](https://github.com/Builder106/qforge) · [CapitolAlpha](https://github.com/Builder106/CapitolAlpha) · [EconOS](https://github.com/Builder106/EconOS) · [IMC_Prosperity](https://github.com/Builder106/IMC_Prosperity)
+![Quant](https://img.shields.io/badge/Quant-3fb950?style=flat-square) &nbsp; [ocaml_limit](https://github.com/Builder106/ocaml-limit) · [qforge](https://github.com/Builder106/qforge) · [CapitolAlpha](https://github.com/Builder106/capitol-alpha) · [EconOS](https://github.com/Builder106/econ-os) · [IMC_Prosperity](https://github.com/Builder106/imc-prosperity)
 
-![Cybersec](https://img.shields.io/badge/Cybersec-cf222e?style=flat-square) &nbsp; [ClearHash](https://github.com/Builder106/ClearHash) · [HackHelper](https://github.com/Builder106/HackHelper)
+![Cybersec](https://img.shields.io/badge/Cybersec-cf222e?style=flat-square) &nbsp; [ClearHash](https://github.com/Builder106/clear-hash) · [HackHelper](https://github.com/Builder106/hack-helper)
 
-![Analyst](https://img.shields.io/badge/Analyst-d29922?style=flat-square) &nbsp; [datafest-2026](https://github.com/Builder106/datafest-2026) · [MedCore](https://github.com/Builder106/MedCore)
+![Analyst](https://img.shields.io/badge/Analyst-d29922?style=flat-square) &nbsp; [datafest-2026](https://github.com/Builder106/datafest-2026) · [MedCore](https://github.com/Builder106/med-core)
 
-![SWE](https://img.shields.io/badge/SWE-a78bfa?style=flat-square) &nbsp; [LinuxBenchHub](https://github.com/Builder106/LinuxBenchHub) · [STAIJA](https://github.com/Builder106/STAIJA) · [StudySprint](https://github.com/Builder106/StudySprint) · [MicroMatch](https://github.com/Builder106/MicroMatch) · [portfolio](https://github.com/Builder106/builder106.github.io)
+![SWE](https://img.shields.io/badge/SWE-a78bfa?style=flat-square) &nbsp; [LinuxBenchHub](https://github.com/Builder106/linux-bench-hub) · [STAIJA](https://github.com/Builder106/staija) · [StudySprint](https://github.com/Builder106/study-sprint) · [MicroMatch](https://github.com/Builder106/micro-match) · [portfolio](https://github.com/Builder106/builder106.github.io)
 
-![Mobile](https://img.shields.io/badge/Mobile-1f6feb?style=flat-square) &nbsp; [donut](https://github.com/Builder106/donut) · [DOOM](https://github.com/Builder106/DOOM) · [MetaHelper](https://github.com/Builder106/MetaHelper)
+![Mobile](https://img.shields.io/badge/Mobile-1f6feb?style=flat-square) &nbsp; [donut](https://github.com/Builder106/donut) · [DOOM](https://github.com/Builder106/DOOM) · [MetaHelper](https://github.com/Builder106/meta-helper)
 
-![Tooling](https://img.shields.io/badge/Tooling-6e7681?style=flat-square) &nbsp; [PocketStyle](https://github.com/Builder106/PocketStyle) · [terminal](https://github.com/Builder106/terminal)
+![Tooling](https://img.shields.io/badge/Tooling-6e7681?style=flat-square) &nbsp; [PocketStyle](https://github.com/Builder106/pocket-style) · [terminal](https://github.com/Builder106/terminal)
 
 ## Flagships
 
-- **[ocaml_limit](https://github.com/Builder106/ocaml_limit)** · ![OCaml](https://img.shields.io/badge/OCaml-EC6813?style=flat-square&logo=ocaml&logoColor=white) — Zero-allocation limit-order-book matching engine. **~18M ops/sec, p99 < 1µs**. Bloomberg-terminal–styled live dashboard. → [demo](https://ocaml-lob.vercel.app/)
-- **[ClearHash](https://github.com/Builder106/ClearHash)** · ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) — Rebuild every package, compare every byte, block every tamper. Supply-chain integrity verifier driven by **Sigstore + SLSA**. → [demo](https://clearhash.vercel.app/)
-- **[CapitolAlpha](https://github.com/Builder106/CapitolAlpha)** · ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) — Found a **+2.58% Jensen's α** (p<0.05) across 16,203 disclosed Congressional trades, 2020–2024. → [demo](https://capitolalpha.vercel.app/)
+- **[ocaml_limit](https://github.com/Builder106/ocaml-limit)** · ![OCaml](https://img.shields.io/badge/OCaml-EC6813?style=flat-square&logo=ocaml&logoColor=white) — Zero-allocation limit-order-book matching engine. **~18M ops/sec, p99 < 1µs**. Bloomberg-terminal–styled live dashboard. → [demo](https://ocaml-lob.vercel.app/)
+- **[ClearHash](https://github.com/Builder106/clear-hash)** · ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) — Rebuild every package, compare every byte, block every tamper. Supply-chain integrity verifier driven by **Sigstore + SLSA**. → [demo](https://clearhash.vercel.app/)
+- **[CapitolAlpha](https://github.com/Builder106/capitol-alpha)** · ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) — Found a **+2.58% Jensen's α** (p<0.05) across 16,203 disclosed Congressional trades, 2020–2024. → [demo](https://capitolalpha.vercel.app/)
 - **[datafest-2026](https://github.com/Builder106/datafest-2026)** · ![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white) — Wesleyan DataFest 2026 (Team 13). Transportation barriers in EHR data drive **3× emergency-department visits** across 7.6M encounters, 947K patients. → [demo](https://datafest-2026.vercel.app/)
-- **[LinuxBenchHub](https://github.com/Builder106/LinuxBenchHub)** · ![Rails](https://img.shields.io/badge/Rails-CC0000?style=flat-square&logo=rubyonrails&logoColor=white) — VM benchmarking across Ubuntu, Fedora, and Debian under **identical virtual hardware**. Phoronix + Rails 8 + noVNC live view. → [demo](https://linuxbenchhub.vercel.app/)
+- **[LinuxBenchHub](https://github.com/Builder106/linux-bench-hub)** · ![Rails](https://img.shields.io/badge/Rails-CC0000?style=flat-square&logo=rubyonrails&logoColor=white) — VM benchmarking across Ubuntu, Fedora, and Debian under **identical virtual hardware**. Phoronix + Rails 8 + noVNC live view. → [demo](https://linuxbenchhub.vercel.app/)
 
 ## Stack
 
