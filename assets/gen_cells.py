@@ -36,11 +36,24 @@ CELLS = [
 ]
 
 REPO_NAME = {  # project_id -> actual repo name (slug)
+    "ocaml_limit": "ocaml-limit",
+    "ClearHash": "clear-hash",
+    "CapitolAlpha": "capitol-alpha",
+    "EconOS": "econ-os",
+    "LinuxBenchHub": "linux-bench-hub",
+    "STAIJA": "staija",
+    "StudySprint": "study-sprint",
+    "MicroMatch": "micro-match",
+    "MedCore": "med-core",
     "portfolio": "builder106.github.io",
+    "IMC_Prosperity": "imc-prosperity",
+    "HackHelper": "hack-helper",
+    "MetaHelper": "meta-helper",
+    "PocketStyle": "pocket-style",
 }
 
 # Currently-active project: gets a "NOW" indicator
-NOW_PROJECT = "LinuxBenchHub"
+NOW_PROJECT = "MicroMatch"
 
 # (label, dark_accent, light_accent, dark_cellbg, light_cellbg)
 DISC = {
