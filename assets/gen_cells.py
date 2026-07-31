@@ -101,7 +101,11 @@ def cell_svg(theme, num, symbol, lang, project, disc):
       </circle>
     </g>'''
 
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130" role="img" aria-label="{num:02d} {symbol} {lang} {project}">
+    disc_label = DISC[disc][0]
+    disc_x = 106 if is_now else 120
+    disc_tag = f'<text x="{disc_x}" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="600" fill="{accent}" text-anchor="end">{disc_label}</text>'
+
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130" role="img" aria-label="{num:02d} {symbol} {lang} {project} {disc_label}">
   <defs>
     <linearGradient id="{grad_id}" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%"  stop-color="{accent}" stop-opacity="{tint_opacity_top}"/>
@@ -116,7 +120,7 @@ def cell_svg(theme, num, symbol, lang, project, disc):
     <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="{accent}">
       <animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="{pulse_offset:.2f}s" repeatCount="indefinite"/>
     </rect>
-    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="500" fill="{accent}">{num:02d}</text>{now_marker}
+    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="500" fill="{accent}">{num:02d}</text>{disc_tag}{now_marker}
     <text x="65" y="76" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="{fg}" text-anchor="middle" letter-spacing="-1">{symbol}</text>
     <text x="65" y="101" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="{muted}" text-anchor="middle">{lang}</text>
     <text x="65" y="120" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="{faded}" text-anchor="middle">{project}</text>
@@ -237,8 +241,11 @@ def unified_svg(theme):
         out.append(f'    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-{disc})">')
         out.append(f'      <animate attributeName="opacity" values="0.4;1;1;0.4;0.4" keyTimes="0;0.1;0.2;0.3;1" dur="5s" begin="{wave_offset:.2f}s" repeatCount="indefinite"/>')
         out.append(f'    </rect>')
+        disc_label = DISC[disc][0]
+        disc_x = 106 if is_now else 120
         out.append(f'    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="{accent}"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="{pulse_offset:.2f}s" repeatCount="indefinite"/></rect>')
         out.append(f'    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="500" fill="{accent}">{num:02d}</text>')
+        out.append(f'    <text x="{disc_x}" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="600" fill="{accent}" text-anchor="end">{disc_label}</text>')
         if is_now:
             out.append(f'    <g transform="translate(118, 14)">')
             out.append(f'      <circle r="4" fill="{accent}"><animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite"/></circle>')

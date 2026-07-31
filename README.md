@@ -34,9 +34,9 @@ Hi, I'm Olayinka — CS and Econ at Wesleyan. Everything I've built so far is be
 
 <a href="https://github.com/Builder106?tab=repositories">
   <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="assets/table-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/table-light.svg">
-    <img alt="Periodic table of self — 20 projects, 10 languages, 7 disciplines" src="assets/table-dark.png" width="1200" loading="lazy">
+    <source media="(prefers-color-scheme: dark)"  srcset="assets/table-dark.svg?v=2">
+    <source media="(prefers-color-scheme: light)" srcset="assets/table-light.svg?v=2">
+    <img alt="Periodic table of self — 20 projects, 10 languages, 7 disciplines" src="assets/table-dark.png?v=2" width="1200" loading="lazy">
   </picture>
 </a>
 
