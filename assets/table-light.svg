@@ -334,33 +334,33 @@
   <text x="52" y="752" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#656d76" letter-spacing="2">GROUPS</text>
   <g transform="translate(150, 736)">
     <rect x="0" y="0" width="126" height="26" rx="3" fill="#e6f5ea" stroke="#d0d7de" stroke-width="1"/>
-    <rect x="0" y="0" width="4" height="26" rx="2" fill="#1a7f37"/>
-    <text x="16" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#656d76">Quant</text>
+    <rect x="0" y="0" width="126" height="3" rx="1.5" fill="#1a7f37"/>
+    <text x="63" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#656d76" text-anchor="middle">Quant</text>
   </g>
   <g transform="translate(288, 736)">
     <rect x="0" y="0" width="126" height="26" rx="3" fill="#ebe4f7" stroke="#d0d7de" stroke-width="1"/>
-    <rect x="0" y="0" width="4" height="26" rx="2" fill="#6b46c1"/>
-    <text x="16" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#656d76">SWE</text>
+    <rect x="0" y="0" width="126" height="3" rx="1.5" fill="#6b46c1"/>
+    <text x="63" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#656d76" text-anchor="middle">SWE</text>
   </g>
   <g transform="translate(426, 736)">
     <rect x="0" y="0" width="126" height="26" rx="3" fill="#fbe7e9" stroke="#d0d7de" stroke-width="1"/>
-    <rect x="0" y="0" width="4" height="26" rx="2" fill="#cf222e"/>
-    <text x="16" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#656d76">Cybersec</text>
+    <rect x="0" y="0" width="126" height="3" rx="1.5" fill="#cf222e"/>
+    <text x="63" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#656d76" text-anchor="middle">Cybersec</text>
   </g>
   <g transform="translate(564, 736)">
     <rect x="0" y="0" width="126" height="26" rx="3" fill="#f8edd2" stroke="#d0d7de" stroke-width="1"/>
-    <rect x="0" y="0" width="4" height="26" rx="2" fill="#9a6700"/>
-    <text x="16" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#656d76">Analyst</text>
+    <rect x="0" y="0" width="126" height="3" rx="1.5" fill="#9a6700"/>
+    <text x="63" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#656d76" text-anchor="middle">Analyst</text>
   </g>
   <g transform="translate(702, 736)">
     <rect x="0" y="0" width="126" height="26" rx="3" fill="#dfecfb" stroke="#d0d7de" stroke-width="1"/>
-    <rect x="0" y="0" width="4" height="26" rx="2" fill="#0969da"/>
-    <text x="16" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#656d76">Mobile</text>
+    <rect x="0" y="0" width="126" height="3" rx="1.5" fill="#0969da"/>
+    <text x="63" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#656d76" text-anchor="middle">Mobile</text>
   </g>
   <g transform="translate(840, 736)">
     <rect x="0" y="0" width="126" height="26" rx="3" fill="#eaecef" stroke="#d0d7de" stroke-width="1"/>
-    <rect x="0" y="0" width="4" height="26" rx="2" fill="#656d76"/>
-    <text x="16" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#656d76">Tooling</text>
+    <rect x="0" y="0" width="126" height="3" rx="1.5" fill="#656d76"/>
+    <text x="63" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#656d76" text-anchor="middle">Tooling</text>
   </g>
   <text x="52" y="798" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#656d76" letter-spacing="2">SYMBOLS</text>
   <text x="150" y="798" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#8c959f"><tspan font-weight="700" fill="#1f2328">Oc</tspan> OCaml</text>

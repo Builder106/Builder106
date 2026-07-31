@@ -256,8 +256,8 @@ def unified_svg(theme):
         chip_bg = dbg if is_dark else lbg
         out.append(f'  <g transform="translate({chip_x}, {chip_y})">')
         out.append(f'    <rect x="0" y="0" width="126" height="26" rx="3" fill="{chip_bg}" stroke="{border}" stroke-width="1"/>')
-        out.append(f'    <rect x="0" y="0" width="4" height="26" rx="2" fill="{accent}"/>')
-        out.append(f'    <text x="16" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="{muted}">{name}</text>')
+        out.append(f'    <rect x="0" y="0" width="126" height="3" rx="1.5" fill="{accent}"/>')
+        out.append(f'    <text x="63" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="{muted}" text-anchor="middle">{name}</text>')
         out.append(f'  </g>')
         chip_x += 138
 
