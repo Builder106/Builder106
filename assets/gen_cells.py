@@ -180,7 +180,7 @@ def unified_svg(theme):
     cell_text_faded = "#6e7681" if is_dark else "#8c959f"
     chrome_rule = "#262d36" if is_dark else "#e6eaef"
 
-    W, H = 1200, 830
+    W, H = 1200, 885
     MARGIN_L, MARGIN_TOP = 52, 130
     CELL_W, CELL_H = 130, 130
     COL_STRIDE, ROW_STRIDE = 139, 145
@@ -274,16 +274,22 @@ def unified_svg(theme):
         out.append(f'  </g>')
         chip_x += 138
 
-    sym_y = legend_y + 76
-    out.append(f'  <text x="52" y="{sym_y}" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="{muted}" letter-spacing="2">SYMBOLS</text>')
-    syms = [("Oc","OCaml"),("Rs","Rust"),("C","C99"),("Py","Python"),("R","R"),("Rb","Ruby"),("Ts","TypeScript"),("Sv","Svelte"),("Go","Go"),("Kt","Kotlin")]
-    # Monospace at 12px ≈ 7.2 px/char; "Sym Name" = len(sym) + 1 space + len(name)
-    char_w = 7.2
-    gap = 22
-    sx = 150
-    for sym, name in syms:
-        out.append(f'  <text x="{sx}" y="{sym_y}" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="{faded}"><tspan font-weight="700" fill="{fg}">{sym}</tspan> {name}</text>')
-        sx += int((len(sym) + 1 + len(name)) * char_w + gap)
+    sym_y = legend_y + 80
+    out.append(f'  <text x="52" y="{sym_y + 24}" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="{muted}" letter-spacing="2">SYMBOLS</text>')
+    syms_rows = [
+        [("Oc","OCaml"), ("Rs","Rust"), ("C","C99"), ("Py","Python"), ("R","R")],
+        [("Rb","Ruby"), ("Ts","TypeScript"), ("Sv","Svelte"), ("Go","Go"), ("Kt","Kotlin")]
+    ]
+    sym_chip_bg = "#161b22" if is_dark else "#f6f8fa"
+    for r_idx, row in enumerate(syms_rows):
+        cx = 150
+        cy = sym_y + r_idx * 36
+        for sym, name in row:
+            out.append(f'  <g transform="translate({cx}, {cy})">')
+            out.append(f'    <rect x="0" y="0" width="170" height="30" rx="4" fill="{sym_chip_bg}" stroke="{border}" stroke-width="1"/>')
+            out.append(f'    <text x="85" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" text-anchor="middle"><tspan font-weight="700" font-size="14" fill="{fg}">{sym}</tspan> &#160;<tspan fill="{muted}">{name}</tspan></text>')
+            out.append(f'  </g>')
+            cx += 188
 
     out.append('</svg>')
     return "\n".join(out)
