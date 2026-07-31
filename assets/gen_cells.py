@@ -26,13 +26,14 @@ CELLS = [
     (2, 3, 10, "Sv", "Svelte",     "MicroMatch",     "W"),
     (2, 4, 11, "Ts", "TypeScript", "MedCore",        "A"),
     (2, 5, 12, "Ts", "TypeScript", "portfolio",      "W"),
-    (2, 6, 13, "Py", "Python",     "IMC_Prosperity", "Q"),
+    (2, 6, 13, "Py", "Python",     "IMC_Prosperity", "L"),
     (2, 7, 14, "Py", "Python",     "HackHelper",     "Y"),
     (3, 0, 15, "Go", "Go",         "halberd",        "Y"),
     (3, 1, 16, "Ts", "TypeScript", "quarry",         "Y"),
-    (3, 2, 17, "Ts", "TypeScript", "enclave",        "A"),
-    (3, 3, 18, "Kt", "Kotlin",     "MetaHelper",     "M"),
-    (3, 4, 19, "Rs", "Rust",       "ascii_arcade",   "T"),
+    (3, 2, 17, "Ts", "TypeScript", "enclave",        "L"),
+    (3, 3, 18, "Ts", "TypeScript", "helm",           "L"),
+    (3, 4, 19, "Kt", "Kotlin",     "MetaHelper",     "M"),
+    (3, 5, 20, "Rs", "Rust",       "ascii_arcade",   "T"),
 ]
 
 REPO_NAME = {  # project_id -> actual repo name (slug)
@@ -51,6 +52,7 @@ REPO_NAME = {  # project_id -> actual repo name (slug)
     "halberd": "halberd",
     "quarry": "quarry",
     "enclave": "enclave",
+    "helm": "helm",
     "MetaHelper": "meta-helper",
     "ascii_arcade": "ascii-arcade",
 }
@@ -61,6 +63,7 @@ NOW_PROJECT = "MicroMatch"
 # (label, dark_accent, light_accent, dark_cellbg, light_cellbg)
 DISC = {
     "Q": ("Quant",    "#3fb950", "#1a7f37", "#0d2a17", "#e6f5ea"),
+    "L": ("AI/ML",    "#f0883e", "#d97706", "#2c1a08", "#fef3c7"),
     "Y": ("Cybersec", "#f85149", "#cf222e", "#2e1416", "#fbe7e9"),
     "A": ("Analyst",  "#d29922", "#9a6700", "#2e2208", "#f8edd2"),
     "W": ("SWE",      "#a78bfa", "#6b46c1", "#1c1340", "#ebe4f7"),
@@ -193,7 +196,7 @@ def unified_svg(theme):
 
     # Header
     out.append(f'  <text x="52" y="52" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="{muted}" letter-spacing="3">BUILDER106  //  THE ELEMENTS</text>')
-    out.append(f'  <text x="52" y="82" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="14" fill="{faded}">19 projects  ·  10 languages  ·  6 disciplines  ·  arranged by language &amp; track</text>')
+    out.append(f'  <text x="52" y="82" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="14" fill="{faded}">20 projects  ·  10 languages  ·  7 disciplines  ·  arranged by language &amp; track</text>')
     out.append(f'  <line x1="52" y1="102" x2="{W - 47}" y2="102" stroke="{chrome_rule}" stroke-width="1"/>')
 
     # Group labels (1..8 across the top of cell columns)
@@ -216,8 +219,8 @@ def unified_svg(theme):
         pulse_offset = -((num * 0.21) % 4)
         # Brightness wave: each cell phase-shifted by atomic number, 5s cycle
         wave_offset = -(((num - 1) * 0.25) % 5)
-        # Discipline spotlight: 6 disciplines × 2s slot in a 12s cycle
-        slot_map = {"Q": 0, "W": 1, "Y": 2, "A": 3, "M": 4, "T": 5}
+        # Discipline spotlight: 7 disciplines × 2s slot in a 14s cycle
+        slot_map = {"Q": 0, "L": 1, "Y": 2, "A": 3, "W": 4, "M": 5, "T": 6}
         slot = slot_map[disc]
         is_now = project == NOW_PROJECT
 
@@ -226,7 +229,7 @@ def unified_svg(theme):
         out.append(f'    <animate attributeName="opacity" from="0" to="1" begin="{reveal_delay:.2f}s" dur="0.55s" fill="freeze"/>')
         # Spotlight halo — sits behind the card, glows during this discipline's slot
         out.append(f'    <rect x="-4" y="-4" width="138" height="138" rx="8" fill="{accent}" opacity="0">')
-        out.append(f'      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="12s" begin="{slot * 2}s" repeatCount="indefinite"/>')
+        out.append(f'      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="14s" begin="{slot * 2}s" repeatCount="indefinite"/>')
         out.append(f'    </rect>')
         # Card
         out.append(f'    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="{cardbg}" stroke="{border}" stroke-width="1"/>')
@@ -251,8 +254,8 @@ def unified_svg(theme):
     out.append(f'  <line x1="52" y1="{legend_y}" x2="{W - 47}" y2="{legend_y}" stroke="{chrome_rule}" stroke-width="1"/>')
     out.append(f'  <text x="52" y="{legend_y + 30}" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="{muted}" letter-spacing="2">GROUPS</text>')
 
-    chip_x, chip_y = 150, legend_y + 14
-    order = ["Q", "W", "Y", "A", "M", "T"]
+    chip_x, chip_y = 120, legend_y + 14
+    order = ["Q", "L", "Y", "A", "W", "M", "T"]
     for code in order:
         name, da, la, dbg, lbg = DISC[code]
         accent = da if is_dark else la
