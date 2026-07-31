@@ -19,7 +19,7 @@ CELLS = [
     (1, 0,  3, "Rs", "Rust",       "ClearHash",      "Y"),
     (1, 1,  4, "Py", "Python",     "CapitolAlpha",   "Q"),
     (1, 6,  5, "R",  "R",          "datafest-2026",  "A"),
-    (1, 7,  6, "Js", "JavaScript", "EconOS",         "Q"),
+    (1, 7,  6, "Py", "Python",     "EconOS",         "Q"),
     (2, 0,  7, "Rb", "Ruby",       "LinuxBenchHub",  "W"),
     (2, 1,  8, "Ts", "TypeScript", "STAIJA",         "W"),
     (2, 2,  9, "Ts", "TypeScript", "StudySprint",    "W"),
@@ -28,11 +28,11 @@ CELLS = [
     (2, 5, 12, "Ts", "TypeScript", "portfolio",      "W"),
     (2, 6, 13, "Py", "Python",     "IMC_Prosperity", "Q"),
     (2, 7, 14, "Py", "Python",     "HackHelper",     "Y"),
-    (3, 0, 15, "Sw", "Swift",      "donut",          "M"),
-    (3, 1, 16, "Sw", "Swift",      "DOOM",           "M"),
-    (3, 2, 17, "Kt", "Kotlin",     "MetaHelper",     "M"),
-    (3, 3, 18, "Sh", "Shell",      "PocketStyle",    "T"),
-    (3, 4, 19, "Py", "Python",     "terminal",       "T"),
+    (3, 0, 15, "Go", "Go",         "halberd",        "Y"),
+    (3, 1, 16, "Ts", "TypeScript", "quarry",         "Y"),
+    (3, 2, 17, "Ts", "TypeScript", "enclave",        "A"),
+    (3, 3, 18, "Kt", "Kotlin",     "MetaHelper",     "M"),
+    (3, 4, 19, "Rs", "Rust",       "ascii_arcade",   "T"),
 ]
 
 REPO_NAME = {  # project_id -> actual repo name (slug)
@@ -48,8 +48,11 @@ REPO_NAME = {  # project_id -> actual repo name (slug)
     "portfolio": "builder106.github.io",
     "IMC_Prosperity": "imc-prosperity",
     "HackHelper": "hack-helper",
+    "halberd": "halberd",
+    "quarry": "quarry",
+    "enclave": "enclave",
     "MetaHelper": "meta-helper",
-    "PocketStyle": "pocket-style",
+    "ascii_arcade": "ascii-arcade",
 }
 
 # Currently-active project: gets a "NOW" indicator
@@ -190,7 +193,7 @@ def unified_svg(theme):
 
     # Header
     out.append(f'  <text x="52" y="52" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="{muted}" letter-spacing="3">BUILDER106  //  THE ELEMENTS</text>')
-    out.append(f'  <text x="52" y="82" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="14" fill="{faded}">19 projects  ·  12 languages  ·  6 disciplines  ·  arranged by language &amp; track</text>')
+    out.append(f'  <text x="52" y="82" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="14" fill="{faded}">19 projects  ·  10 languages  ·  6 disciplines  ·  arranged by language &amp; track</text>')
     out.append(f'  <line x1="52" y1="102" x2="{W - 47}" y2="102" stroke="{chrome_rule}" stroke-width="1"/>')
 
     # Group labels (1..8 across the top of cell columns)
@@ -263,7 +266,7 @@ def unified_svg(theme):
 
     sym_y = legend_y + 76
     out.append(f'  <text x="52" y="{sym_y}" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="{muted}" letter-spacing="2">SYMBOLS</text>')
-    syms = [("Oc","OCaml"),("Rs","Rust"),("C","C99"),("Py","Python"),("R","R"),("Rb","Ruby"),("Ts","TypeScript"),("Js","JavaScript"),("Sv","Svelte"),("Sw","Swift"),("Kt","Kotlin"),("Sh","Shell")]
+    syms = [("Oc","OCaml"),("Rs","Rust"),("C","C99"),("Py","Python"),("R","R"),("Rb","Ruby"),("Ts","TypeScript"),("Sv","Svelte"),("Go","Go"),("Kt","Kotlin")]
     # Monospace at 12px ≈ 7.2 px/char; "Sym Name" = len(sym) + 1 space + len(name)
     char_w = 7.2
     gap = 22

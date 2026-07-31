@@ -36,7 +36,7 @@ Hi, I'm Olayinka — CS and Econ at Wesleyan. Everything I've built so far is be
   <picture>
     <source media="(prefers-color-scheme: dark)"  srcset="assets/table-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/table-light.svg">
-    <img alt="Periodic table of self — 19 projects, 12 languages, 6 disciplines" src="assets/table-dark.png" width="1200" loading="lazy">
+    <img alt="Periodic table of self — 19 projects, 10 languages, 6 disciplines" src="assets/table-dark.png" width="1200" loading="lazy">
   </picture>
 </a>
 
@@ -44,15 +44,15 @@ Hi, I'm Olayinka — CS and Econ at Wesleyan. Everything I've built so far is be
 
 ![Quant](https://img.shields.io/badge/Quant-3fb950?style=flat-square) &nbsp; [ocaml_limit](https://github.com/Builder106/ocaml-limit) · [qforge](https://github.com/Builder106/qforge) · [CapitolAlpha](https://github.com/Builder106/capitol-alpha) · [EconOS](https://github.com/Builder106/econ-os) · [IMC_Prosperity](https://github.com/Builder106/imc-prosperity)
 
-![Cybersec](https://img.shields.io/badge/Cybersec-cf222e?style=flat-square) &nbsp; [ClearHash](https://github.com/Builder106/clear-hash) · [HackHelper](https://github.com/Builder106/hack-helper)
+![Cybersec](https://img.shields.io/badge/Cybersec-cf222e?style=flat-square) &nbsp; [ClearHash](https://github.com/Builder106/clear-hash) · [halberd](https://github.com/Builder106/halberd) · [quarry](https://github.com/Builder106/quarry) · [HackHelper](https://github.com/Builder106/hack-helper)
 
-![Analyst](https://img.shields.io/badge/Analyst-d29922?style=flat-square) &nbsp; [datafest-2026](https://github.com/Builder106/datafest-2026) · [MedCore](https://github.com/Builder106/med-core)
+![Analyst](https://img.shields.io/badge/Analyst-d29922?style=flat-square) &nbsp; [datafest-2026](https://github.com/Builder106/datafest-2026) · [MedCore](https://github.com/Builder106/med-core) · [enclave](https://github.com/Builder106/enclave)
 
 ![SWE](https://img.shields.io/badge/SWE-a78bfa?style=flat-square) &nbsp; [LinuxBenchHub](https://github.com/Builder106/linux-bench-hub) · [STAIJA](https://github.com/Builder106/staija) · [StudySprint](https://github.com/Builder106/study-sprint) · [MicroMatch](https://github.com/Builder106/micro-match) · [portfolio](https://github.com/Builder106/builder106.github.io)
 
-![Mobile](https://img.shields.io/badge/Mobile-1f6feb?style=flat-square) &nbsp; [donut](https://github.com/Builder106/donut) · [DOOM](https://github.com/Builder106/DOOM) · [MetaHelper](https://github.com/Builder106/meta-helper)
+![Mobile](https://img.shields.io/badge/Mobile-1f6feb?style=flat-square) &nbsp; [MetaHelper](https://github.com/Builder106/meta-helper)
 
-![Tooling](https://img.shields.io/badge/Tooling-6e7681?style=flat-square) &nbsp; [PocketStyle](https://github.com/Builder106/pocket-style) · [terminal](https://github.com/Builder106/terminal)
+![Tooling](https://img.shields.io/badge/Tooling-6e7681?style=flat-square) &nbsp; [ascii-arcade](https://github.com/Builder106/ascii-arcade)
 
 ## Flagships
 
