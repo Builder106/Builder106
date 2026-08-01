@@ -15,8 +15,6 @@ Hi, I'm Olayinka — CS and Econ at Wesleyan. Everything I've built so far is be
 ## Competitive Programming
 
 [![Codeforces](https://img.shields.io/badge/Codeforces-Builder106-1f8acb?logo=codeforces&logoColor=white)](https://codeforces.com/profile/Builder106)
-[![Rating](https://img.shields.io/badge/Rating-1382%20(Pupil)-green)](https://codeforces.com/profile/Builder106)
-[![Accuracy](https://img.shields.io/badge/Accuracy-81.8%25-brightgreen)](https://codeforces.com/profile/Builder106)
 
 <a href="https://codeforces.com/profile/Builder106">
   <picture>
@@ -25,8 +23,6 @@ Hi, I'm Olayinka — CS and Econ at Wesleyan. Everything I've built so far is be
     <img alt="Codeforces Stats for Builder106" src="https://codeforces-readme-stats.vercel.app/api/card?username=Builder106&theme=dark" loading="lazy">
   </picture>
 </a>
-
-- **Handle:** [Builder106](https://codeforces.com/profile/Builder106)
 
 ## The Elements
 
