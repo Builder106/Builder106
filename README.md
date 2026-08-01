@@ -27,8 +27,6 @@ Hi, I'm Olayinka — CS and Econ at Wesleyan. Everything I've built so far is be
 </a>
 
 - **Handle:** [Builder106](https://codeforces.com/profile/Builder106)
-- **Rank:** Pupil (Current Rating: **1382** · Peak: **1382**)
-- **Problems Solved:** 18 unique AC problems (81.8% submission accuracy)
 
 ## The Elements
 
