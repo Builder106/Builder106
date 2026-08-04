@@ -5,6 +5,7 @@ Renders an animated SVG (`quant-final.svg`) into a Discord-compatible animated P
 ## Pipeline
 
 `build_pfp.py`:
+
 1. Launches headless Chromium via Playwright at 256×256.
 2. Loads `quant-final.svg` inside an HTML wrapper with the dark background pinned (`#0D1117`).
 3. Captures frames across the SVG's animation loop.
