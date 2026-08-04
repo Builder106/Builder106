@@ -12,18 +12,6 @@
 
 Hi, I'm Olayinka — CS and Econ at Wesleyan. Everything I've built so far is below, arranged by language and discipline.
 
-## Competitive Programming
-
-[![Codeforces](https://img.shields.io/badge/Codeforces-Builder106-1f8acb?logo=codeforces&logoColor=white)](https://codeforces.com/profile/Builder106)
-
-<a href="https://codeforces.com/profile/Builder106">
-  <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="https://codeforces-readme-stats.vercel.app/api/card?username=Builder106&theme=dark">
-    <source media="(prefers-color-scheme: light)" srcset="https://codeforces-readme-stats.vercel.app/api/card?username=Builder106">
-    <img alt="Codeforces Stats for Builder106" src="https://codeforces-readme-stats.vercel.app/api/card?username=Builder106&theme=dark" loading="lazy">
-  </picture>
-</a>
-
 ## The Elements
 
 <a href="https://github.com/Builder106?tab=repositories">
