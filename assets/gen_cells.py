@@ -157,7 +157,7 @@ def print_table():
                 repo = REPO_NAME.get(project, project)
                 stem = f"{num:02d}-{symbol.lower()}"
                 url = f"https://github.com/Builder106/{repo}"
-                print(f'    <td width="132" align="center"><a href="{url}" title="{project}"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/{stem}-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/{stem}-light.svg"><img alt="{num:02d} {symbol} {project}" src="assets/cells/{stem}-dark.svg" width="130" height="130"></picture></a></td>')
+                print(f'    <td width="132" align="center"><a href="{url}" title="{project}"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/cells/{stem}-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/cells/{stem}-light.svg"><img alt="{num:02d} {symbol} {project}" src="assets/generated/cells/{stem}-dark.svg" width="130" height="130"></picture></a></td>')
             else:
                 print(f'    <td width="132"></td>')
         print('  </tr>')
@@ -296,7 +296,7 @@ def unified_svg(theme):
 
 
 def write_unified():
-    out_dir = os.path.dirname(os.path.abspath(__file__))
+    out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "generated")
     for theme in ("dark", "light"):
         path = os.path.join(out_dir, f"table-{theme}.svg")
         with open(path, "w") as f:
@@ -306,8 +306,9 @@ def write_unified():
 
 if __name__ == "__main__":
     mode = sys.argv[1] if len(sys.argv) > 1 else "svgs"
+    base = os.path.dirname(os.path.abspath(__file__))
     if mode == "svgs":
-        out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "cells")
+        out = os.path.join(base, "generated", "cells")
         write_svgs(out)
         print(f"wrote {len(CELLS) * 2} svgs to {out}/", file=sys.stderr)
     elif mode == "table":
