@@ -4,11 +4,12 @@ from PIL import Image
 from playwright.async_api import async_playwright
 from io import BytesIO
 
-async def create_flawless_apng():
+
+async def create_apng(size: int, output_name: str):
     async with async_playwright() as p:
         browser = await p.chromium.launch()
-        page = await browser.new_page(viewport={'width': 256, 'height': 256})
-        
+        page = await browser.new_page(viewport={'width': size, 'height': size})
+
         script_dir = os.path.dirname(os.path.abspath(__file__))
         svg_path = os.path.join(script_dir, 'quant-final.svg')
         with open(svg_path, 'r') as f:
@@ -19,11 +20,11 @@ async def create_flawless_apng():
         <html>
         <head>
             <style>
-                body, html {{ 
-                    margin: 0; padding: 0; width: 256px; height: 256px; 
-                    overflow: hidden; background-color: #0D1117; 
+                body, html {{
+                    margin: 0; padding: 0; width: {size}px; height: {size}px;
+                    overflow: hidden; background-color: #0D1117;
                 }}
-                svg {{ display: block; width: 256px; height: 256px; }}
+                svg {{ display: block; width: {size}px; height: {size}px; }}
             </style>
         </head>
         <body>
@@ -31,7 +32,7 @@ async def create_flawless_apng():
         </body>
         </html>
         """
-        
+
         await page.set_content(html_content)
 
         frames = []
@@ -39,23 +40,21 @@ async def create_flawless_apng():
         duration_sec = 4
         total_frames = fps * duration_sec
 
-        print("Capturing strictly opaque frames...")
+        print(f"Capturing {size}x{size} frames...")
         for i in range(total_frames):
             current_time = (i / fps) * 1000
             await page.evaluate(f"document.getAnimations().forEach(a => a.currentTime = {current_time})")
-            
+
             screenshot_bytes = await page.screenshot()
-            # THE FIX: Converting to RGB removes all transparency, forcing a solid square
             frames.append(Image.open(BytesIO(screenshot_bytes)).convert("RGB"))
 
         print("Shifting frames for Discord fallback...")
         shift_index = int(total_frames * 0.75)
         shifted_frames = frames[shift_index:] + frames[:shift_index]
-        
-        output_file = os.path.join(script_dir, "discord-perfect.png")
-        print("Encoding solid Animated PNG...")
-        
-        # Removed disposal=2. Opaque frames drawn over opaque frames don't need disposal.
+
+        output_file = os.path.join(script_dir, output_name)
+        print(f"Encoding {size}x{size} Animated PNG...")
+
         shifted_frames[0].save(
             output_file,
             save_all=True,
@@ -63,8 +62,17 @@ async def create_flawless_apng():
             duration=33,
             loop=0
         )
-        
-        print(f"Success! {output_file} is a solid 256x256 block. No clipping possible.")
+
+        print(f"Success! {output_file} is a solid {size}x{size} block. No clipping possible.")
         await browser.close()
 
-asyncio.run(create_flawless_apng())
+
+async def main():
+    # 256x256 for Discord avatar (500KB limit)
+    await create_apng(256, "discord-perfect.png")
+
+    # 500x500 for high-res use
+    await create_apng(500, "discord-perfect-500x500.png")
+
+
+asyncio.run(main())
