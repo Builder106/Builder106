@@ -14,7 +14,7 @@ Hi, I'm Olayinka — CS and Econ at Wesleyan. Everything I've built so far is be
 
 ## The Elements
 
-<a href="https://github.com/Builder106?tab=repositories">
+<a href="<https://github.com/Builder106?tab=repositories>">
   <picture>
     <source media="(prefers-color-scheme: dark)"  srcset="assets/table-dark.svg?v=3">
     <source media="(prefers-color-scheme: light)" srcset="assets/table-light.svg?v=3">
@@ -40,11 +40,11 @@ Hi, I'm Olayinka — CS and Econ at Wesleyan. Everything I've built so far is be
 
 ## Flagships
 
-- **[ocaml_limit](https://github.com/Builder106/ocaml-limit)** · ![OCaml](https://img.shields.io/badge/OCaml-EC6813?style=flat-square&logo=ocaml&logoColor=white) — Zero-allocation limit-order-book matching engine. **~18M ops/sec, p99 < 1µs**. Bloomberg-terminal–styled live dashboard. → [demo](https://ocaml-lob.vercel.app/)
-- **[ClearHash](https://github.com/Builder106/clear-hash)** · ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) — Rebuild every package, compare every byte, block every tamper. Supply-chain integrity verifier driven by **Sigstore + SLSA**. → [demo](https://clearhash.vercel.app/)
-- **[CapitolAlpha](https://github.com/Builder106/capitol-alpha)** · ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) — Found a **+2.58% Jensen's α** (p<0.05) across 16,203 disclosed Congressional trades, 2020–2024. → [demo](https://capitolalpha.vercel.app/)
-- **[datafest-2026](https://github.com/Builder106/datafest-2026)** · ![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white) — Wesleyan DataFest 2026 (Team 13). Transportation barriers in EHR data drive **3× emergency-department visits** across 7.6M encounters, 947K patients. → [demo](https://datafest-2026.vercel.app/)
-- **[LinuxBenchHub](https://github.com/Builder106/linux-bench-hub)** · ![Rails](https://img.shields.io/badge/Rails-CC0000?style=flat-square&logo=rubyonrails&logoColor=white) — VM benchmarking across Ubuntu, Fedora, and Debian under **identical virtual hardware**. Phoronix + Rails 8 + noVNC live view. → [demo](https://linuxbenchhub.vercel.app/)
+- **[ocaml_limit](https://github.com/Builder106/ocaml-limit)**· ![OCaml](https://img.shields.io/badge/OCaml-EC6813?style=flat-square&logo=ocaml&logoColor=white) — Zero-allocation limit-order-book matching engine.**~18M ops/sec, p99 < 1µs**. Bloomberg-terminal–styled live dashboard. → [demo](https://ocaml-lob.vercel.app/)
+- **[ClearHash](https://github.com/Builder106/clear-hash)**· ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) — Rebuild every package, compare every byte, block every tamper. Supply-chain integrity verifier driven by**Sigstore + SLSA**. → [demo](https://clearhash.vercel.app/)
+- **[CapitolAlpha](https://github.com/Builder106/capitol-alpha)**· ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) — Found a**+2.58% Jensen's α** (p<0.05) across 16,203 disclosed Congressional trades, 2020–2024. → [demo](https://capitolalpha.vercel.app/)
+- **[datafest-2026](https://github.com/Builder106/datafest-2026)**· ![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white) — Wesleyan DataFest 2026 (Team 13). Transportation barriers in EHR data drive**3× emergency-department visits** across 7.6M encounters, 947K patients. → [demo](https://datafest-2026.vercel.app/)
+- **[LinuxBenchHub](https://github.com/Builder106/linux-bench-hub)**· ![Rails](https://img.shields.io/badge/Rails-CC0000?style=flat-square&logo=rubyonrails&logoColor=white) — VM benchmarking across Ubuntu, Fedora, and Debian under**identical virtual hardware**. Phoronix + Rails 8 + noVNC live view. → [demo](https://linuxbenchhub.vercel.app/)
 
 ## Stack
 
