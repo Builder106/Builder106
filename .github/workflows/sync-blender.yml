@@ -1,0 +1,30 @@
+name: Daily Blender Sync (projects.blender.org)
+
+on:
+  schedule:
+    # Runs daily at 05:00 UTC
+    - cron: '0 5 * * *'
+  workflow_dispatch: # Allows running manually on demand
+
+jobs:
+  sync-blender:
+    name: Sync Builder106/blender with upstream
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fast-forward Blender main from upstream
+        env:
+          BLENDER_TOKEN: ${{ secrets.BLENDER_TOKEN }}
+        run: |
+          echo "Setting up temporary Git workspace..."
+          git init blender-sync && cd blender-sync
+
+          # Configure remotes
+          git remote add upstream https://projects.blender.org/blender/blender.git
+          git remote add fork "https://Builder106:${BLENDER_TOKEN}@projects.blender.org/Builder106/blender.git"
+
+          echo "Fetching latest main branch from upstream blender..."
+          # Shallow fetch keeps it lightweight and avoids downloading full multi-GB history
+          git fetch --depth=50 upstream main
+
+          echo "Pushing latest commits to Builder106/blender:main..."
+          git push fork FETCH_HEAD:refs/heads/main
