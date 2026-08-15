@@ -14,26 +14,26 @@ import sys
 
 # (period, slot, num, symbol, lang, project_id, discipline_code)
 CELLS = [
-    (0, 0,  1, "Oc", "OCaml",      "ocaml_limit",    "Q"),
-    (0, 7,  2, "C",  "C99",        "qforge",         "Q"),
-    (1, 0,  3, "Rs", "Rust",       "ClearHash",      "Y"),
-    (1, 1,  4, "Py", "Python",     "CapitolAlpha",   "Q"),
-    (1, 6,  5, "R",  "R",          "datafest-2026",  "A"),
-    (1, 7,  6, "Py", "Python",     "EconOS",         "Q"),
-    (2, 0,  7, "Rb", "Ruby",       "LinuxBenchHub",  "W"),
-    (2, 1,  8, "Ts", "TypeScript", "STAIJA",         "W"),
-    (2, 2,  9, "Ts", "TypeScript", "StudySprint",    "W"),
-    (2, 3, 10, "Sv", "Svelte",     "MicroMatch",     "W"),
-    (2, 4, 11, "Ts", "TypeScript", "MedCore",        "A"),
-    (2, 5, 12, "Ts", "TypeScript", "portfolio",      "W"),
-    (2, 6, 13, "Py", "Python",     "IMC_Prosperity", "L"),
-    (2, 7, 14, "Py", "Python",     "HackHelper",     "Y"),
-    (3, 0, 15, "Go", "Go",         "halberd",        "Y"),
-    (3, 1, 16, "Ts", "TypeScript", "quarry",         "Y"),
-    (3, 2, 17, "Ts", "TypeScript", "enclave",        "L"),
-    (3, 3, 18, "Ts", "TypeScript", "helm",           "L"),
-    (3, 4, 19, "Kt", "Kotlin",     "MetaHelper",     "M"),
-    (3, 5, 20, "Rs", "Rust",       "ascii_arcade",   "T"),
+    (0, 0,  1, "Oc", "OCaml",      "ocaml_limit",       "Q"),
+    (0, 7,  2, "C",  "C99",        "qforge",            "Q"),
+    (1, 0,  3, "Rs", "Rust",       "ClearHash",         "Y"),
+    (1, 1,  4, "Py", "Python",     "CapitolAlpha",      "A"),
+    (1, 6,  5, "R",  "R",          "datafest-2026",     "A"),
+    (1, 7,  6, "Py", "Python",     "EconOS",            "Q"),
+    (2, 0,  7, "Rb", "Ruby",       "LinuxBenchHub",     "A"),
+    (2, 1,  8, "Ts", "TypeScript", "STAIJA",            "W"),
+    (2, 2,  9, "Ts", "TypeScript", "StudySprint",       "W"),
+    (2, 3, 10, "Sv", "Svelte",     "MicroMatch",        "W"),
+    (2, 4, 11, "Ts", "TypeScript", "MedCore",           "H"),
+    (2, 5, 12, "Ts", "TypeScript", "portfolio",         "W"),
+    (2, 6, 13, "Py", "Python",     "IMC_Prosperity",    "L"),
+    (2, 7, 14, "Sw", "Swift",      "celestial_sanctum", "M"),
+    (3, 0, 15, "Go", "Go",         "halberd",           "Y"),
+    (3, 1, 16, "Ts", "TypeScript", "quarry",            "Y"),
+    (3, 2, 17, "Ts", "TypeScript", "enclave",           "L"),
+    (3, 3, 18, "Ts", "TypeScript", "helm",              "L"),
+    (3, 4, 19, "Kt", "Kotlin",     "MetaHelper",        "M"),
+    (3, 5, 20, "Rs", "Rust",       "ascii_arcade",      "T"),
 ]
 
 REPO_NAME = {  # project_id -> actual repo name (slug)
@@ -48,7 +48,7 @@ REPO_NAME = {  # project_id -> actual repo name (slug)
     "MedCore": "med-core",
     "portfolio": "builder106.github.io",
     "IMC_Prosperity": "imc-prosperity",
-    "HackHelper": "hack-helper",
+    "celestial_sanctum": "celestial-sanctum",
     "halberd": "halberd",
     "quarry": "quarry",
     "enclave": "enclave",
@@ -62,13 +62,14 @@ NOW_PROJECT = "MicroMatch"
 
 # (label, dark_accent, light_accent, dark_cellbg, light_cellbg)
 DISC = {
-    "Q": ("Quant",    "#3fb950", "#1a7f37", "#0d2a17", "#e6f5ea"),
-    "L": ("AI/ML",    "#f0883e", "#d97706", "#2c1a08", "#fef3c7"),
-    "Y": ("Cybersec", "#f85149", "#cf222e", "#2e1416", "#fbe7e9"),
-    "A": ("Analyst",  "#d29922", "#9a6700", "#2e2208", "#f8edd2"),
-    "W": ("SWE",      "#a78bfa", "#6b46c1", "#1c1340", "#ebe4f7"),
-    "M": ("Mobile",   "#58a6ff", "#0969da", "#0f1f3a", "#dfecfb"),
-    "T": ("Tooling",  "#8b949e", "#656d76", "#1a1e23", "#eaecef"),
+    "Q": ("Quant",      "#3fb950", "#1a7f37", "#0d2a17", "#e6f5ea"),
+    "L": ("AI/ML",      "#f0883e", "#d97706", "#2c1a08", "#fef3c7"),
+    "Y": ("Cybersec",   "#f85149", "#cf222e", "#2e1416", "#fbe7e9"),
+    "A": ("Analyst",    "#d29922", "#9a6700", "#2e2208", "#f8edd2"),
+    "W": ("SWE",        "#a78bfa", "#6b46c1", "#1c1340", "#ebe4f7"),
+    "H": ("HealthTech", "#06b6d4", "#0891b2", "#082a30", "#e0f7fa"),
+    "M": ("Mobile",     "#58a6ff", "#0969da", "#0f1f3a", "#dfecfb"),
+    "T": ("Tooling",    "#8b949e", "#656d76", "#1a1e23", "#eaecef"),
 }
 
 
@@ -157,7 +158,7 @@ def print_table():
                 repo = REPO_NAME.get(project, project)
                 stem = f"{num:02d}-{symbol.lower()}"
                 url = f"https://github.com/Builder106/{repo}"
-                print(f'    <td width="132" align="center"><a href="{url}" title="{project}"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/cells/{stem}-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/cells/{stem}-light.svg"><img alt="{num:02d} {symbol} {project}" src="assets/generated/cells/{stem}-dark.svg" width="130" height="130"></picture></a></td>')
+                print(f'    <td width="132" align="center"><a href="{url}" title="{project}"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/{stem}-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/{stem}-light.svg"><img alt="{num:02d} {symbol} {project}" src="assets/cells/{stem}-dark.svg" width="130" height="130"></picture></a></td>')
             else:
                 print(f'    <td width="132"></td>')
         print('  </tr>')
@@ -188,7 +189,7 @@ def unified_svg(theme):
     by_pos = {(p, s): (num, symbol, lang, project, disc)
               for p, s, num, symbol, lang, project, disc in CELLS}
 
-    out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Periodic table of self — 19 projects across 12 languages and 6 disciplines">']
+    out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Periodic table of self — 20 projects, 10 languages, 7 disciplines">']
 
     # Defs: per-discipline cell gradients only (no canvas bg — blends into page)
     out.append('  <defs>')
@@ -223,8 +224,8 @@ def unified_svg(theme):
         pulse_offset = -((num * 0.21) % 4)
         # Brightness wave: each cell phase-shifted by atomic number, 5s cycle
         wave_offset = -(((num - 1) * 0.25) % 5)
-        # Discipline spotlight: 7 disciplines × 2s slot in a 14s cycle
-        slot_map = {"Q": 0, "L": 1, "Y": 2, "A": 3, "W": 4, "M": 5, "T": 6}
+        # Discipline spotlight: 8 disciplines × 2s slot in a 16s cycle
+        slot_map = {"Q": 0, "L": 1, "Y": 2, "A": 3, "W": 4, "H": 5, "M": 6, "T": 7}
         slot = slot_map[disc]
         is_now = project == NOW_PROJECT
 
@@ -233,7 +234,7 @@ def unified_svg(theme):
         out.append(f'    <animate attributeName="opacity" from="0" to="1" begin="{reveal_delay:.2f}s" dur="0.55s" fill="freeze"/>')
         # Spotlight halo — sits behind the card, glows during this discipline's slot
         out.append(f'    <rect x="-4" y="-4" width="138" height="138" rx="8" fill="{accent}" opacity="0">')
-        out.append(f'      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="14s" begin="{slot * 2}s" repeatCount="indefinite"/>')
+        out.append(f'      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="16s" begin="{slot * 2}s" repeatCount="indefinite"/>')
         out.append(f'    </rect>')
         # Card
         out.append(f'    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="{cardbg}" stroke="{border}" stroke-width="1"/>')
@@ -261,35 +262,35 @@ def unified_svg(theme):
     out.append(f'  <line x1="52" y1="{legend_y}" x2="{W - 47}" y2="{legend_y}" stroke="{chrome_rule}" stroke-width="1"/>')
     out.append(f'  <text x="52" y="{legend_y + 30}" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="{muted}" letter-spacing="2">GROUPS</text>')
 
-    chip_x, chip_y = 120, legend_y + 14
-    order = ["Q", "L", "Y", "A", "W", "M", "T"]
+    chip_x, chip_y = 65, legend_y + 14
+    order = ["Q", "L", "Y", "A", "W", "H", "M", "T"]
     for code in order:
         name, da, la, dbg, lbg = DISC[code]
         accent = da if is_dark else la
         chip_bg = dbg if is_dark else lbg
         out.append(f'  <g transform="translate({chip_x}, {chip_y})">')
-        out.append(f'    <rect x="0" y="0" width="126" height="26" rx="3" fill="{chip_bg}" stroke="{border}" stroke-width="1"/>')
-        out.append(f'    <rect x="0" y="0" width="126" height="3" rx="1.5" fill="{accent}"/>')
-        out.append(f'    <text x="63" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="{muted}" text-anchor="middle">{name}</text>')
+        out.append(f'    <rect x="0" y="0" width="120" height="26" rx="3" fill="{chip_bg}" stroke="{border}" stroke-width="1"/>')
+        out.append(f'    <rect x="0" y="0" width="120" height="3" rx="1.5" fill="{accent}"/>')
+        out.append(f'    <text x="60" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="{muted}" text-anchor="middle">{name}</text>')
         out.append(f'  </g>')
-        chip_x += 138
+        chip_x += 132
 
     sym_y = legend_y + 80
     out.append(f'  <text x="52" y="{sym_y + 24}" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="{muted}" letter-spacing="2">SYMBOLS</text>')
     syms_rows = [
-        [("Oc","OCaml"), ("Rs","Rust"), ("C","C99"), ("Py","Python"), ("R","R")],
-        [("Rb","Ruby"), ("Ts","TypeScript"), ("Sv","Svelte"), ("Go","Go"), ("Kt","Kotlin")]
+        [("Oc","OCaml"), ("Rs","Rust"), ("C","C99"), ("Py","Python"), ("R","R"), ("Rb","Ruby")],
+        [("Ts","TypeScript"), ("Sv","Svelte"), ("Sw","Swift"), ("Go","Go"), ("Kt","Kotlin")]
     ]
     sym_chip_bg = "#161b22" if is_dark else "#f6f8fa"
     for r_idx, row in enumerate(syms_rows):
-        cx = 150
+        cx = 65 if r_idx == 0 else 150
         cy = sym_y + r_idx * 36
         for sym, name in row:
             out.append(f'  <g transform="translate({cx}, {cy})">')
-            out.append(f'    <rect x="0" y="0" width="170" height="30" rx="4" fill="{sym_chip_bg}" stroke="{border}" stroke-width="1"/>')
-            out.append(f'    <text x="85" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" text-anchor="middle"><tspan font-weight="700" font-size="14" fill="{fg}">{sym}</tspan> &#160;<tspan fill="{muted}">{name}</tspan></text>')
+            out.append(f'    <rect x="0" y="0" width="160" height="30" rx="4" fill="{sym_chip_bg}" stroke="{border}" stroke-width="1"/>')
+            out.append(f'    <text x="80" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" text-anchor="middle"><tspan font-weight="700" font-size="14" fill="{fg}">{sym}</tspan> &#160;<tspan fill="{muted}">{name}</tspan></text>')
             out.append(f'  </g>')
-            cx += 188
+            cx += 175
 
     out.append('</svg>')
     return "\n".join(out)
@@ -308,7 +309,7 @@ if __name__ == "__main__":
     mode = sys.argv[1] if len(sys.argv) > 1 else "svgs"
     base = os.path.dirname(os.path.abspath(__file__))
     if mode == "svgs":
-        out = os.path.join(base, "generated", "cells")
+        out = os.path.join(base, "cells")
         write_svgs(out)
         print(f"wrote {len(CELLS) * 2} svgs to {out}/", file=sys.stderr)
     elif mode == "table":

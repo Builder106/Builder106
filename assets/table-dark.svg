@@ -1,10 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="885" viewBox="0 0 1200 885" role="img" aria-label="Periodic table of self — 19 projects across 12 languages and 6 disciplines">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="885" viewBox="0 0 1200 885" role="img" aria-label="Periodic table of self — 20 projects, 10 languages, 7 disciplines">
   <defs>
     <linearGradient id="grad-Q" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#3fb950" stop-opacity="0.45"/><stop offset="60%" stop-color="#3fb950" stop-opacity="0"/></linearGradient>
     <linearGradient id="grad-L" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f0883e" stop-opacity="0.45"/><stop offset="60%" stop-color="#f0883e" stop-opacity="0"/></linearGradient>
     <linearGradient id="grad-Y" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f85149" stop-opacity="0.45"/><stop offset="60%" stop-color="#f85149" stop-opacity="0"/></linearGradient>
     <linearGradient id="grad-A" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#d29922" stop-opacity="0.45"/><stop offset="60%" stop-color="#d29922" stop-opacity="0"/></linearGradient>
     <linearGradient id="grad-W" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#a78bfa" stop-opacity="0.45"/><stop offset="60%" stop-color="#a78bfa" stop-opacity="0"/></linearGradient>
+    <linearGradient id="grad-H" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#06b6d4" stop-opacity="0.45"/><stop offset="60%" stop-color="#06b6d4" stop-opacity="0"/></linearGradient>
     <linearGradient id="grad-M" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#58a6ff" stop-opacity="0.45"/><stop offset="60%" stop-color="#58a6ff" stop-opacity="0"/></linearGradient>
     <linearGradient id="grad-T" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#8b949e" stop-opacity="0.45"/><stop offset="60%" stop-color="#8b949e" stop-opacity="0"/></linearGradient>
   </defs>
@@ -27,7 +28,7 @@
     <set attributeName="opacity" to="0" begin="0s"/>
     <animate attributeName="opacity" from="0" to="1" begin="0.00s" dur="0.55s" fill="freeze"/>
     <rect x="-4" y="-4" width="138" height="138" rx="8" fill="#3fb950" opacity="0">
-      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="14s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="16s" begin="0s" repeatCount="indefinite"/>
     </rect>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#0d2a17" stroke="#30363d" stroke-width="1"/>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-Q)">
@@ -44,7 +45,7 @@
     <set attributeName="opacity" to="0" begin="0s"/>
     <animate attributeName="opacity" from="0" to="1" begin="0.25s" dur="0.55s" fill="freeze"/>
     <rect x="-4" y="-4" width="138" height="138" rx="8" fill="#3fb950" opacity="0">
-      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="14s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="16s" begin="0s" repeatCount="indefinite"/>
     </rect>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#0d2a17" stroke="#30363d" stroke-width="1"/>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-Q)">
@@ -61,7 +62,7 @@
     <set attributeName="opacity" to="0" begin="0s"/>
     <animate attributeName="opacity" from="0" to="1" begin="0.50s" dur="0.55s" fill="freeze"/>
     <rect x="-4" y="-4" width="138" height="138" rx="8" fill="#f85149" opacity="0">
-      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="14s" begin="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="16s" begin="4s" repeatCount="indefinite"/>
     </rect>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#2e1416" stroke="#30363d" stroke-width="1"/>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-Y)">
@@ -77,16 +78,16 @@
   <g opacity="1" transform="translate(191, 275)">
     <set attributeName="opacity" to="0" begin="0s"/>
     <animate attributeName="opacity" from="0" to="1" begin="0.75s" dur="0.55s" fill="freeze"/>
-    <rect x="-4" y="-4" width="138" height="138" rx="8" fill="#3fb950" opacity="0">
-      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="14s" begin="0s" repeatCount="indefinite"/>
+    <rect x="-4" y="-4" width="138" height="138" rx="8" fill="#d29922" opacity="0">
+      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="16s" begin="6s" repeatCount="indefinite"/>
     </rect>
-    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#0d2a17" stroke="#30363d" stroke-width="1"/>
-    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-Q)">
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#2e2208" stroke="#30363d" stroke-width="1"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-A)">
       <animate attributeName="opacity" values="0.4;1;1;0.4;0.4" keyTimes="0;0.1;0.2;0.3;1" dur="5s" begin="-0.75s" repeatCount="indefinite"/>
     </rect>
-    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#3fb950"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-0.84s" repeatCount="indefinite"/></rect>
-    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="500" fill="#3fb950">04</text>
-    <text x="120" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="600" fill="#3fb950" text-anchor="end">Quant</text>
+    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#d29922"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-0.84s" repeatCount="indefinite"/></rect>
+    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="500" fill="#d29922">04</text>
+    <text x="120" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="600" fill="#d29922" text-anchor="end">Analyst</text>
     <text x="65" y="76" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="-1">Py</text>
     <text x="65" y="101" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#8b949e" text-anchor="middle">Python</text>
     <text x="65" y="120" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681" text-anchor="middle">CapitolAlpha</text>
@@ -95,7 +96,7 @@
     <set attributeName="opacity" to="0" begin="0s"/>
     <animate attributeName="opacity" from="0" to="1" begin="1.00s" dur="0.55s" fill="freeze"/>
     <rect x="-4" y="-4" width="138" height="138" rx="8" fill="#d29922" opacity="0">
-      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="14s" begin="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="16s" begin="6s" repeatCount="indefinite"/>
     </rect>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#2e2208" stroke="#30363d" stroke-width="1"/>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-A)">
@@ -112,7 +113,7 @@
     <set attributeName="opacity" to="0" begin="0s"/>
     <animate attributeName="opacity" from="0" to="1" begin="1.25s" dur="0.55s" fill="freeze"/>
     <rect x="-4" y="-4" width="138" height="138" rx="8" fill="#3fb950" opacity="0">
-      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="14s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="16s" begin="0s" repeatCount="indefinite"/>
     </rect>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#0d2a17" stroke="#30363d" stroke-width="1"/>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-Q)">
@@ -128,16 +129,16 @@
   <g opacity="1" transform="translate(52, 420)">
     <set attributeName="opacity" to="0" begin="0s"/>
     <animate attributeName="opacity" from="0" to="1" begin="1.50s" dur="0.55s" fill="freeze"/>
-    <rect x="-4" y="-4" width="138" height="138" rx="8" fill="#a78bfa" opacity="0">
-      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="14s" begin="8s" repeatCount="indefinite"/>
+    <rect x="-4" y="-4" width="138" height="138" rx="8" fill="#d29922" opacity="0">
+      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="16s" begin="6s" repeatCount="indefinite"/>
     </rect>
-    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#1c1340" stroke="#30363d" stroke-width="1"/>
-    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-W)">
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#2e2208" stroke="#30363d" stroke-width="1"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-A)">
       <animate attributeName="opacity" values="0.4;1;1;0.4;0.4" keyTimes="0;0.1;0.2;0.3;1" dur="5s" begin="-1.50s" repeatCount="indefinite"/>
     </rect>
-    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#a78bfa"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-1.47s" repeatCount="indefinite"/></rect>
-    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="500" fill="#a78bfa">07</text>
-    <text x="120" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="600" fill="#a78bfa" text-anchor="end">SWE</text>
+    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#d29922"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-1.47s" repeatCount="indefinite"/></rect>
+    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="500" fill="#d29922">07</text>
+    <text x="120" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="600" fill="#d29922" text-anchor="end">Analyst</text>
     <text x="65" y="76" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="-1">Rb</text>
     <text x="65" y="101" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#8b949e" text-anchor="middle">Ruby</text>
     <text x="65" y="120" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681" text-anchor="middle">LinuxBenchHub</text>
@@ -146,7 +147,7 @@
     <set attributeName="opacity" to="0" begin="0s"/>
     <animate attributeName="opacity" from="0" to="1" begin="1.75s" dur="0.55s" fill="freeze"/>
     <rect x="-4" y="-4" width="138" height="138" rx="8" fill="#a78bfa" opacity="0">
-      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="14s" begin="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="16s" begin="8s" repeatCount="indefinite"/>
     </rect>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#1c1340" stroke="#30363d" stroke-width="1"/>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-W)">
@@ -163,7 +164,7 @@
     <set attributeName="opacity" to="0" begin="0s"/>
     <animate attributeName="opacity" from="0" to="1" begin="2.00s" dur="0.55s" fill="freeze"/>
     <rect x="-4" y="-4" width="138" height="138" rx="8" fill="#a78bfa" opacity="0">
-      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="14s" begin="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="16s" begin="8s" repeatCount="indefinite"/>
     </rect>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#1c1340" stroke="#30363d" stroke-width="1"/>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-W)">
@@ -180,7 +181,7 @@
     <set attributeName="opacity" to="0" begin="0s"/>
     <animate attributeName="opacity" from="0" to="1" begin="2.25s" dur="0.55s" fill="freeze"/>
     <rect x="-4" y="-4" width="138" height="138" rx="8" fill="#a78bfa" opacity="0">
-      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="14s" begin="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="16s" begin="8s" repeatCount="indefinite"/>
     </rect>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#1c1340" stroke="#30363d" stroke-width="1"/>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-W)">
@@ -200,16 +201,16 @@
   <g opacity="1" transform="translate(608, 420)">
     <set attributeName="opacity" to="0" begin="0s"/>
     <animate attributeName="opacity" from="0" to="1" begin="2.50s" dur="0.55s" fill="freeze"/>
-    <rect x="-4" y="-4" width="138" height="138" rx="8" fill="#d29922" opacity="0">
-      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="14s" begin="6s" repeatCount="indefinite"/>
+    <rect x="-4" y="-4" width="138" height="138" rx="8" fill="#06b6d4" opacity="0">
+      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="16s" begin="10s" repeatCount="indefinite"/>
     </rect>
-    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#2e2208" stroke="#30363d" stroke-width="1"/>
-    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-A)">
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#082a30" stroke="#30363d" stroke-width="1"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-H)">
       <animate attributeName="opacity" values="0.4;1;1;0.4;0.4" keyTimes="0;0.1;0.2;0.3;1" dur="5s" begin="-2.50s" repeatCount="indefinite"/>
     </rect>
-    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#d29922"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-2.31s" repeatCount="indefinite"/></rect>
-    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="500" fill="#d29922">11</text>
-    <text x="120" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="600" fill="#d29922" text-anchor="end">Analyst</text>
+    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#06b6d4"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-2.31s" repeatCount="indefinite"/></rect>
+    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="500" fill="#06b6d4">11</text>
+    <text x="120" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="600" fill="#06b6d4" text-anchor="end">HealthTech</text>
     <text x="65" y="76" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="-1">Ts</text>
     <text x="65" y="101" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#8b949e" text-anchor="middle">TypeScript</text>
     <text x="65" y="120" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681" text-anchor="middle">MedCore</text>
@@ -218,7 +219,7 @@
     <set attributeName="opacity" to="0" begin="0s"/>
     <animate attributeName="opacity" from="0" to="1" begin="2.75s" dur="0.55s" fill="freeze"/>
     <rect x="-4" y="-4" width="138" height="138" rx="8" fill="#a78bfa" opacity="0">
-      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="14s" begin="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="16s" begin="8s" repeatCount="indefinite"/>
     </rect>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#1c1340" stroke="#30363d" stroke-width="1"/>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-W)">
@@ -235,7 +236,7 @@
     <set attributeName="opacity" to="0" begin="0s"/>
     <animate attributeName="opacity" from="0" to="1" begin="3.00s" dur="0.55s" fill="freeze"/>
     <rect x="-4" y="-4" width="138" height="138" rx="8" fill="#f0883e" opacity="0">
-      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="14s" begin="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="16s" begin="2s" repeatCount="indefinite"/>
     </rect>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#2c1a08" stroke="#30363d" stroke-width="1"/>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-L)">
@@ -251,25 +252,25 @@
   <g opacity="1" transform="translate(1025, 420)">
     <set attributeName="opacity" to="0" begin="0s"/>
     <animate attributeName="opacity" from="0" to="1" begin="3.25s" dur="0.55s" fill="freeze"/>
-    <rect x="-4" y="-4" width="138" height="138" rx="8" fill="#f85149" opacity="0">
-      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="14s" begin="4s" repeatCount="indefinite"/>
+    <rect x="-4" y="-4" width="138" height="138" rx="8" fill="#58a6ff" opacity="0">
+      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="16s" begin="12s" repeatCount="indefinite"/>
     </rect>
-    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#2e1416" stroke="#30363d" stroke-width="1"/>
-    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-Y)">
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#0f1f3a" stroke="#30363d" stroke-width="1"/>
+    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-M)">
       <animate attributeName="opacity" values="0.4;1;1;0.4;0.4" keyTimes="0;0.1;0.2;0.3;1" dur="5s" begin="-3.25s" repeatCount="indefinite"/>
     </rect>
-    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#f85149"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-2.94s" repeatCount="indefinite"/></rect>
-    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="500" fill="#f85149">14</text>
-    <text x="120" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="600" fill="#f85149" text-anchor="end">Cybersec</text>
-    <text x="65" y="76" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="-1">Py</text>
-    <text x="65" y="101" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#8b949e" text-anchor="middle">Python</text>
-    <text x="65" y="120" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681" text-anchor="middle">HackHelper</text>
+    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="#58a6ff"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="-2.94s" repeatCount="indefinite"/></rect>
+    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="500" fill="#58a6ff">14</text>
+    <text x="120" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="600" fill="#58a6ff" text-anchor="end">Mobile</text>
+    <text x="65" y="76" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="-1">Sw</text>
+    <text x="65" y="101" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#8b949e" text-anchor="middle">Swift</text>
+    <text x="65" y="120" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681" text-anchor="middle">celestial_sanctum</text>
   </g>
   <g opacity="1" transform="translate(52, 565)">
     <set attributeName="opacity" to="0" begin="0s"/>
     <animate attributeName="opacity" from="0" to="1" begin="3.50s" dur="0.55s" fill="freeze"/>
     <rect x="-4" y="-4" width="138" height="138" rx="8" fill="#f85149" opacity="0">
-      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="14s" begin="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="16s" begin="4s" repeatCount="indefinite"/>
     </rect>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#2e1416" stroke="#30363d" stroke-width="1"/>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-Y)">
@@ -286,7 +287,7 @@
     <set attributeName="opacity" to="0" begin="0s"/>
     <animate attributeName="opacity" from="0" to="1" begin="3.75s" dur="0.55s" fill="freeze"/>
     <rect x="-4" y="-4" width="138" height="138" rx="8" fill="#f85149" opacity="0">
-      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="14s" begin="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="16s" begin="4s" repeatCount="indefinite"/>
     </rect>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#2e1416" stroke="#30363d" stroke-width="1"/>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-Y)">
@@ -303,7 +304,7 @@
     <set attributeName="opacity" to="0" begin="0s"/>
     <animate attributeName="opacity" from="0" to="1" begin="4.00s" dur="0.55s" fill="freeze"/>
     <rect x="-4" y="-4" width="138" height="138" rx="8" fill="#f0883e" opacity="0">
-      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="14s" begin="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="16s" begin="2s" repeatCount="indefinite"/>
     </rect>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#2c1a08" stroke="#30363d" stroke-width="1"/>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-L)">
@@ -320,7 +321,7 @@
     <set attributeName="opacity" to="0" begin="0s"/>
     <animate attributeName="opacity" from="0" to="1" begin="4.25s" dur="0.55s" fill="freeze"/>
     <rect x="-4" y="-4" width="138" height="138" rx="8" fill="#f0883e" opacity="0">
-      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="14s" begin="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="16s" begin="2s" repeatCount="indefinite"/>
     </rect>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#2c1a08" stroke="#30363d" stroke-width="1"/>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-L)">
@@ -337,7 +338,7 @@
     <set attributeName="opacity" to="0" begin="0s"/>
     <animate attributeName="opacity" from="0" to="1" begin="4.50s" dur="0.55s" fill="freeze"/>
     <rect x="-4" y="-4" width="138" height="138" rx="8" fill="#58a6ff" opacity="0">
-      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="14s" begin="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="16s" begin="12s" repeatCount="indefinite"/>
     </rect>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#0f1f3a" stroke="#30363d" stroke-width="1"/>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-M)">
@@ -354,7 +355,7 @@
     <set attributeName="opacity" to="0" begin="0s"/>
     <animate attributeName="opacity" from="0" to="1" begin="4.75s" dur="0.55s" fill="freeze"/>
     <rect x="-4" y="-4" width="138" height="138" rx="8" fill="#8b949e" opacity="0">
-      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="14s" begin="12s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="16s" begin="14s" repeatCount="indefinite"/>
     </rect>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="#1a1e23" stroke="#30363d" stroke-width="1"/>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-T)">
@@ -369,80 +370,89 @@
   </g>
   <line x1="52" y1="722" x2="1153" y2="722" stroke="#262d36" stroke-width="1"/>
   <text x="52" y="752" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#7d8590" letter-spacing="2">GROUPS</text>
-  <g transform="translate(120, 736)">
-    <rect x="0" y="0" width="126" height="26" rx="3" fill="#0d2a17" stroke="#30363d" stroke-width="1"/>
-    <rect x="0" y="0" width="126" height="3" rx="1.5" fill="#3fb950"/>
-    <text x="63" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#7d8590" text-anchor="middle">Quant</text>
+  <g transform="translate(65, 736)">
+    <rect x="0" y="0" width="120" height="26" rx="3" fill="#0d2a17" stroke="#30363d" stroke-width="1"/>
+    <rect x="0" y="0" width="120" height="3" rx="1.5" fill="#3fb950"/>
+    <text x="60" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#7d8590" text-anchor="middle">Quant</text>
   </g>
-  <g transform="translate(258, 736)">
-    <rect x="0" y="0" width="126" height="26" rx="3" fill="#2c1a08" stroke="#30363d" stroke-width="1"/>
-    <rect x="0" y="0" width="126" height="3" rx="1.5" fill="#f0883e"/>
-    <text x="63" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#7d8590" text-anchor="middle">AI/ML</text>
+  <g transform="translate(197, 736)">
+    <rect x="0" y="0" width="120" height="26" rx="3" fill="#2c1a08" stroke="#30363d" stroke-width="1"/>
+    <rect x="0" y="0" width="120" height="3" rx="1.5" fill="#f0883e"/>
+    <text x="60" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#7d8590" text-anchor="middle">AI/ML</text>
   </g>
-  <g transform="translate(396, 736)">
-    <rect x="0" y="0" width="126" height="26" rx="3" fill="#2e1416" stroke="#30363d" stroke-width="1"/>
-    <rect x="0" y="0" width="126" height="3" rx="1.5" fill="#f85149"/>
-    <text x="63" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#7d8590" text-anchor="middle">Cybersec</text>
+  <g transform="translate(329, 736)">
+    <rect x="0" y="0" width="120" height="26" rx="3" fill="#2e1416" stroke="#30363d" stroke-width="1"/>
+    <rect x="0" y="0" width="120" height="3" rx="1.5" fill="#f85149"/>
+    <text x="60" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#7d8590" text-anchor="middle">Cybersec</text>
   </g>
-  <g transform="translate(534, 736)">
-    <rect x="0" y="0" width="126" height="26" rx="3" fill="#2e2208" stroke="#30363d" stroke-width="1"/>
-    <rect x="0" y="0" width="126" height="3" rx="1.5" fill="#d29922"/>
-    <text x="63" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#7d8590" text-anchor="middle">Analyst</text>
+  <g transform="translate(461, 736)">
+    <rect x="0" y="0" width="120" height="26" rx="3" fill="#2e2208" stroke="#30363d" stroke-width="1"/>
+    <rect x="0" y="0" width="120" height="3" rx="1.5" fill="#d29922"/>
+    <text x="60" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#7d8590" text-anchor="middle">Analyst</text>
   </g>
-  <g transform="translate(672, 736)">
-    <rect x="0" y="0" width="126" height="26" rx="3" fill="#1c1340" stroke="#30363d" stroke-width="1"/>
-    <rect x="0" y="0" width="126" height="3" rx="1.5" fill="#a78bfa"/>
-    <text x="63" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#7d8590" text-anchor="middle">SWE</text>
+  <g transform="translate(593, 736)">
+    <rect x="0" y="0" width="120" height="26" rx="3" fill="#1c1340" stroke="#30363d" stroke-width="1"/>
+    <rect x="0" y="0" width="120" height="3" rx="1.5" fill="#a78bfa"/>
+    <text x="60" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#7d8590" text-anchor="middle">SWE</text>
   </g>
-  <g transform="translate(810, 736)">
-    <rect x="0" y="0" width="126" height="26" rx="3" fill="#0f1f3a" stroke="#30363d" stroke-width="1"/>
-    <rect x="0" y="0" width="126" height="3" rx="1.5" fill="#58a6ff"/>
-    <text x="63" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#7d8590" text-anchor="middle">Mobile</text>
+  <g transform="translate(725, 736)">
+    <rect x="0" y="0" width="120" height="26" rx="3" fill="#082a30" stroke="#30363d" stroke-width="1"/>
+    <rect x="0" y="0" width="120" height="3" rx="1.5" fill="#06b6d4"/>
+    <text x="60" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#7d8590" text-anchor="middle">HealthTech</text>
   </g>
-  <g transform="translate(948, 736)">
-    <rect x="0" y="0" width="126" height="26" rx="3" fill="#1a1e23" stroke="#30363d" stroke-width="1"/>
-    <rect x="0" y="0" width="126" height="3" rx="1.5" fill="#8b949e"/>
-    <text x="63" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#7d8590" text-anchor="middle">Tooling</text>
+  <g transform="translate(857, 736)">
+    <rect x="0" y="0" width="120" height="26" rx="3" fill="#0f1f3a" stroke="#30363d" stroke-width="1"/>
+    <rect x="0" y="0" width="120" height="3" rx="1.5" fill="#58a6ff"/>
+    <text x="60" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#7d8590" text-anchor="middle">Mobile</text>
+  </g>
+  <g transform="translate(989, 736)">
+    <rect x="0" y="0" width="120" height="26" rx="3" fill="#1a1e23" stroke="#30363d" stroke-width="1"/>
+    <rect x="0" y="0" width="120" height="3" rx="1.5" fill="#8b949e"/>
+    <text x="60" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#7d8590" text-anchor="middle">Tooling</text>
   </g>
   <text x="52" y="826" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#7d8590" letter-spacing="2">SYMBOLS</text>
-  <g transform="translate(150, 802)">
-    <rect x="0" y="0" width="170" height="30" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-    <text x="85" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" text-anchor="middle"><tspan font-weight="700" font-size="14" fill="#e6edf3">Oc</tspan> &#160;<tspan fill="#7d8590">OCaml</tspan></text>
+  <g transform="translate(65, 802)">
+    <rect x="0" y="0" width="160" height="30" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="80" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" text-anchor="middle"><tspan font-weight="700" font-size="14" fill="#e6edf3">Oc</tspan> &#160;<tspan fill="#7d8590">OCaml</tspan></text>
   </g>
-  <g transform="translate(338, 802)">
-    <rect x="0" y="0" width="170" height="30" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-    <text x="85" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" text-anchor="middle"><tspan font-weight="700" font-size="14" fill="#e6edf3">Rs</tspan> &#160;<tspan fill="#7d8590">Rust</tspan></text>
+  <g transform="translate(240, 802)">
+    <rect x="0" y="0" width="160" height="30" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="80" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" text-anchor="middle"><tspan font-weight="700" font-size="14" fill="#e6edf3">Rs</tspan> &#160;<tspan fill="#7d8590">Rust</tspan></text>
   </g>
-  <g transform="translate(526, 802)">
-    <rect x="0" y="0" width="170" height="30" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-    <text x="85" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" text-anchor="middle"><tspan font-weight="700" font-size="14" fill="#e6edf3">C</tspan> &#160;<tspan fill="#7d8590">C99</tspan></text>
+  <g transform="translate(415, 802)">
+    <rect x="0" y="0" width="160" height="30" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="80" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" text-anchor="middle"><tspan font-weight="700" font-size="14" fill="#e6edf3">C</tspan> &#160;<tspan fill="#7d8590">C99</tspan></text>
   </g>
-  <g transform="translate(714, 802)">
-    <rect x="0" y="0" width="170" height="30" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-    <text x="85" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" text-anchor="middle"><tspan font-weight="700" font-size="14" fill="#e6edf3">Py</tspan> &#160;<tspan fill="#7d8590">Python</tspan></text>
+  <g transform="translate(590, 802)">
+    <rect x="0" y="0" width="160" height="30" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="80" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" text-anchor="middle"><tspan font-weight="700" font-size="14" fill="#e6edf3">Py</tspan> &#160;<tspan fill="#7d8590">Python</tspan></text>
   </g>
-  <g transform="translate(902, 802)">
-    <rect x="0" y="0" width="170" height="30" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-    <text x="85" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" text-anchor="middle"><tspan font-weight="700" font-size="14" fill="#e6edf3">R</tspan> &#160;<tspan fill="#7d8590">R</tspan></text>
+  <g transform="translate(765, 802)">
+    <rect x="0" y="0" width="160" height="30" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="80" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" text-anchor="middle"><tspan font-weight="700" font-size="14" fill="#e6edf3">R</tspan> &#160;<tspan fill="#7d8590">R</tspan></text>
+  </g>
+  <g transform="translate(940, 802)">
+    <rect x="0" y="0" width="160" height="30" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="80" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" text-anchor="middle"><tspan font-weight="700" font-size="14" fill="#e6edf3">Rb</tspan> &#160;<tspan fill="#7d8590">Ruby</tspan></text>
   </g>
   <g transform="translate(150, 838)">
-    <rect x="0" y="0" width="170" height="30" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-    <text x="85" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" text-anchor="middle"><tspan font-weight="700" font-size="14" fill="#e6edf3">Rb</tspan> &#160;<tspan fill="#7d8590">Ruby</tspan></text>
+    <rect x="0" y="0" width="160" height="30" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="80" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" text-anchor="middle"><tspan font-weight="700" font-size="14" fill="#e6edf3">Ts</tspan> &#160;<tspan fill="#7d8590">TypeScript</tspan></text>
   </g>
-  <g transform="translate(338, 838)">
-    <rect x="0" y="0" width="170" height="30" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-    <text x="85" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" text-anchor="middle"><tspan font-weight="700" font-size="14" fill="#e6edf3">Ts</tspan> &#160;<tspan fill="#7d8590">TypeScript</tspan></text>
+  <g transform="translate(325, 838)">
+    <rect x="0" y="0" width="160" height="30" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="80" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" text-anchor="middle"><tspan font-weight="700" font-size="14" fill="#e6edf3">Sv</tspan> &#160;<tspan fill="#7d8590">Svelte</tspan></text>
   </g>
-  <g transform="translate(526, 838)">
-    <rect x="0" y="0" width="170" height="30" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-    <text x="85" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" text-anchor="middle"><tspan font-weight="700" font-size="14" fill="#e6edf3">Sv</tspan> &#160;<tspan fill="#7d8590">Svelte</tspan></text>
+  <g transform="translate(500, 838)">
+    <rect x="0" y="0" width="160" height="30" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="80" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" text-anchor="middle"><tspan font-weight="700" font-size="14" fill="#e6edf3">Sw</tspan> &#160;<tspan fill="#7d8590">Swift</tspan></text>
   </g>
-  <g transform="translate(714, 838)">
-    <rect x="0" y="0" width="170" height="30" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-    <text x="85" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" text-anchor="middle"><tspan font-weight="700" font-size="14" fill="#e6edf3">Go</tspan> &#160;<tspan fill="#7d8590">Go</tspan></text>
+  <g transform="translate(675, 838)">
+    <rect x="0" y="0" width="160" height="30" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="80" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" text-anchor="middle"><tspan font-weight="700" font-size="14" fill="#e6edf3">Go</tspan> &#160;<tspan fill="#7d8590">Go</tspan></text>
   </g>
-  <g transform="translate(902, 838)">
-    <rect x="0" y="0" width="170" height="30" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-    <text x="85" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" text-anchor="middle"><tspan font-weight="700" font-size="14" fill="#e6edf3">Kt</tspan> &#160;<tspan fill="#7d8590">Kotlin</tspan></text>
+  <g transform="translate(850, 838)">
+    <rect x="0" y="0" width="160" height="30" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="80" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" text-anchor="middle"><tspan font-weight="700" font-size="14" fill="#e6edf3">Kt</tspan> &#160;<tspan fill="#7d8590">Kotlin</tspan></text>
   </g>
 </svg>

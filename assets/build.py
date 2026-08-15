@@ -24,7 +24,7 @@ def run(cmd, cwd=None):
 def main():
     assets_dir = Path(__file__).parent
     gen_dir = assets_dir / "generated"
-    cells_dir = gen_dir / "cells"
+    cells_dir = assets_dir / "cells"
 
     # Ensure output directories exist
     cells_dir.mkdir(parents=True, exist_ok=True)
@@ -47,9 +47,9 @@ def main():
 
     if ok:
         print("\n✓ Build complete!")
-        print(f"  Generated: {assets_dir}")
-        print(f"    table-dark.svg, table-light.svg in assets/")
-        print(f"    cells/: {len(list(cells_dir.glob('*.svg')))} SVGs in generated/")
+        print(f"  Generated in {assets_dir}:")
+        print(f"    table-dark.svg, table-light.svg")
+        print(f"    cells/: {len(list(cells_dir.glob('*.svg')))} SVGs")
     else:
         print("\n✗ Build failed", file=sys.stderr)
         sys.exit(1)
