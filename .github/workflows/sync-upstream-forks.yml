@@ -1,0 +1,30 @@
+name: Daily Upstream Sync (neovim & cpython)
+
+on:
+  schedule:
+    # Runs daily at 04:30 UTC
+    - cron: '30 4 * * *'
+  workflow_dispatch: # Allows running manually on demand
+
+jobs:
+  sync-neovim-and-cpython:
+    name: Sync neovim & cpython with upstream
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sync forks
+        env:
+          GH_TOKEN: ${{ secrets.SYNC_PAT }}
+        run: |
+          echo "=== 1. Syncing Builder106/neovim ==="
+          # Sync default branch (master) from neovim/neovim
+          gh repo sync Builder106/neovim -b master || echo "::warning::Failed to sync neovim master"
+
+          echo "=== 2. Syncing Builder106/cpython ==="
+          # Sync default branch (main) from python/cpython
+          gh repo sync Builder106/cpython -b main || echo "::warning::Failed to sync cpython main"
+
+          # Sync active CPython maintenance release branches
+          for branch in 3.10 3.11 3.12 3.13 3.14 3.15; do
+            echo "Syncing CPython release branch $branch..."
+            gh repo sync Builder106/cpython -b "$branch" || echo "::warning::Failed to sync cpython $branch"
+          done
