@@ -1,7 +1,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="assets/hero-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
-  <img alt="Olayinka Vaughan — SWE · Cybersec · Analyst · Quant" src="assets/hero-dark.png">
+  <img alt="Olayinka Vaughan — SWE · Cybersec · Analyst · Quant" src="assets/hero-dark.svg">
 </picture>
 
 [![Wesleyan](https://img.shields.io/badge/Wesleyan_University-CS-cc0033)](https://www.wesleyan.edu/)
@@ -14,11 +14,11 @@ Hi, I'm Olayinka — CS and Econ at Wesleyan. Everything I've built so far is be
 
 ## The Elements
 
-<a href="<https://github.com/Builder106?tab=repositories>">
+<a href="https://github.com/Builder106?tab=repositories">
   <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="assets/table-dark.svg?v=3">
-    <source media="(prefers-color-scheme: light)" srcset="assets/table-light.svg?v=3">
-    <img alt="Periodic table of self — 20 projects, 10 languages, 7 disciplines" src="assets/table-dark.png?v=3" width="1200" loading="lazy">
+    <source media="(prefers-color-scheme: dark)"  srcset="assets/table-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/table-light.svg">
+    <img alt="Periodic table of self — 20 projects, 10 languages, 7 disciplines" src="assets/table-dark.svg" width="1200" loading="lazy">
   </picture>
 </a>
 
