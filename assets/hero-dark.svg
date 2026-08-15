@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-label="Olayinka Vaughan — SWE, Cybersec, Analyst, Quant">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-label="Olayinka Vaughan — SWE, AI/ML, Cybersec, Analyst, Quant">
   <defs>
     <style>
       @keyframes breathe {
@@ -10,30 +10,36 @@
         100% { width: 220px; }
       }
       @keyframes c1 {
-        0%, 22%   { fill: #e9d5ff; }
-        25%, 100% { fill: #a78bfa; }
+        0%, 17%   { fill: #c084fc; }
+        20%, 100% { fill: #6e7681; }
       }
       @keyframes c2 {
-        0%, 22%   { fill: #a78bfa; }
-        25%, 47%  { fill: #e9d5ff; }
-        50%, 100% { fill: #a78bfa; }
+        0%, 17%   { fill: #6e7681; }
+        20%, 37%  { fill: #fb923c; }
+        40%, 100% { fill: #6e7681; }
       }
       @keyframes c3 {
-        0%, 47%   { fill: #a78bfa; }
-        50%, 72%  { fill: #e9d5ff; }
-        75%, 100% { fill: #a78bfa; }
+        0%, 37%   { fill: #6e7681; }
+        40%, 57%  { fill: #f87171; }
+        60%, 100% { fill: #6e7681; }
       }
       @keyframes c4 {
-        0%, 72%   { fill: #a78bfa; }
-        75%, 97%  { fill: #e9d5ff; }
-        100%      { fill: #a78bfa; }
+        0%, 57%   { fill: #6e7681; }
+        60%, 77%  { fill: #fbbf24; }
+        80%, 100% { fill: #6e7681; }
+      }
+      @keyframes c5 {
+        0%, 77%   { fill: #6e7681; }
+        80%, 97%  { fill: #4ade80; }
+        100%      { fill: #6e7681; }
       }
       .breath { animation: breathe 9s ease-in-out infinite; }
       .bar    { animation: draw 1.6s cubic-bezier(.2,.7,.2,1) .3s both; }
-      .w1     { animation: c1 9s linear infinite; }
-      .w2     { animation: c2 9s linear infinite; }
-      .w3     { animation: c3 9s linear infinite; }
-      .w4     { animation: c4 9s linear infinite; }
+      .w1     { animation: c1 10s linear infinite; }
+      .w2     { animation: c2 10s linear infinite; }
+      .w3     { animation: c3 10s linear infinite; }
+      .w4     { animation: c4 10s linear infinite; }
+      .w5     { animation: c5 10s linear infinite; }
     </style>
 
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -73,17 +79,19 @@
   <!-- Animated accent bar (draws in on load) -->
   <rect class="bar" x="80" y="348" width="220" height="4" rx="2" fill="#a78bfa"/>
 
-  <!-- Discipline cycle — sequential highlight every ~2.25s -->
-  <g font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', system-ui, sans-serif" font-size="34" font-weight="600">
-    <text class="w1" x="80"  y="425" fill="#e9d5ff">SWE</text>
-    <text         x="180" y="425" fill="#5b21b6">·</text>
-    <text class="w2" x="208" y="425" fill="#a78bfa">Cybersec</text>
-    <text         x="392" y="425" fill="#5b21b6">·</text>
-    <text class="w3" x="420" y="425" fill="#a78bfa">Analyst</text>
-    <text         x="582" y="425" fill="#5b21b6">·</text>
-    <text class="w4" x="610" y="425" fill="#a78bfa">Quant</text>
+  <!-- Discipline cycle — sequential highlight every 2s -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', system-ui, sans-serif" font-size="32" font-weight="600">
+    <text class="w1" x="80"  y="425" fill="#6e7681">SWE</text>
+    <text         x="164" y="425" fill="#30363d">·</text>
+    <text class="w2" x="192" y="425" fill="#6e7681">AI/ML</text>
+    <text         x="300" y="425" fill="#30363d">·</text>
+    <text class="w3" x="328" y="425" fill="#6e7681">Cybersec</text>
+    <text         x="494" y="425" fill="#30363d">·</text>
+    <text class="w4" x="522" y="425" fill="#6e7681">Analyst</text>
+    <text         x="664" y="425" fill="#30363d">·</text>
+    <text class="w5" x="692" y="425" fill="#6e7681">Quant</text>
   </g>
 
   <!-- Footer -->
-  <text x="80" y="530" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#6e7681">middletown, ct  ·  yinkavaughan.me  ·  building across four tracks</text>
+  <text x="80" y="530" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#6e7681">middletown, ct  ·  yinkavaughan.me  ·  building across five tracks</text>
 </svg>

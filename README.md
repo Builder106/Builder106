@@ -1,7 +1,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="assets/hero-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
-  <img alt="Olayinka Vaughan | SWE | Cybersec | Analyst | Quant" src="assets/hero-dark.svg">
+  <img alt="Olayinka Vaughan | SWE | AI/ML | Cybersec | Analyst | Quant" src="assets/hero-dark.svg">
 </picture>
 
 [![Wesleyan](https://img.shields.io/badge/Wesleyan_University-CS-cc0033)](https://www.wesleyan.edu/)
