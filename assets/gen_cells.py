@@ -189,7 +189,7 @@ def unified_svg(theme):
     by_pos = {(p, s): (num, symbol, lang, project, disc)
               for p, s, num, symbol, lang, project, disc in CELLS}
 
-    out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Periodic table of self — 20 projects, 10 languages, 7 disciplines">']
+    out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Periodic table of self — 20 projects, 10 languages, 8 disciplines">']
 
     # Defs: per-discipline cell gradients only (no canvas bg — blends into page)
     out.append('  <defs>')
@@ -201,7 +201,7 @@ def unified_svg(theme):
 
     # Header
     out.append(f'  <text x="52" y="52" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="{muted}" letter-spacing="3">BUILDER106  //  THE ELEMENTS</text>')
-    out.append(f'  <text x="52" y="82" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="14" fill="{faded}">20 projects  ·  10 languages  ·  7 disciplines  ·  arranged by language &amp; track</text>')
+    out.append(f'  <text x="52" y="82" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="14" fill="{faded}">20 projects  ·  10 languages  ·  8 disciplines  ·  arranged by language &amp; track</text>')
     out.append(f'  <line x1="52" y1="102" x2="{W - 47}" y2="102" stroke="{chrome_rule}" stroke-width="1"/>')
 
     # Group labels (1..8 across the top of cell columns)
