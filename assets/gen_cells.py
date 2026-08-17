@@ -10,8 +10,16 @@ Usage:
     python3 gen_cells.py table > /tmp/t  # prints HTML <table> markup
 """
 
+import json
 import os
 import sys
+from pathlib import Path
+
+# Every colour comes from palette.json, which mirrors the hero SVGs.
+# Regenerate it with make_palette.py; never hard-code a hex in here.
+PALETTE = json.loads((Path(__file__).parent / "palette.json").read_text())
+NEUTRAL = PALETTE["neutral"]
+TRACK = PALETTE["tracks"]
 
 # (period, slot, num, symbol, lang, project_id, discipline_code)
 CELLS = [
@@ -61,27 +69,57 @@ REPO_NAME = {  # project_id -> actual repo name (slug)
 # Currently-active project: gets a "NOW" indicator
 NOW_PROJECT = "MicroMatch"
 
-# (label, dark_accent, light_accent, dark_cellbg, light_cellbg)
-DISC = {
-    "Q": ("Quant", "#3fb950", "#1a7f37", "#0d2a17", "#e6f5ea"),
-    "L": ("AI/ML", "#f0883e", "#d97706", "#2c1a08", "#fef3c7"),
-    "Y": ("Cybersec", "#f85149", "#cf222e", "#2e1416", "#fbe7e9"),
-    "A": ("Analyst", "#d29922", "#9a6700", "#2e2208", "#f8edd2"),
-    "W": ("SWE", "#a78bfa", "#6b46c1", "#1c1340", "#ebe4f7"),
-    "H": ("HealthTech", "#06b6d4", "#0891b2", "#082a30", "#e0f7fa"),
-    "M": ("Mobile", "#58a6ff", "#0969da", "#0f1f3a", "#dfecfb"),
-    "T": ("Tooling", "#8b949e", "#656d76", "#1a1e23", "#eaecef"),
-}
+
+def disc_label(code):
+    return TRACK[code]["label"]
+
+
+def disc_accent(code, theme):
+    return TRACK[code][theme]["accent"]
+
+
+def disc_tint(code, theme):
+    return TRACK[code][theme]["tint"]
+
+
+def disc_text(code, theme):
+    """Label colour for text set on a discipline's card. Darker/lighter than the
+    accent so it clears WCAG 2.2 AAA (7:1) against the tint."""
+    return TRACK[code][theme]["text"]
+
+
+# Animation, declared in CSS rather than SMIL so that a reader who has asked
+# their OS for reduced motion actually gets a still image (WCAG 2.2.2).
+MOTION_CSS = """  <style>
+    .cell   { animation: reveal 0.55s both; }
+    .halo   { opacity: 0; animation: spotlight 16s linear infinite; }
+    .wave   { animation: wave 5s linear infinite; }
+    .pulse  { animation: pulse 4s ease-in-out infinite; }
+    .now    { animation: pulse 1.6s ease-in-out infinite; }
+    .ripple { transform-origin: center; animation: ripple 1.6s linear infinite; }
+    @keyframes reveal    { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes spotlight { 0% { opacity: 0; } 4%, 10% { opacity: 0.55; } 14%, 100% { opacity: 0; } }
+    @keyframes wave      { 0% { opacity: 0.4; } 10%, 20% { opacity: 1; } 30%, 100% { opacity: 0.4; } }
+    @keyframes pulse     { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+    @keyframes ripple    { from { transform: scale(1); opacity: 0.5; } to { transform: scale(2.25); opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .cell, .halo, .wave, .pulse, .now, .ripple { animation: none; }
+      .cell, .wave, .pulse, .now { opacity: 1; }
+      .halo, .ripple { opacity: 0; }
+    }
+  </style>"""
 
 
 def cell_svg(theme, num, symbol, lang, project, disc):
     is_dark = theme == "dark"
-    fg = "#e6edf3" if is_dark else "#1f2328"
-    muted = "#8b949e" if is_dark else "#656d76"
-    faded = "#6e7681" if is_dark else "#8c959f"
-    border = "#30363d" if is_dark else "#d0d7de"
-    accent = DISC[disc][1 if is_dark else 2]
-    cardbg = DISC[disc][3 if is_dark else 4]  # per-discipline tinted bg
+    n = NEUTRAL[theme]
+    fg = n["fg"]
+    muted = n["muted"]
+    faded = n["faded"]
+    border = n["border"]
+    accent = disc_accent(disc, theme)
+    label_ink = disc_text(disc, theme)
+    cardbg = disc_tint(disc, theme)  # per-discipline tinted bg
     # Gradient overlay on top of the tinted bg, for extra depth at the top edge
     tint_opacity_top = 0.45 if is_dark else 0.35
     grad_id = f"g{num}"
@@ -94,35 +132,27 @@ def cell_svg(theme, num, symbol, lang, project, disc):
     if is_now:
         now_marker = f'''
     <g transform="translate(118, 14)">
-      <circle r="4" fill="{accent}">
-        <animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite"/>
-      </circle>
-      <circle r="4" fill="{accent}" opacity="0.4">
-        <animate attributeName="r" values="4;9;4" dur="1.6s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.5;0;0.5" dur="1.6s" repeatCount="indefinite"/>
-      </circle>
+      <circle class="now" r="4" fill="{accent}"/>
+      <circle class="ripple" r="4" fill="{accent}" opacity="0.5"/>
     </g>'''
 
-    disc_label = DISC[disc][0]
+    label = disc_label(disc)
     disc_x = 106 if is_now else 120
-    disc_tag = f'<text x="{disc_x}" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="600" fill="{accent}" text-anchor="end">{disc_label}</text>'
+    disc_tag = f'<text x="{disc_x}" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="600" fill="{label_ink}" text-anchor="end">{label}</text>'
 
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130" role="img" aria-label="{num:02d} {symbol} {lang} {project} {disc_label}">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130" role="img" aria-label="{num:02d} {symbol} {lang} {project} {label}">
   <defs>
+{MOTION_CSS}
     <linearGradient id="{grad_id}" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%"  stop-color="{accent}" stop-opacity="{tint_opacity_top}"/>
       <stop offset="60%" stop-color="{accent}" stop-opacity="0"/>
     </linearGradient>
   </defs>
-  <g opacity="1">
-    <set attributeName="opacity" to="0" begin="0s"/>
-    <animate attributeName="opacity" from="0" to="1" begin="{reveal_delay:.2f}s" dur="0.55s" fill="freeze"/>
+  <g class="cell" style="animation-delay: {reveal_delay:.2f}s">
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="{cardbg}" stroke="{border}" stroke-width="1"/>
     <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#{grad_id})"/>
-    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="{accent}">
-      <animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="{pulse_offset:.2f}s" repeatCount="indefinite"/>
-    </rect>
-    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="500" fill="{accent}">{num:02d}</text>{disc_tag}{now_marker}
+    <rect class="pulse" style="animation-delay: {pulse_offset:.2f}s" x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="{accent}"/>
+    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="500" fill="{label_ink}">{num:02d}</text>{disc_tag}{now_marker}
     <text x="65" y="76" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="{fg}" text-anchor="middle" letter-spacing="-1">{symbol}</text>
     <text x="65" y="101" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="{muted}" text-anchor="middle">{lang}</text>
     <text x="65" y="120" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="{faded}" text-anchor="middle">{project}</text>
@@ -173,13 +203,14 @@ def unified_svg(theme):
     Click-through per cell isn't possible when img-served; flat link list below
     the SVG in the README provides navigation."""
     is_dark = theme == "dark"
-    fg = "#e6edf3" if is_dark else "#1f2328"
-    muted = "#7d8590" if is_dark else "#656d76"
-    faded = "#6e7681" if is_dark else "#8c959f"
-    border = "#30363d" if is_dark else "#d0d7de"
-    cell_text_muted = "#8b949e" if is_dark else "#656d76"
-    cell_text_faded = "#6e7681" if is_dark else "#8c959f"
-    chrome_rule = "#262d36" if is_dark else "#e6eaef"
+    n = NEUTRAL[theme]
+    fg = n["fg"]
+    muted = n["muted"]
+    faded = n["faded"]
+    border = n["border"]
+    cell_text_muted = n["muted"]
+    cell_text_faded = n["faded"]
+    chrome_rule = n["rule"]
 
     W, H = 1200, 885
     MARGIN_L, MARGIN_TOP = 52, 130
@@ -193,9 +224,10 @@ def unified_svg(theme):
     ]
 
     # Defs: per-discipline cell gradients only (no canvas bg — blends into page)
+    out.append(MOTION_CSS)
     out.append("  <defs>")
-    for code, (_, da, la, _, _) in DISC.items():
-        accent = da if is_dark else la
+    for code in TRACK:
+        accent = disc_accent(code, theme)
         tint_opacity = 0.45 if is_dark else 0.35
         out.append(
             f'    <linearGradient id="grad-{code}" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="{accent}" stop-opacity="{tint_opacity}"/><stop offset="60%" stop-color="{accent}" stop-opacity="0"/></linearGradient>'
@@ -227,8 +259,9 @@ def unified_svg(theme):
 
     # Cells
     for (p, s), (num, symbol, lang, project, disc) in sorted(by_pos.items()):
-        accent = DISC[disc][1 if is_dark else 2]
-        cardbg = DISC[disc][3 if is_dark else 4]
+        accent = disc_accent(disc, theme)
+        label_ink = disc_text(disc, theme)
+        cardbg = disc_tint(disc, theme)
         x = MARGIN_L + s * COL_STRIDE
         y = MARGIN_TOP + p * ROW_STRIDE
         reveal_delay = (num - 1) * 0.25
@@ -240,46 +273,34 @@ def unified_svg(theme):
         slot = slot_map[disc]
         is_now = project == NOW_PROJECT
 
-        out.append(f'  <g opacity="1" transform="translate({x}, {y})">')
-        out.append('    <set attributeName="opacity" to="0" begin="0s"/>')
-        out.append(
-            f'    <animate attributeName="opacity" from="0" to="1" begin="{reveal_delay:.2f}s" dur="0.55s" fill="freeze"/>'
-        )
+        out.append(f'  <g class="cell" style="animation-delay: {reveal_delay:.2f}s" transform="translate({x}, {y})">')
         # Spotlight halo — sits behind the card, glows during this discipline's slot
-        out.append(f'    <rect x="-4" y="-4" width="138" height="138" rx="8" fill="{accent}" opacity="0">')
         out.append(
-            f'      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="16s" begin="{slot * 2}s" repeatCount="indefinite"/>'
+            f'    <rect class="halo" style="animation-delay: {slot * 2}s" x="-4" y="-4" width="138" height="138" rx="8" fill="{accent}"/>'
         )
-        out.append("    </rect>")
         # Card
         out.append(
             f'    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="{cardbg}" stroke="{border}" stroke-width="1"/>'
         )
         # Gradient overlay with brightness wave
-        out.append(f'    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-{disc})">')
         out.append(
-            f'      <animate attributeName="opacity" values="0.4;1;1;0.4;0.4" keyTimes="0;0.1;0.2;0.3;1" dur="5s" begin="{wave_offset:.2f}s" repeatCount="indefinite"/>'
+            f'    <rect class="wave" style="animation-delay: {wave_offset:.2f}s" x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-{disc})"/>'
         )
-        out.append("    </rect>")
-        disc_label = DISC[disc][0]
+        label = disc_label(disc)
         disc_x = 106 if is_now else 120
         out.append(
-            f'    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="{accent}"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="{pulse_offset:.2f}s" repeatCount="indefinite"/></rect>'
+            f'    <rect class="pulse" style="animation-delay: {pulse_offset:.2f}s" x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="{accent}"/>'
         )
         out.append(
-            f'    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="500" fill="{accent}">{num:02d}</text>'
+            f'    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="500" fill="{label_ink}">{num:02d}</text>'
         )
         out.append(
-            f'    <text x="{disc_x}" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="600" fill="{accent}" text-anchor="end">{disc_label}</text>'
+            f'    <text x="{disc_x}" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="600" fill="{label_ink}" text-anchor="end">{label}</text>'
         )
         if is_now:
             out.append('    <g transform="translate(118, 14)">')
-            out.append(
-                f'      <circle r="4" fill="{accent}"><animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite"/></circle>'
-            )
-            out.append(
-                f'      <circle r="4" fill="{accent}" opacity="0.4"><animate attributeName="r" values="4;9;4" dur="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.5;0;0.5" dur="1.6s" repeatCount="indefinite"/></circle>'
-            )
+            out.append(f'      <circle class="now" r="4" fill="{accent}"/>')
+            out.append(f'      <circle class="ripple" r="4" fill="{accent}" opacity="0.5"/>')
             out.append("    </g>")
         out.append(
             f'    <text x="65" y="76" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="{fg}" text-anchor="middle" letter-spacing="-1">{symbol}</text>'
@@ -304,9 +325,9 @@ def unified_svg(theme):
     chip_x, chip_y = 65, legend_y + 14
     order = ["Q", "L", "Y", "A", "W", "H", "M", "T"]
     for code in order:
-        name, da, la, dbg, lbg = DISC[code]
-        accent = da if is_dark else la
-        chip_bg = dbg if is_dark else lbg
+        name = disc_label(code)
+        accent = disc_accent(code, theme)
+        chip_bg = disc_tint(code, theme)
         out.append(f'  <g transform="translate({chip_x}, {chip_y})">')
         out.append(
             f'    <rect x="0" y="0" width="120" height="26" rx="3" fill="{chip_bg}" stroke="{border}" stroke-width="1"/>'
@@ -339,7 +360,7 @@ def unified_svg(theme):
             ("Kt", "Kotlin"),
         ],
     ]
-    sym_chip_bg = "#161b22" if is_dark else "#f6f8fa"
+    sym_chip_bg = n["surface"]
     for r_idx, row in enumerate(syms_rows):
         cx = 65 if r_idx == 0 else 150
         cy = sym_y + r_idx * 36

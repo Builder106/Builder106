@@ -10,28 +10,28 @@
         100% { width: 220px; }
       }
       @keyframes c1 {
-        0%, 17%   { fill: #0284c7; }
-        20%, 100% { fill: #8c959f; }
+        0%, 17%   { fill: #014e76; }
+        20%, 100% { fill: #40464d; }
       }
       @keyframes c2 {
-        0%, 17%   { fill: #8c959f; }
-        20%, 37%  { fill: #c2410c; }
-        40%, 100% { fill: #8c959f; }
+        0%, 17%   { fill: #40464d; }
+        20%, 37%  { fill: #812b08; }
+        40%, 100% { fill: #40464d; }
       }
       @keyframes c3 {
-        0%, 37%   { fill: #8c959f; }
-        40%, 57%  { fill: #b91c1c; }
-        60%, 100% { fill: #8c959f; }
+        0%, 37%   { fill: #40464d; }
+        40%, 57%  { fill: #8a1515; }
+        60%, 100% { fill: #40464d; }
       }
       @keyframes c4 {
-        0%, 57%   { fill: #8c959f; }
-        60%, 77%  { fill: #b45309; }
-        80%, 100% { fill: #8c959f; }
+        0%, 57%   { fill: #40464d; }
+        60%, 77%  { fill: #773706; }
+        80%, 100% { fill: #40464d; }
       }
       @keyframes c5 {
-        0%, 77%   { fill: #8c959f; }
-        80%, 97%  { fill: #15803d; }
-        100%      { fill: #8c959f; }
+        0%, 77%   { fill: #40464d; }
+        80%, 97%  { fill: #0e5428; }
+        100%      { fill: #40464d; }
       }
       .breath { animation: breathe 9s ease-in-out infinite; }
       .bar    { animation: draw 1.6s cubic-bezier(.2,.7,.2,1) .3s both; }
@@ -40,6 +40,14 @@
       .w3     { animation: c3 10s linear infinite; }
       .w4     { animation: c4 10s linear infinite; }
       .w5     { animation: c5 10s linear infinite; }
+      @media (prefers-reduced-motion: reduce) {
+        .breath, .bar, .w1, .w2, .w3, .w4, .w5 { animation: none; }
+        .w1 { fill: #014e76; }
+        .w2 { fill: #812b08; }
+        .w3 { fill: #8a1515; }
+        .w4 { fill: #773706; }
+        .w5 { fill: #0e5428; }
+      }
     </style>
 
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -67,11 +75,11 @@
   </g>
 
   <!-- Hairlines -->
-  <line x1="0" y1="0.5"   x2="1200" y2="0.5"   stroke="#d0d7de" stroke-width="1"/>
-  <line x1="0" y1="599.5" x2="1200" y2="599.5" stroke="#d0d7de" stroke-width="1"/>
+  <line x1="0" y1="0.5"   x2="1200" y2="0.5"   stroke="#656d76" stroke-width="1"/>
+  <line x1="0" y1="599.5" x2="1200" y2="599.5" stroke="#656d76" stroke-width="1"/>
 
   <!-- Eyebrow -->
-  <text x="80" y="170" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" fill="#656d76" letter-spacing="3">@BUILDER106  |  CS @ WESLEYAN</text>
+  <text x="80" y="170" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" fill="#35393e" letter-spacing="3">@BUILDER106  |  CS @ WESLEYAN</text>
 
   <!-- Massive wordmark -->
   <text x="80" y="320" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', system-ui, sans-serif" font-size="98" font-weight="700" fill="#1f2328" letter-spacing="-3">Olayinka Vaughan</text>
@@ -81,17 +89,17 @@
 
   <!-- Discipline cycle -->
   <g font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', system-ui, sans-serif" font-size="32" font-weight="600">
-    <text class="w1" x="80"  y="425" fill="#8c959f">SWE</text>
-    <text         x="164" y="425" fill="#d0d7de">|</text>
-    <text class="w2" x="192" y="425" fill="#8c959f">AI/ML</text>
-    <text         x="300" y="425" fill="#d0d7de">|</text>
-    <text class="w3" x="328" y="425" fill="#8c959f">Cybersec</text>
-    <text         x="494" y="425" fill="#d0d7de">|</text>
-    <text class="w4" x="522" y="425" fill="#8c959f">Analyst</text>
-    <text         x="664" y="425" fill="#d0d7de">|</text>
-    <text class="w5" x="692" y="425" fill="#8c959f">Quant</text>
+    <text class="w1" x="80"  y="425" fill="#40464d">SWE</text>
+    <text         x="164" y="425" fill="#656d76">|</text>
+    <text class="w2" x="192" y="425" fill="#40464d">AI/ML</text>
+    <text         x="300" y="425" fill="#656d76">|</text>
+    <text class="w3" x="328" y="425" fill="#40464d">Cybersec</text>
+    <text         x="494" y="425" fill="#656d76">|</text>
+    <text class="w4" x="522" y="425" fill="#40464d">Analyst</text>
+    <text         x="664" y="425" fill="#656d76">|</text>
+    <text class="w5" x="692" y="425" fill="#40464d">Quant</text>
   </g>
 
   <!-- Footer -->
-  <text x="80" y="530" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#8c959f">middletown, ct  |  yinkavaughan.me  |  building across five tracks</text>
+  <text x="80" y="530" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#40464d">middletown, ct  |  yinkavaughan.me  |  building across five tracks</text>
 </svg>

@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="Olayinka Vaughan — systems, quant, web">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#fbfaf6"/>
-      <stop offset="100%" stop-color="#f1ede4"/>
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f0f3f6"/>
     </linearGradient>
     <radialGradient id="glow" cx="0.8" cy="0.45" r="0.55">
       <stop offset="0%" stop-color="#0284c7" stop-opacity="0.14"/>
@@ -18,8 +18,8 @@
   <rect width="1200" height="420" fill="url(#dots)"/>
   <rect width="1200" height="420" fill="url(#glow)"/>
 
-  <line x1="0" y1="0.5" x2="1200" y2="0.5" stroke="#d0d7de" stroke-width="1"/>
-  <line x1="0" y1="419.5" x2="1200" y2="419.5" stroke="#d0d7de" stroke-width="1"/>
+  <line x1="0" y1="0.5" x2="1200" y2="0.5" stroke="#656d76" stroke-width="1"/>
+  <line x1="0" y1="419.5" x2="1200" y2="419.5" stroke="#656d76" stroke-width="1"/>
 
   <!-- Faint monogram on right: 106 -->
   <g font-family="ui-monospace, SFMono-Regular, Menlo, 'Liberation Mono', monospace" font-weight="200" fill="#d0d7de" text-anchor="middle">
@@ -29,7 +29,7 @@
   </g>
 
   <!-- Eyebrow -->
-  <text x="80" y="130" font-family="ui-monospace, SFMono-Regular, Menlo, 'Liberation Mono', monospace" font-size="15" fill="#656d76" letter-spacing="3">@BUILDER106  |  CS @ WESLEYAN</text>
+  <text x="80" y="130" font-family="ui-monospace, SFMono-Regular, Menlo, 'Liberation Mono', monospace" font-size="15" fill="#35393e" letter-spacing="3">@BUILDER106  |  CS @ WESLEYAN</text>
 
   <!-- Wordmark -->
   <text x="80" y="222" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', system-ui, sans-serif" font-size="72" font-weight="700" fill="#1f2328" letter-spacing="-2">Olayinka Vaughan</text>
@@ -38,8 +38,8 @@
   <rect x="80" y="248" width="64" height="3" rx="1.5" fill="#0284c7"/>
 
   <!-- Tagline -->
-  <text x="80" y="298" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', system-ui, sans-serif" font-size="26" font-weight="500" fill="#475569">SWE | Cybersec | Analyst | Quant</text>
+  <text x="80" y="298" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', system-ui, sans-serif" font-size="26" font-weight="500" fill="#35393e">SWE | Cybersec | Analyst | Quant</text>
 
   <!-- Footer line -->
-  <text x="80" y="350" font-family="ui-monospace, SFMono-Regular, Menlo, 'Liberation Mono', monospace" font-size="13" fill="#8c959f">middletown, ct  |  yinkavaughan.me</text>
+  <text x="80" y="350" font-family="ui-monospace, SFMono-Regular, Menlo, 'Liberation Mono', monospace" font-size="13" fill="#40464d">middletown, ct  |  yinkavaughan.me</text>
 </svg>
