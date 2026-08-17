@@ -5,6 +5,7 @@ Generates all derived assets from source files.
 Run from the assets/ directory:
     python3 build.py
 """
+
 import subprocess
 import sys
 from pathlib import Path

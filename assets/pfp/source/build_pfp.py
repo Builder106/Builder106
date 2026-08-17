@@ -44,7 +44,9 @@ async def create_apng(size: int, output_name: str):
         print(f"Capturing {size}x{size} frames...")
         for i in range(total_frames):
             current_time = (i / fps) * 1000
-            await page.evaluate(f"document.getAnimations().forEach(a => a.currentTime = {current_time})")
+            await page.evaluate(
+                f"document.getAnimations().forEach(a => a.currentTime = {current_time})"
+            )
 
             screenshot_bytes = await page.screenshot()
             frames.append(Image.open(BytesIO(screenshot_bytes)).convert("RGB"))
@@ -61,10 +63,12 @@ async def create_apng(size: int, output_name: str):
             save_all=True,
             append_images=shifted_frames[1:],
             duration=33,
-            loop=0
+            loop=0,
         )
 
-        print(f"Success! {output_file} is a solid {size}x{size} block. No clipping possible.")
+        print(
+            f"Success! {output_file} is a solid {size}x{size} block. No clipping possible."
+        )
         await browser.close()
 
 
