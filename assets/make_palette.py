@@ -17,10 +17,11 @@ Run from the assets/ directory:
     python3 make_palette.py
 """
 
+import colorsys
 import json
 from pathlib import Path
 
-from a11y import AAA_LARGE_TEXT, AAA_TEXT, NON_TEXT, contrast, mix, solve
+from a11y import AAA_LARGE_TEXT, AAA_TEXT, NON_TEXT, contrast, mix, solve, to_hex
 
 # --- hues, straight from the hero SVGs ---------------------------------------
 
@@ -41,17 +42,39 @@ NEUTRAL_SEED = {
     "dark": {"fg": "#e6edf3", "muted": "#7d8590", "faded": "#6e7681", "accent": "#38bdf8"},
 }
 
-# The hero's five cycling tracks, in hero order, then the three extensions.
-TRACKS = {
-    "W": {"label": "SWE", "light": "#0284c7", "dark": "#38bdf8"},
-    "L": {"label": "AI/ML", "light": "#c2410c", "dark": "#fb923c"},
-    "Y": {"label": "Cybersec", "light": "#b91c1c", "dark": "#f87171"},
-    "A": {"label": "Analyst", "light": "#b45309", "dark": "#fbbf24"},
-    "Q": {"label": "Quant", "light": "#15803d", "dark": "#4ade80"},
-    "H": {"label": "HealthTech", "light": "#0e7490", "dark": "#22d3ee"},
-    "M": {"label": "Mobile", "light": "#6d28d9", "dark": "#a78bfa"},
-    "T": {"label": "Tooling", "light": "#656d76", "dark": "#7d8590"},
+# Track hues, spaced around the colour wheel so that no two disciplines read as
+# the same colour in the legend. The semantic anchors are kept — red for
+# Cybersec, gold for Analyst, green for Quant, teal for HealthTech, blue for
+# SWE — and the rest fill the gaps evenly. Saturation and lightness are fixed
+# per theme; make_palette then solves each one for contrast.
+TRACK_HUE = {
+    "Y": ("Cybersec", 0),
+    "A": ("Analyst", 45),
+    "Q": ("Quant", 120),
+    "H": ("HealthTech", 165),
+    "W": ("SWE", 208),
+    "M": ("Mobile", 252),
+    "L": ("AI/ML", 305),
 }
+
+# Starting saturation/lightness per theme, before the contrast solve.
+SEED_SL = {"light": (0.70, 0.34), "dark": (0.72, 0.68)}
+
+
+def seed(hue: int, theme: str) -> str:
+    saturation, lightness = SEED_SL[theme]
+    return to_hex(colorsys.hls_to_rgb(hue / 360, lightness, saturation))
+
+
+TRACKS = {
+    code: {"label": label, "light": seed(hue, "light"), "dark": seed(hue, "dark")}
+    for code, (label, hue) in TRACK_HUE.items()
+}
+TRACKS["T"] = {"label": "Tooling", "light": "#656d76", "dark": "#7d8590"}
+
+# The table lays disciplines out in this order.
+ORDER = ["Q", "L", "Y", "A", "W", "H", "M", "T"]
+TRACKS = {code: TRACKS[code] for code in ORDER}
 
 # How much accent bleeds into the surface for a discipline's card tint.
 TINT_RATIO = 0.14

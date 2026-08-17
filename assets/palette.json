@@ -8,14 +8,14 @@
       "dots": "#d0d7de",
       "ghost": "#d0d7de",
       "fg": "#1f2328",
-      "muted": "#35393e",
-      "faded": "#40464d",
-      "muted_large": "#5c636b",
-      "faded_large": "#5b636d",
+      "muted": "#34383c",
+      "faded": "#3e444a",
+      "muted_large": "#596068",
+      "faded_large": "#58616a",
       "rule": "#656d76",
       "border": "#656d76",
       "accent": "#0284c7",
-      "accent_text": "#01496f"
+      "accent_text": "#01486c"
     },
     "dark": {
       "canvas_from": "#0b0f15",
@@ -24,127 +24,127 @@
       "dots": "#1f2630",
       "ghost": "#1c2530",
       "fg": "#e6edf3",
-      "muted": "#d1d4d8",
-      "faded": "#bdc1c6",
-      "muted_large": "#939aa3",
-      "faded_large": "#939aa3",
+      "muted": "#d5d8db",
+      "faded": "#c1c5ca",
+      "muted_large": "#979ea6",
+      "faded_large": "#969da5",
       "rule": "#7d8590",
       "border": "#7d8590",
       "accent": "#38bdf8",
-      "accent_text": "#64ccfa"
+      "accent_text": "#6ecffa"
     }
   },
   "tracks": {
-    "W": {
-      "label": "SWE",
+    "Q": {
+      "label": "Quant",
       "light": {
-        "accent": "#0284c7",
-        "text": "#014e76",
-        "text_large": "#026ba1",
-        "tint": "#d4e8f3"
+        "accent": "#1a931a",
+        "text": "#0f560f",
+        "text_large": "#157715",
+        "tint": "#d7eadb"
       },
-      "badge": "#015d8d",
+      "badge": "#126512",
       "dark": {
-        "accent": "#38bdf8",
-        "text": "#58c8f9",
-        "text_large": "#38bdf8",
-        "tint": "#1b3240"
+        "accent": "#73e873",
+        "text": "#73e873",
+        "text_large": "#73e873",
+        "tint": "#23382d"
       }
     },
     "L": {
       "label": "AI/ML",
       "light": {
-        "accent": "#c2410c",
-        "text": "#812b08",
-        "text_large": "#b13b0b",
-        "tint": "#efded9"
+        "accent": "#931a89",
+        "text": "#7b1673",
+        "text_large": "#931a89",
+        "tint": "#e8d9ea"
       },
-      "badge": "#9e350a",
+      "badge": "#931a89",
       "dark": {
-        "accent": "#fb923c",
-        "text": "#fca761",
-        "text_large": "#fb923c",
-        "tint": "#362c26"
+        "accent": "#e873de",
+        "text": "#ef9de8",
+        "text_large": "#e873de",
+        "tint": "#33273c"
       }
     },
     "Y": {
       "label": "Cybersec",
       "light": {
-        "accent": "#b91c1c",
-        "text": "#8a1515",
-        "text_large": "#b91c1c",
-        "tint": "#edd9db"
+        "accent": "#931a1a",
+        "text": "#881818",
+        "text_large": "#931a1a",
+        "tint": "#e8d9db"
       },
-      "badge": "#ae1a1a",
+      "badge": "#931a1a",
       "dark": {
-        "accent": "#f87171",
-        "text": "#fa9f9f",
-        "text_large": "#f87171",
-        "tint": "#36272d"
+        "accent": "#e87373",
+        "text": "#f0a1a1",
+        "text_large": "#e87373",
+        "tint": "#33272d"
       }
     },
     "A": {
       "label": "Analyst",
       "light": {
-        "accent": "#b45309",
-        "text": "#773706",
-        "text_large": "#a34b08",
-        "tint": "#ede1d8"
+        "accent": "#93751a",
+        "text": "#5b4810",
+        "text_large": "#7d6416",
+        "tint": "#e8e6db"
       },
-      "badge": "#904207",
+      "badge": "#6c5613",
       "dark": {
-        "accent": "#fbbf24",
-        "text": "#fbbf24",
-        "text_large": "#fbbf24",
-        "tint": "#363222"
+        "accent": "#e8cb73",
+        "text": "#e8cb73",
+        "text_large": "#e8cb73",
+        "tint": "#33342d"
       }
     },
-    "Q": {
-      "label": "Quant",
+    "W": {
+      "label": "SWE",
       "light": {
-        "accent": "#15803d",
-        "text": "#0e5428",
-        "text_large": "#137538",
-        "tint": "#d6e7e0"
+        "accent": "#1a5b93",
+        "text": "#154a77",
+        "text_large": "#1a5b93",
+        "tint": "#d7e2ec"
       },
-      "badge": "#116630",
+      "badge": "#1a5b93",
       "dark": {
-        "accent": "#4ade80",
-        "text": "#4ade80",
-        "text_large": "#4ade80",
-        "tint": "#1d362f"
+        "accent": "#73b1e8",
+        "text": "#8fc1ed",
+        "text_large": "#73b1e8",
+        "tint": "#23303e"
       }
     },
     "H": {
       "label": "HealthTech",
       "light": {
-        "accent": "#0e7490",
-        "text": "#094f62",
-        "text_large": "#0d6e89",
-        "tint": "#d6e6eb"
+        "accent": "#1a9375",
+        "text": "#0f5443",
+        "text_large": "#15755d",
+        "tint": "#d7eae7"
       },
-      "badge": "#0c5f76",
+      "badge": "#12634f",
       "dark": {
-        "accent": "#22d3ee",
-        "text": "#22d3ee",
-        "text_large": "#22d3ee",
-        "tint": "#18353f"
+        "accent": "#73e8cb",
+        "text": "#73e8cb",
+        "text_large": "#73e8cb",
+        "tint": "#23383a"
       }
     },
     "M": {
       "label": "Mobile",
       "light": {
-        "accent": "#6d28d9",
-        "text": "#571faf",
-        "text_large": "#6d28d9",
-        "tint": "#e3dbf5"
+        "accent": "#321a93",
+        "text": "#321a93",
+        "text_large": "#321a93",
+        "tint": "#dbd9ec"
       },
-      "badge": "#6d28d9",
+      "badge": "#321a93",
       "dark": {
-        "accent": "#a78bfa",
-        "text": "#c1adfb",
-        "text_large": "#a78bfa",
-        "tint": "#2a2b40"
+        "accent": "#8a73e8",
+        "text": "#baacf1",
+        "text_large": "#9580ea",
+        "tint": "#26273e"
       }
     },
     "T": {

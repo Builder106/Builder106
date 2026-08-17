@@ -10,28 +10,28 @@
         100% { width: 220px; }
       }
       @keyframes c1 {
-        0%, 17%   { fill: #026ba1; }
-        20%, 100% { fill: #5b636d; }
+        0%, 17%   { fill: #1a5b93; }
+        20%, 100% { fill: #58616a; }
       }
       @keyframes c2 {
-        0%, 17%   { fill: #5b636d; }
-        20%, 37%  { fill: #b13b0b; }
-        40%, 100% { fill: #5b636d; }
+        0%, 17%   { fill: #58616a; }
+        20%, 37%  { fill: #931a89; }
+        40%, 100% { fill: #58616a; }
       }
       @keyframes c3 {
-        0%, 37%   { fill: #5b636d; }
-        40%, 57%  { fill: #b91c1c; }
-        60%, 100% { fill: #5b636d; }
+        0%, 37%   { fill: #58616a; }
+        40%, 57%  { fill: #931a1a; }
+        60%, 100% { fill: #58616a; }
       }
       @keyframes c4 {
-        0%, 57%   { fill: #5b636d; }
-        60%, 77%  { fill: #a34b08; }
-        80%, 100% { fill: #5b636d; }
+        0%, 57%   { fill: #58616a; }
+        60%, 77%  { fill: #7d6416; }
+        80%, 100% { fill: #58616a; }
       }
       @keyframes c5 {
-        0%, 77%   { fill: #5b636d; }
-        80%, 97%  { fill: #137538; }
-        100%      { fill: #5b636d; }
+        0%, 77%   { fill: #58616a; }
+        80%, 97%  { fill: #157715; }
+        100%      { fill: #58616a; }
       }
       .breath { animation: breathe 9s ease-in-out infinite; }
       .bar    { animation: draw 1.6s cubic-bezier(.2,.7,.2,1) .3s both; }
@@ -42,11 +42,11 @@
       .w5     { animation: c5 10s linear infinite; }
       @media (prefers-reduced-motion: reduce) {
         .breath, .bar, .w1, .w2, .w3, .w4, .w5 { animation: none; }
-        .w1 { fill: #026ba1; }
-        .w2 { fill: #b13b0b; }
-        .w3 { fill: #b91c1c; }
-        .w4 { fill: #a34b08; }
-        .w5 { fill: #137538; }
+        .w1 { fill: #1a5b93; }
+        .w2 { fill: #931a89; }
+        .w3 { fill: #931a1a; }
+        .w4 { fill: #7d6416; }
+        .w5 { fill: #157715; }
       }
     </style>
 
@@ -79,7 +79,7 @@
   <line x1="0" y1="599.5" x2="1200" y2="599.5" stroke="#656d76" stroke-width="1"/>
 
   <!-- Eyebrow -->
-  <text x="80" y="170" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" fill="#35393e" letter-spacing="3">@BUILDER106  |  CS @ WESLEYAN</text>
+  <text x="80" y="170" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" fill="#34383c" letter-spacing="3">@BUILDER106  |  CS @ WESLEYAN</text>
 
   <!-- Massive wordmark -->
   <text x="80" y="320" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', system-ui, sans-serif" font-size="98" font-weight="700" fill="#1f2328" letter-spacing="-3">Olayinka Vaughan</text>
@@ -89,17 +89,17 @@
 
   <!-- Discipline cycle -->
   <g font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', system-ui, sans-serif" font-size="32" font-weight="600">
-    <text class="w1" x="80"  y="425" fill="#5b636d">SWE</text>
+    <text class="w1" x="80"  y="425" fill="#58616a">SWE</text>
     <text         x="164" y="425" fill="#656d76">|</text>
-    <text class="w2" x="192" y="425" fill="#5b636d">AI/ML</text>
+    <text class="w2" x="192" y="425" fill="#58616a">AI/ML</text>
     <text         x="300" y="425" fill="#656d76">|</text>
-    <text class="w3" x="328" y="425" fill="#5b636d">Cybersec</text>
+    <text class="w3" x="328" y="425" fill="#58616a">Cybersec</text>
     <text         x="494" y="425" fill="#656d76">|</text>
-    <text class="w4" x="522" y="425" fill="#5b636d">Analyst</text>
+    <text class="w4" x="522" y="425" fill="#58616a">Analyst</text>
     <text         x="664" y="425" fill="#656d76">|</text>
-    <text class="w5" x="692" y="425" fill="#5b636d">Quant</text>
+    <text class="w5" x="692" y="425" fill="#58616a">Quant</text>
   </g>
 
   <!-- Footer -->
-  <text x="80" y="530" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#40464d">middletown, ct  |  yinkavaughan.me  |  building across five tracks</text>
+  <text x="80" y="530" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#3e444a">middletown, ct  |  yinkavaughan.me  |  building across five tracks</text>
 </svg>

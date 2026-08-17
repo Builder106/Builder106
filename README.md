@@ -28,19 +28,19 @@ Hi, I'm Olayinka — CS and Econ at Wesleyan. Everything I've built so far is be
 
 ## Repos
 
-![Quant](https://img.shields.io/badge/Quant-116630?style=flat-square) &nbsp; [ocaml_limit](https://github.com/Builder106/ocaml-limit) | [qforge](https://github.com/Builder106/qforge) | [EconOS](https://github.com/Builder106/econ-os)
+![Quant](https://img.shields.io/badge/Quant-126512?style=flat-square) &nbsp; [ocaml_limit](https://github.com/Builder106/ocaml-limit) | [qforge](https://github.com/Builder106/qforge) | [EconOS](https://github.com/Builder106/econ-os)
 
-![AI/ML](https://img.shields.io/badge/AI%2FML-9e350a?style=flat-square) &nbsp; [IMC_Prosperity](https://github.com/Builder106/imc-prosperity) | [enclave](https://github.com/Builder106/enclave) | [helm](https://github.com/Builder106/helm)
+![AI/ML](https://img.shields.io/badge/AI%2FML-931a89?style=flat-square) &nbsp; [IMC_Prosperity](https://github.com/Builder106/imc-prosperity) | [enclave](https://github.com/Builder106/enclave) | [helm](https://github.com/Builder106/helm)
 
-![Cybersec](https://img.shields.io/badge/Cybersec-ae1a1a?style=flat-square) &nbsp; [ClearHash](https://github.com/Builder106/clear-hash) | [halberd](https://github.com/Builder106/halberd) | [quarry](https://github.com/Builder106/quarry)
+![Cybersec](https://img.shields.io/badge/Cybersec-931a1a?style=flat-square) &nbsp; [ClearHash](https://github.com/Builder106/clear-hash) | [halberd](https://github.com/Builder106/halberd) | [quarry](https://github.com/Builder106/quarry)
 
-![Analyst](https://img.shields.io/badge/Analyst-904207?style=flat-square) &nbsp; [CapitolAlpha](https://github.com/Builder106/capitol-alpha) | [datafest-2026](https://github.com/Builder106/datafest-2026) | [LinuxBenchHub](https://github.com/Builder106/linux-bench-hub)
+![Analyst](https://img.shields.io/badge/Analyst-6c5613?style=flat-square) &nbsp; [CapitolAlpha](https://github.com/Builder106/capitol-alpha) | [datafest-2026](https://github.com/Builder106/datafest-2026) | [LinuxBenchHub](https://github.com/Builder106/linux-bench-hub)
 
-![HealthTech](https://img.shields.io/badge/HealthTech-0c5f76?style=flat-square) &nbsp; [MedCore](https://github.com/Builder106/med-core)
+![HealthTech](https://img.shields.io/badge/HealthTech-12634f?style=flat-square) &nbsp; [MedCore](https://github.com/Builder106/med-core)
 
-![SWE](https://img.shields.io/badge/SWE-015d8d?style=flat-square) &nbsp; [STAIJA](https://github.com/Builder106/staija) | [StudySprint](https://github.com/Builder106/study-sprint) | [MicroMatch](https://github.com/Builder106/micro-match) | [portfolio](https://github.com/Builder106/builder106.github.io)
+![SWE](https://img.shields.io/badge/SWE-1a5b93?style=flat-square) &nbsp; [STAIJA](https://github.com/Builder106/staija) | [StudySprint](https://github.com/Builder106/study-sprint) | [MicroMatch](https://github.com/Builder106/micro-match) | [portfolio](https://github.com/Builder106/builder106.github.io)
 
-![Mobile](https://img.shields.io/badge/Mobile-6d28d9?style=flat-square) &nbsp; [MetaHelper](https://github.com/Builder106/meta-helper) | [celestial-sanctum](https://github.com/Builder106/celestial-sanctum)
+![Mobile](https://img.shields.io/badge/Mobile-321a93?style=flat-square) &nbsp; [MetaHelper](https://github.com/Builder106/meta-helper) | [celestial-sanctum](https://github.com/Builder106/celestial-sanctum)
 
 ![Tooling](https://img.shields.io/badge/Tooling-525960?style=flat-square) &nbsp; [ascii-arcade](https://github.com/Builder106/ascii-arcade)
 
