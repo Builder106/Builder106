@@ -10,7 +10,7 @@
         100% { width: 220px; }
       }
       @keyframes c1 {
-        0%, 17%   { fill: #c084fc; }
+        0%, 17%   { fill: #38bdf8; }
         20%, 100% { fill: #6e7681; }
       }
       @keyframes c2 {
@@ -47,8 +47,8 @@
       <stop offset="100%" stop-color="#161b22"/>
     </linearGradient>
     <radialGradient id="glow" cx="0.75" cy="0.45" r="0.55">
-      <stop offset="0%"   stop-color="#a78bfa"/>
-      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+      <stop offset="0%"   stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
     </radialGradient>
     <pattern id="dots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
       <circle cx="1.4" cy="1.4" r="1.4" fill="#1f2630"/>
@@ -71,27 +71,27 @@
   <line x1="0" y1="599.5" x2="1200" y2="599.5" stroke="#262d36" stroke-width="1"/>
 
   <!-- Eyebrow -->
-  <text x="80" y="170" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" fill="#7d8590" letter-spacing="3">@BUILDER106  ·  CS @ WESLEYAN</text>
+  <text x="80" y="170" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" fill="#7d8590" letter-spacing="3">@BUILDER106  |  CS @ WESLEYAN</text>
 
   <!-- Massive wordmark -->
   <text x="80" y="320" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', system-ui, sans-serif" font-size="98" font-weight="700" fill="#e6edf3" letter-spacing="-3">Olayinka Vaughan</text>
 
   <!-- Animated accent bar (draws in on load) -->
-  <rect class="bar" x="80" y="348" width="220" height="4" rx="2" fill="#a78bfa"/>
+  <rect class="bar" x="80" y="348" width="220" height="4" rx="2" fill="#38bdf8"/>
 
   <!-- Discipline cycle — sequential highlight every 2s -->
   <g font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', system-ui, sans-serif" font-size="32" font-weight="600">
     <text class="w1" x="80"  y="425" fill="#6e7681">SWE</text>
-    <text         x="164" y="425" fill="#30363d">·</text>
+    <text         x="164" y="425" fill="#30363d">|</text>
     <text class="w2" x="192" y="425" fill="#6e7681">AI/ML</text>
-    <text         x="300" y="425" fill="#30363d">·</text>
+    <text         x="300" y="425" fill="#30363d">|</text>
     <text class="w3" x="328" y="425" fill="#6e7681">Cybersec</text>
-    <text         x="494" y="425" fill="#30363d">·</text>
+    <text         x="494" y="425" fill="#30363d">|</text>
     <text class="w4" x="522" y="425" fill="#6e7681">Analyst</text>
-    <text         x="664" y="425" fill="#30363d">·</text>
+    <text         x="664" y="425" fill="#30363d">|</text>
     <text class="w5" x="692" y="425" fill="#6e7681">Quant</text>
   </g>
 
   <!-- Footer -->
-  <text x="80" y="530" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#6e7681">middletown, ct  ·  yinkavaughan.me  ·  building across five tracks</text>
+  <text x="80" y="530" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#6e7681">middletown, ct  |  yinkavaughan.me  |  building across five tracks</text>
 </svg>

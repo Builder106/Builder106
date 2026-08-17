@@ -5,9 +5,9 @@
       <stop offset="100%" stop-color="#161b22"/>
     </linearGradient>
     <radialGradient id="glow" cx="0.8" cy="0.45" r="0.55">
-      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.18"/>
-      <stop offset="60%" stop-color="#a78bfa" stop-opacity="0.04"/>
-      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.18"/>
+      <stop offset="60%" stop-color="#38bdf8" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
     </radialGradient>
     <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
       <circle cx="1.2" cy="1.2" r="1.2" fill="#1f2630"/>
@@ -30,17 +30,17 @@
   </g>
 
   <!-- Eyebrow -->
-  <text x="80" y="130" font-family="ui-monospace, SFMono-Regular, Menlo, 'Liberation Mono', monospace" font-size="15" fill="#7d8590" letter-spacing="3">@BUILDER106  ·  CS @ WESLEYAN</text>
+  <text x="80" y="130" font-family="ui-monospace, SFMono-Regular, Menlo, 'Liberation Mono', monospace" font-size="15" fill="#7d8590" letter-spacing="3">@BUILDER106  |  CS @ WESLEYAN</text>
 
   <!-- Wordmark -->
   <text x="80" y="222" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', system-ui, sans-serif" font-size="72" font-weight="700" fill="#e6edf3" letter-spacing="-2">Olayinka Vaughan</text>
 
   <!-- Accent rule -->
-  <rect x="80" y="248" width="64" height="3" rx="1.5" fill="#a78bfa"/>
+  <rect x="80" y="248" width="64" height="3" rx="1.5" fill="#38bdf8"/>
 
   <!-- Tagline -->
-  <text x="80" y="298" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', system-ui, sans-serif" font-size="26" font-weight="500" fill="#c4b5fd">SWE · Cybersec · Analyst · Quant</text>
+  <text x="80" y="298" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', system-ui, sans-serif" font-size="26" font-weight="500" fill="#94a3b8">SWE | Cybersec | Analyst | Quant</text>
 
   <!-- Footer line -->
-  <text x="80" y="350" font-family="ui-monospace, SFMono-Regular, Menlo, 'Liberation Mono', monospace" font-size="13" fill="#6e7681">middletown, ct  ·  yinkavaughan.me</text>
+  <text x="80" y="350" font-family="ui-monospace, SFMono-Regular, Menlo, 'Liberation Mono', monospace" font-size="13" fill="#6e7681">middletown, ct  |  yinkavaughan.me</text>
 </svg>
