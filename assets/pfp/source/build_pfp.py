@@ -1,6 +1,6 @@
 import asyncio
-from io import BytesIO
 import os
+from io import BytesIO
 
 from PIL import Image
 from playwright.async_api import async_playwright
