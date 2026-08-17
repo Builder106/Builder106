@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Fast-forward Blender main from upstream
         env:
-          BLENDER_TOKEN: ${{ secrets.BLENDER_TOKEN }}
+          BLENDER_TOKEN: ${{ secrets.BLENDER_SYNC_PAT || secrets.BLENDER_TOKEN }}
         run: |
           echo "Setting up temporary Git workspace..."
           git init blender-sync && cd blender-sync
@@ -28,3 +28,5 @@ jobs:
 
           echo "Pushing latest commits to Builder106/blender:main..."
           git push fork FETCH_HEAD:refs/heads/main
+
+
