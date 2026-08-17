@@ -10,28 +10,28 @@
         100% { width: 220px; }
       }
       @keyframes c1 {
-        0%, 17%   { fill: #58c8f9; }
-        20%, 100% { fill: #bdc1c6; }
+        0%, 17%   { fill: #38bdf8; }
+        20%, 100% { fill: #939aa3; }
       }
       @keyframes c2 {
-        0%, 17%   { fill: #bdc1c6; }
-        20%, 37%  { fill: #fca761; }
-        40%, 100% { fill: #bdc1c6; }
+        0%, 17%   { fill: #939aa3; }
+        20%, 37%  { fill: #fb923c; }
+        40%, 100% { fill: #939aa3; }
       }
       @keyframes c3 {
-        0%, 37%   { fill: #bdc1c6; }
-        40%, 57%  { fill: #fa9f9f; }
-        60%, 100% { fill: #bdc1c6; }
+        0%, 37%   { fill: #939aa3; }
+        40%, 57%  { fill: #f87171; }
+        60%, 100% { fill: #939aa3; }
       }
       @keyframes c4 {
-        0%, 57%   { fill: #bdc1c6; }
+        0%, 57%   { fill: #939aa3; }
         60%, 77%  { fill: #fbbf24; }
-        80%, 100% { fill: #bdc1c6; }
+        80%, 100% { fill: #939aa3; }
       }
       @keyframes c5 {
-        0%, 77%   { fill: #bdc1c6; }
+        0%, 77%   { fill: #939aa3; }
         80%, 97%  { fill: #4ade80; }
-        100%      { fill: #bdc1c6; }
+        100%      { fill: #939aa3; }
       }
       .breath { animation: breathe 9s ease-in-out infinite; }
       .bar    { animation: draw 1.6s cubic-bezier(.2,.7,.2,1) .3s both; }
@@ -42,9 +42,9 @@
       .w5     { animation: c5 10s linear infinite; }
       @media (prefers-reduced-motion: reduce) {
         .breath, .bar, .w1, .w2, .w3, .w4, .w5 { animation: none; }
-        .w1 { fill: #58c8f9; }
-        .w2 { fill: #fca761; }
-        .w3 { fill: #fa9f9f; }
+        .w1 { fill: #38bdf8; }
+        .w2 { fill: #fb923c; }
+        .w3 { fill: #f87171; }
         .w4 { fill: #fbbf24; }
         .w5 { fill: #4ade80; }
       }
@@ -89,15 +89,15 @@
 
   <!-- Discipline cycle — sequential highlight every 2s -->
   <g font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', system-ui, sans-serif" font-size="32" font-weight="600">
-    <text class="w1" x="80"  y="425" fill="#bdc1c6">SWE</text>
+    <text class="w1" x="80"  y="425" fill="#939aa3">SWE</text>
     <text         x="164" y="425" fill="#7d8590">|</text>
-    <text class="w2" x="192" y="425" fill="#bdc1c6">AI/ML</text>
+    <text class="w2" x="192" y="425" fill="#939aa3">AI/ML</text>
     <text         x="300" y="425" fill="#7d8590">|</text>
-    <text class="w3" x="328" y="425" fill="#bdc1c6">Cybersec</text>
+    <text class="w3" x="328" y="425" fill="#939aa3">Cybersec</text>
     <text         x="494" y="425" fill="#7d8590">|</text>
-    <text class="w4" x="522" y="425" fill="#bdc1c6">Analyst</text>
+    <text class="w4" x="522" y="425" fill="#939aa3">Analyst</text>
     <text         x="664" y="425" fill="#7d8590">|</text>
-    <text class="w5" x="692" y="425" fill="#bdc1c6">Quant</text>
+    <text class="w5" x="692" y="425" fill="#939aa3">Quant</text>
   </g>
 
   <!-- Footer -->

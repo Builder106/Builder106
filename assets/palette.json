@@ -10,6 +10,8 @@
       "fg": "#1f2328",
       "muted": "#35393e",
       "faded": "#40464d",
+      "muted_large": "#5c636b",
+      "faded_large": "#5b636d",
       "rule": "#656d76",
       "border": "#656d76",
       "accent": "#0284c7",
@@ -24,6 +26,8 @@
       "fg": "#e6edf3",
       "muted": "#d1d4d8",
       "faded": "#bdc1c6",
+      "muted_large": "#939aa3",
+      "faded_large": "#939aa3",
       "rule": "#7d8590",
       "border": "#7d8590",
       "accent": "#38bdf8",
@@ -36,12 +40,14 @@
       "light": {
         "accent": "#0284c7",
         "text": "#014e76",
+        "text_large": "#026ba1",
         "tint": "#d4e8f3"
       },
       "badge": "#015d8d",
       "dark": {
         "accent": "#38bdf8",
         "text": "#58c8f9",
+        "text_large": "#38bdf8",
         "tint": "#1b3240"
       }
     },
@@ -50,12 +56,14 @@
       "light": {
         "accent": "#c2410c",
         "text": "#812b08",
+        "text_large": "#b13b0b",
         "tint": "#efded9"
       },
       "badge": "#9e350a",
       "dark": {
         "accent": "#fb923c",
         "text": "#fca761",
+        "text_large": "#fb923c",
         "tint": "#362c26"
       }
     },
@@ -64,12 +72,14 @@
       "light": {
         "accent": "#b91c1c",
         "text": "#8a1515",
+        "text_large": "#b91c1c",
         "tint": "#edd9db"
       },
       "badge": "#ae1a1a",
       "dark": {
         "accent": "#f87171",
         "text": "#fa9f9f",
+        "text_large": "#f87171",
         "tint": "#36272d"
       }
     },
@@ -78,12 +88,14 @@
       "light": {
         "accent": "#b45309",
         "text": "#773706",
+        "text_large": "#a34b08",
         "tint": "#ede1d8"
       },
       "badge": "#904207",
       "dark": {
         "accent": "#fbbf24",
         "text": "#fbbf24",
+        "text_large": "#fbbf24",
         "tint": "#363222"
       }
     },
@@ -92,12 +104,14 @@
       "light": {
         "accent": "#15803d",
         "text": "#0e5428",
+        "text_large": "#137538",
         "tint": "#d6e7e0"
       },
       "badge": "#116630",
       "dark": {
         "accent": "#4ade80",
         "text": "#4ade80",
+        "text_large": "#4ade80",
         "tint": "#1d362f"
       }
     },
@@ -106,12 +120,14 @@
       "light": {
         "accent": "#0e7490",
         "text": "#094f62",
+        "text_large": "#0d6e89",
         "tint": "#d6e6eb"
       },
       "badge": "#0c5f76",
       "dark": {
         "accent": "#22d3ee",
         "text": "#22d3ee",
+        "text_large": "#22d3ee",
         "tint": "#18353f"
       }
     },
@@ -120,12 +136,14 @@
       "light": {
         "accent": "#6d28d9",
         "text": "#571faf",
+        "text_large": "#6d28d9",
         "tint": "#e3dbf5"
       },
       "badge": "#6d28d9",
       "dark": {
         "accent": "#a78bfa",
         "text": "#c1adfb",
+        "text_large": "#a78bfa",
         "tint": "#2a2b40"
       }
     },
@@ -134,12 +152,14 @@
       "light": {
         "accent": "#656d76",
         "text": "#444950",
+        "text_large": "#5f676f",
         "tint": "#e2e5e8"
       },
       "badge": "#525960",
       "dark": {
         "accent": "#7d8590",
         "text": "#b0b5bb",
+        "text_large": "#89919b",
         "tint": "#242a31"
       }
     }

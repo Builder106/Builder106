@@ -20,7 +20,7 @@ Run from the assets/ directory:
 import json
 from pathlib import Path
 
-from a11y import AAA_TEXT, NON_TEXT, contrast, mix, solve
+from a11y import AAA_LARGE_TEXT, AAA_TEXT, NON_TEXT, contrast, mix, solve
 
 # --- hues, straight from the hero SVGs ---------------------------------------
 
@@ -60,6 +60,12 @@ TINT_RATIO = 0.14
 # `faded`; both clear AAA.
 MUTED_TARGET = 8.5
 
+# WCAG counts 24px+, or 18.66px+ bold, as large text, where AAA asks for 4.5:1
+# rather than 7:1. The hero sets its track labels at 32px semibold and the
+# banner its tagline at 26px, so those get the `_large` variants below. Using
+# the 7:1 colours there would be needlessly dark and would flatten the
+# distinction between the five tracks, which is the whole point of the cycle.
+
 # Shields.io renders badge text in white, so badge fills are solved against it.
 BADGE_TEXT = "#ffffff"
 
@@ -90,6 +96,8 @@ def build() -> dict:
         neutral["fg"] = solve(seed["fg"], text_backgrounds, AAA_TEXT, direction)
         neutral["muted"] = solve(seed["muted"], text_backgrounds, MUTED_TARGET, direction)
         neutral["faded"] = solve(seed["faded"], text_backgrounds, AAA_TEXT, direction)
+        neutral["muted_large"] = solve(seed["muted"], text_backgrounds, AAA_LARGE_TEXT, direction)
+        neutral["faded_large"] = solve(seed["faded"], text_backgrounds, AAA_LARGE_TEXT, direction)
         # Hairlines and separator glyphs delineate content, so they take the
         # 3:1 non-text bar rather than the decorative exemption.
         neutral["rule"] = solve(seed["muted"], text_backgrounds, NON_TEXT, direction)
@@ -106,6 +114,7 @@ def build() -> dict:
             entry[theme] = {
                 "accent": solve(track[theme], on, NON_TEXT, direction),
                 "text": solve(track[theme], on, AAA_TEXT, direction),
+                "text_large": solve(track[theme], on, AAA_LARGE_TEXT, direction),
                 "tint": tint,
             }
         # One badge colour per track — README badges render the same in both themes.
@@ -122,9 +131,10 @@ def report(palette: dict) -> None:
         print(f"{theme}: fg {n['fg']}  muted {n['muted']}  faded {n['faded']} (min {worst:.2f}:1)")
         for track in palette["tracks"].values():
             t = track[theme]
+            page = "#ffffff" if theme == "light" else "#0d1117"
             print(
-                f"  {track['label']:<11} accent {t['accent']}  text {t['text']} "
-                f"({contrast(t['text'], t['tint']):.2f}:1 on tint)  badge {track['badge']}"
+                f"  {track['label']:<11} accent {t['accent']}  text {t['text']}  "
+                f"large {t['text_large']} ({contrast(t['text_large'], page):.2f}:1 on page)"
             )
 
 

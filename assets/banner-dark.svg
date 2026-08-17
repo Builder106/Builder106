@@ -39,7 +39,7 @@
   <rect x="80" y="248" width="64" height="3" rx="1.5" fill="#38bdf8"/>
 
   <!-- Tagline -->
-  <text x="80" y="298" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', system-ui, sans-serif" font-size="26" font-weight="500" fill="#d1d4d8">SWE | Cybersec | Analyst | Quant</text>
+  <text x="80" y="298" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', system-ui, sans-serif" font-size="26" font-weight="500" fill="#939aa3">SWE | Cybersec | Analyst | Quant</text>
 
   <!-- Footer line -->
   <text x="80" y="350" font-family="ui-monospace, SFMono-Regular, Menlo, 'Liberation Mono', monospace" font-size="13" fill="#bdc1c6">middletown, ct  |  yinkavaughan.me</text>
