@@ -23,7 +23,6 @@ def run(cmd, cwd=None):
 
 def main():
     assets_dir = Path(__file__).parent
-    gen_dir = assets_dir / "generated"
     cells_dir = assets_dir / "cells"
 
     # Ensure output directories exist
