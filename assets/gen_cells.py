@@ -141,9 +141,7 @@ def write_svgs(out_dir):
 
 
 def print_table():
-    by_pos = {
-        (p, s): (num, symbol, project) for p, s, num, symbol, _, project, _ in CELLS
-    }
+    by_pos = {(p, s): (num, symbol, project) for p, s, num, symbol, _, project, _ in CELLS}
     print('<table cellspacing="2" cellpadding="0" border="0">')
     # Column header: group numbers
     print("  <tr>")
@@ -154,9 +152,7 @@ def print_table():
     for period in range(4):
         print("  <tr>")
         # Row header: period number
-        print(
-            f'    <td width="28" align="right" valign="middle"><sub><code>{period + 1}</code></sub></td>'
-        )
+        print(f'    <td width="28" align="right" valign="middle"><sub><code>{period + 1}</code></sub></td>')
         for slot in range(8):
             if (period, slot) in by_pos:
                 num, symbol, project = by_pos[(period, slot)]
@@ -190,10 +186,7 @@ def unified_svg(theme):
     CELL_W, CELL_H = 130, 130
     COL_STRIDE, ROW_STRIDE = 139, 145
 
-    by_pos = {
-        (p, s): (num, symbol, lang, project, disc)
-        for p, s, num, symbol, lang, project, disc in CELLS
-    }
+    by_pos = {(p, s): (num, symbol, lang, project, disc) for p, s, num, symbol, lang, project, disc in CELLS}
 
     out = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Periodic table of self — 20 projects, 10 languages, 8 disciplines">'
@@ -216,9 +209,7 @@ def unified_svg(theme):
     out.append(
         f'  <text x="52" y="82" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="14" fill="{faded}">20 projects  ·  10 languages  ·  8 disciplines  ·  arranged by language &amp; track</text>'
     )
-    out.append(
-        f'  <line x1="52" y1="102" x2="{W - 47}" y2="102" stroke="{chrome_rule}" stroke-width="1"/>'
-    )
+    out.append(f'  <line x1="52" y1="102" x2="{W - 47}" y2="102" stroke="{chrome_rule}" stroke-width="1"/>')
 
     # Group labels (1..8 across the top of cell columns)
     for g in range(8):
@@ -255,9 +246,7 @@ def unified_svg(theme):
             f'    <animate attributeName="opacity" from="0" to="1" begin="{reveal_delay:.2f}s" dur="0.55s" fill="freeze"/>'
         )
         # Spotlight halo — sits behind the card, glows during this discipline's slot
-        out.append(
-            f'    <rect x="-4" y="-4" width="138" height="138" rx="8" fill="{accent}" opacity="0">'
-        )
+        out.append(f'    <rect x="-4" y="-4" width="138" height="138" rx="8" fill="{accent}" opacity="0">')
         out.append(
             f'      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="16s" begin="{slot * 2}s" repeatCount="indefinite"/>'
         )
@@ -267,9 +256,7 @@ def unified_svg(theme):
             f'    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="{cardbg}" stroke="{border}" stroke-width="1"/>'
         )
         # Gradient overlay with brightness wave
-        out.append(
-            f'    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-{disc})">'
-        )
+        out.append(f'    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-{disc})">')
         out.append(
             f'      <animate attributeName="opacity" values="0.4;1;1;0.4;0.4" keyTimes="0;0.1;0.2;0.3;1" dur="5s" begin="{wave_offset:.2f}s" repeatCount="indefinite"/>'
         )
@@ -324,9 +311,7 @@ def unified_svg(theme):
         out.append(
             f'    <rect x="0" y="0" width="120" height="26" rx="3" fill="{chip_bg}" stroke="{border}" stroke-width="1"/>'
         )
-        out.append(
-            f'    <rect x="0" y="0" width="120" height="3" rx="1.5" fill="{accent}"/>'
-        )
+        out.append(f'    <rect x="0" y="0" width="120" height="3" rx="1.5" fill="{accent}"/>')
         out.append(
             f'    <text x="60" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="{muted}" text-anchor="middle">{name}</text>'
         )

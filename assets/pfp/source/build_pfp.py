@@ -6,15 +6,17 @@ from PIL import Image
 from playwright.async_api import async_playwright
 
 
-async def create_apng(size: int, output_name: str):
+def load_svg():
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    svg_path = os.path.join(script_dir, "quant-final.svg")
+    with open(svg_path) as f:
+        return script_dir, f.read()
+
+
+async def create_apng(size: int, output_name: str, script_dir: str, svg_content: str):
     async with async_playwright() as p:
         browser = await p.chromium.launch()
         page = await browser.new_page(viewport={"width": size, "height": size})
-
-        script_dir = os.path.dirname(os.path.abspath(__file__))
-        svg_path = os.path.join(script_dir, "quant-final.svg")
-        with open(svg_path) as f:
-            svg_content = f.read()
 
         html_content = f"""
         <!DOCTYPE html>
@@ -44,9 +46,7 @@ async def create_apng(size: int, output_name: str):
         print(f"Capturing {size}x{size} frames...")
         for i in range(total_frames):
             current_time = (i / fps) * 1000
-            await page.evaluate(
-                f"document.getAnimations().forEach(a => a.currentTime = {current_time})"
-            )
+            await page.evaluate(f"document.getAnimations().forEach(a => a.currentTime = {current_time})")
 
             screenshot_bytes = await page.screenshot()
             frames.append(Image.open(BytesIO(screenshot_bytes)).convert("RGB"))
@@ -66,18 +66,18 @@ async def create_apng(size: int, output_name: str):
             loop=0,
         )
 
-        print(
-            f"Success! {output_file} is a solid {size}x{size} block. No clipping possible."
-        )
+        print(f"Success! {output_file} is a solid {size}x{size} block. No clipping possible.")
         await browser.close()
 
 
 async def main():
+    script_dir, svg_content = load_svg()
+
     # 256x256 for Discord avatar (500KB limit)
-    await create_apng(256, "discord-perfect.png")
+    await create_apng(256, "discord-perfect.png", script_dir, svg_content)
 
     # 500x500 for high-res use
-    await create_apng(500, "discord-perfect-500x500.png")
+    await create_apng(500, "discord-perfect-500x500.png", script_dir, svg_content)
 
 
 if __name__ == "__main__":

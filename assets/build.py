@@ -14,7 +14,7 @@ from pathlib import Path
 def run(cmd, cwd=None):
     """Run a command and return success."""
     print(f"  $ {' '.join(cmd)}")
-    result = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True)
+    result = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True, check=False)
     if result.stdout:
         print(result.stdout.strip())
     if result.stderr:
