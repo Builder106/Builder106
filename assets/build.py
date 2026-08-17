@@ -47,7 +47,7 @@ def main():
     if ok:
         print("\n✓ Build complete!")
         print(f"  Generated in {assets_dir}:")
-        print(f"    table-dark.svg, table-light.svg")
+        print("    table-dark.svg, table-light.svg")
         print(f"    cells/: {len(list(cells_dir.glob('*.svg')))} SVGs")
     else:
         print("\n✗ Build failed", file=sys.stderr)

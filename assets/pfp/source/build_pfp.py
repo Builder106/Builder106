@@ -1,6 +1,7 @@
 import asyncio
 from io import BytesIO
 import os
+
 from PIL import Image
 from playwright.async_api import async_playwright
 
@@ -75,4 +76,5 @@ async def main():
     await create_apng(500, "discord-perfect-500x500.png")
 
 
-asyncio.run(main())
+if __name__ == "__main__":
+    asyncio.run(main())
