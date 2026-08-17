@@ -1,18 +1,18 @@
 import asyncio
+from io import BytesIO
 import os
 from PIL import Image
 from playwright.async_api import async_playwright
-from io import BytesIO
 
 
 async def create_apng(size: int, output_name: str):
     async with async_playwright() as p:
         browser = await p.chromium.launch()
-        page = await browser.new_page(viewport={'width': size, 'height': size})
+        page = await browser.new_page(viewport={"width": size, "height": size})
 
         script_dir = os.path.dirname(os.path.abspath(__file__))
-        svg_path = os.path.join(script_dir, 'quant-final.svg')
-        with open(svg_path, 'r') as f:
+        svg_path = os.path.join(script_dir, "quant-final.svg")
+        with open(svg_path) as f:
             svg_content = f.read()
 
         html_content = f"""

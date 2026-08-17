@@ -160,7 +160,7 @@ def print_table():
                 url = f"https://github.com/Builder106/{repo}"
                 print(f'    <td width="132" align="center"><a href="{url}" title="{project}"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cells/{stem}-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cells/{stem}-light.svg"><img alt="{num:02d} {symbol} {project}" src="assets/cells/{stem}-dark.svg" width="130" height="130"></picture></a></td>')
             else:
-                print(f'    <td width="132"></td>')
+                print('    <td width="132"></td>')
         print('  </tr>')
     print('</table>')
 
@@ -170,9 +170,6 @@ def unified_svg(theme):
     Click-through per cell isn't possible when img-served; flat link list below
     the SVG in the README provides navigation."""
     is_dark = theme == "dark"
-    bg_start  = "#0b0f15" if is_dark else "#ffffff"
-    bg_end    = "#161b22" if is_dark else "#f0f3f6"
-    dots_fill = "#1f2630" if is_dark else "#e6eaef"
     fg        = "#e6edf3" if is_dark else "#1f2328"
     muted     = "#7d8590" if is_dark else "#656d76"
     faded     = "#6e7681" if is_dark else "#8c959f"
@@ -230,32 +227,32 @@ def unified_svg(theme):
         is_now = project == NOW_PROJECT
 
         out.append(f'  <g opacity="1" transform="translate({x}, {y})">')
-        out.append(f'    <set attributeName="opacity" to="0" begin="0s"/>')
+        out.append('    <set attributeName="opacity" to="0" begin="0s"/>')
         out.append(f'    <animate attributeName="opacity" from="0" to="1" begin="{reveal_delay:.2f}s" dur="0.55s" fill="freeze"/>')
         # Spotlight halo — sits behind the card, glows during this discipline's slot
         out.append(f'    <rect x="-4" y="-4" width="138" height="138" rx="8" fill="{accent}" opacity="0">')
         out.append(f'      <animate attributeName="opacity" values="0;0.55;0.55;0;0" keyTimes="0;0.04;0.1;0.14;1" dur="16s" begin="{slot * 2}s" repeatCount="indefinite"/>')
-        out.append(f'    </rect>')
+        out.append('    </rect>')
         # Card
         out.append(f'    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="{cardbg}" stroke="{border}" stroke-width="1"/>')
         # Gradient overlay with brightness wave
         out.append(f'    <rect x="0.5" y="0.5" width="129" height="129" rx="4" fill="url(#grad-{disc})">')
         out.append(f'      <animate attributeName="opacity" values="0.4;1;1;0.4;0.4" keyTimes="0;0.1;0.2;0.3;1" dur="5s" begin="{wave_offset:.2f}s" repeatCount="indefinite"/>')
-        out.append(f'    </rect>')
+        out.append('    </rect>')
         disc_label = DISC[disc][0]
         disc_x = 106 if is_now else 120
         out.append(f'    <rect x="0.5" y="0.5" width="129" height="3" rx="1.5" fill="{accent}"><animate attributeName="opacity" values="1;0.45;1" dur="4s" begin="{pulse_offset:.2f}s" repeatCount="indefinite"/></rect>')
         out.append(f'    <text x="10" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="500" fill="{accent}">{num:02d}</text>')
         out.append(f'    <text x="{disc_x}" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="600" fill="{accent}" text-anchor="end">{disc_label}</text>')
         if is_now:
-            out.append(f'    <g transform="translate(118, 14)">')
+            out.append('    <g transform="translate(118, 14)">')
             out.append(f'      <circle r="4" fill="{accent}"><animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite"/></circle>')
             out.append(f'      <circle r="4" fill="{accent}" opacity="0.4"><animate attributeName="r" values="4;9;4" dur="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.5;0;0.5" dur="1.6s" repeatCount="indefinite"/></circle>')
-            out.append(f'    </g>')
+            out.append('    </g>')
         out.append(f'    <text x="65" y="76" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="50" font-weight="700" fill="{fg}" text-anchor="middle" letter-spacing="-1">{symbol}</text>')
         out.append(f'    <text x="65" y="101" font-family="-apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="{cell_text_muted}" text-anchor="middle">{lang}</text>')
         out.append(f'    <text x="65" y="120" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="{cell_text_faded}" text-anchor="middle">{project}</text>')
-        out.append(f'  </g>')
+        out.append('  </g>')
 
     # Legend area
     legend_y = MARGIN_TOP + 4 * ROW_STRIDE + 12
@@ -272,7 +269,7 @@ def unified_svg(theme):
         out.append(f'    <rect x="0" y="0" width="120" height="26" rx="3" fill="{chip_bg}" stroke="{border}" stroke-width="1"/>')
         out.append(f'    <rect x="0" y="0" width="120" height="3" rx="1.5" fill="{accent}"/>')
         out.append(f'    <text x="60" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="{muted}" text-anchor="middle">{name}</text>')
-        out.append(f'  </g>')
+        out.append('  </g>')
         chip_x += 132
 
     sym_y = legend_y + 80
@@ -289,7 +286,7 @@ def unified_svg(theme):
             out.append(f'  <g transform="translate({cx}, {cy})">')
             out.append(f'    <rect x="0" y="0" width="160" height="30" rx="4" fill="{sym_chip_bg}" stroke="{border}" stroke-width="1"/>')
             out.append(f'    <text x="80" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" text-anchor="middle"><tspan font-weight="700" font-size="14" fill="{fg}">{sym}</tspan> &#160;<tspan fill="{muted}">{name}</tspan></text>')
-            out.append(f'  </g>')
+            out.append('  </g>')
             cx += 175
 
     out.append('</svg>')

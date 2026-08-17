@@ -1,7 +1,7 @@
 # Ruff configuration for Builder106 Python scripts
 
 target-version = "py312"
-line-length = 100
+line-length = 120
 
 [lint]
 select = [
@@ -13,7 +13,10 @@ select = [
     "B",   # flake8-bugbear
     "RUF", # Ruff-specific rules
 ]
-ignore = []
+ignore = [
+    "E501",   # line length (long embedded SVG strings)
+    "RUF003", # ambiguous character in comments
+]
 
 [format]
 quote-style = "double"
