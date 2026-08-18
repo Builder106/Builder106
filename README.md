@@ -14,7 +14,7 @@
 [![Devpost](https://img.shields.io/badge/Devpost-olayinkav-003e54?logo=devpost&logoColor=white)](https://devpost.com/olayinkav)
 [![Email](https://img.shields.io/badge/email-vaughanolayinka-525960?logo=gmail&logoColor=white)](mailto:vaughanolayinka@gmail.com)
 
-Hi, I'm Olayinka — CS and Econ at Wesleyan. Everything I've built so far is below, arranged by language and discipline.
+Hi, I'm Olayinka, studying CS and Econ at Wesleyan. Below is an overview of my software engineering, machine learning, and quantitative systems projects.
 
 ## The Elements
 
@@ -46,12 +46,12 @@ Hi, I'm Olayinka — CS and Econ at Wesleyan. Everything I've built so far is be
 
 ## Flagships
 
-- **[ocaml_limit](https://github.com/Builder106/ocaml-limit)** | ![OCaml](https://img.shields.io/badge/OCaml-92400c?style=flat-square&logo=ocaml&logoColor=white) — High-speed stock trading engine that matches buy and sell orders in under a microsecond, paired with a live financial dashboard. → [demo](https://ocaml-lob.vercel.app/)
-- **[MedCore](https://github.com/Builder106/med-core)** | ![React](https://img.shields.io/badge/React-03617b?style=flat-square&logo=react&logoColor=white) — Digital medical records platform for African clinics, using AI to help prioritize high-risk patients. **Winner, Yale Africa Innovation Symposium IV**. → [demo](https://medcore-health.vercel.app)
-- **[ClearHash](https://github.com/Builder106/clear-hash)** | ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) — Software security scanner that inspects code byte-by-byte to catch tampering and malicious backdoors before apps are released. → [demo](https://clearhash.vercel.app/)
-- **[CapitolAlpha](https://github.com/Builder106/capitol-alpha)** | ![Python](https://img.shields.io/badge/Python-2b5b84?style=flat-square&logo=python&logoColor=white) — Financial investigation analyzing 16,000+ Congressional stock trades (2020–2024), revealing politicians beat the broader market by **+2.58% annually**. → [demo](https://capitolalpha.vercel.app/)
-- **[datafest-2026](https://github.com/Builder106/datafest-2026)** | ![R](https://img.shields.io/badge/R-20599f?style=flat-square&logo=r&logoColor=white) — Healthcare study of ~1M patients discovering that lack of reliable transportation leads to **3× more emergency room visits**. → [demo](https://datafest-2026.vercel.app/)
-- **[LinuxBenchHub](https://github.com/Builder106/linux-bench-hub)** | ![Rails](https://img.shields.io/badge/Rails-b50000?style=flat-square&logo=rubyonrails&logoColor=white) — Automated speed-test platform comparing major Linux systems side-by-side on identical hardware, with live remote screen viewing. → [demo](https://linuxbenchhub.vercel.app/)
+- **[ocaml_limit](https://github.com/Builder106/ocaml-limit)** | ![OCaml](https://img.shields.io/badge/OCaml-92400c?style=flat-square&logo=ocaml&logoColor=white): High-speed stock trading engine that matches buy and sell orders in under a microsecond, paired with a live financial dashboard. → [demo](https://ocaml-lob.vercel.app/)
+- **[MedCore](https://github.com/Builder106/med-core)** | ![React](https://img.shields.io/badge/React-03617b?style=flat-square&logo=react&logoColor=white): Digital medical records platform for African clinics, using AI to help prioritize high-risk patients. **Winner, Yale Africa Innovation Symposium IV**. → [demo](https://medcore-health.vercel.app)
+- **[ClearHash](https://github.com/Builder106/clear-hash)** | ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white): Software security scanner that inspects code byte-by-byte to catch tampering and malicious backdoors before apps are released. → [demo](https://clearhash.vercel.app/)
+- **[CapitolAlpha](https://github.com/Builder106/capitol-alpha)** | ![Python](https://img.shields.io/badge/Python-2b5b84?style=flat-square&logo=python&logoColor=white): Financial investigation analyzing 16,000+ Congressional stock trades (2020 to 2024), revealing politicians beat the broader market by **+2.58% annually**. → [demo](https://capitolalpha.vercel.app/)
+- **[datafest-2026](https://github.com/Builder106/datafest-2026)** | ![R](https://img.shields.io/badge/R-20599f?style=flat-square&logo=r&logoColor=white): Healthcare study of ~1M patients discovering that lack of reliable transportation leads to **3x more emergency room visits**. → [demo](https://datafest-2026.vercel.app/)
+- **[LinuxBenchHub](https://github.com/Builder106/linux-bench-hub)** | ![Rails](https://img.shields.io/badge/Rails-b50000?style=flat-square&logo=rubyonrails&logoColor=white): Automated speed-test platform comparing major Linux systems side-by-side on identical hardware. → [demo](https://linuxbenchhub.vercel.app/)
 
 ## Stack
 
