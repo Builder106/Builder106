@@ -6,8 +6,6 @@
 
 # Olayinka Vaughan
 
-**SWE, AI/ML, Cybersec, Analyst, Quant.** Middletown, CT. [yinkavaughan.me](https://yinkavaughan.me/)
-
 [![Wesleyan](https://img.shields.io/badge/Wesleyan_University-CS-b3002d)](https://www.wesleyan.edu/)
 [![Portfolio](https://img.shields.io/badge/portfolio-yinkavaughan.me-015d8d)](https://yinkavaughan.me/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Yinka_Vaughan-0958a7?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yinka-vaughan)
