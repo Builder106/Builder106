@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="assets/hero-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
-  <img alt="" src="assets/hero-dark.svg">
+  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/hero-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/hero-light.svg">
+  <img alt="" src="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/hero-dark.svg">
 </picture>
 
 # Olayinka Vaughan
@@ -18,9 +18,9 @@ Hi, I'm Olayinka, studying CS and Econ at Wesleyan. Below is an overview of my s
 
 <a href="https://github.com/Builder106?tab=repositories">
   <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="assets/table-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/table-light.svg">
-    <img alt="Periodic-table layout of 20 projects, grouped by language and discipline. The same projects are listed as links under Repos below." src="assets/table-dark.svg" width="1200" loading="lazy">
+    <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/table-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/table-light.svg">
+    <img alt="Periodic-table layout of 20 projects, grouped by language and discipline. The same projects are listed as links under Repos below." src="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/table-dark.svg" width="1200" loading="lazy">
   </picture>
 </a>
 
