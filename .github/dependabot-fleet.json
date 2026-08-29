@@ -1,0 +1,244 @@
+{
+  "schema": 1,
+  "defaults": {
+    "schedule": {
+      "interval": "weekly"
+    },
+    "github-actions": {
+      "group": {
+        "name": "actions",
+        "patterns": [
+          "*"
+        ]
+      }
+    },
+    "auto-merge": {
+      "update-types": [
+        "version-update:semver-patch",
+        "version-update:semver-minor"
+      ],
+      "fetch-metadata-sha": "25dd0e34f4fe68f24cc83900b1fe3fe149efef98"
+    }
+  },
+  "repositories": {
+    "ascii-arcade": {
+      "add": [
+        {
+          "package-ecosystem": "npm",
+          "directory": "/e2e"
+        },
+        {
+          "package-ecosystem": "swift",
+          "directory": "/Server"
+        },
+        {
+          "package-ecosystem": "gradle",
+          "directory": "/shells/android"
+        }
+      ]
+    },
+    "capitol-alpha": {
+      "replace": [
+        {
+          "from": {
+            "package-ecosystem": "pip",
+            "directory": "/"
+          },
+          "to": {
+            "package-ecosystem": "uv",
+            "directory": "/"
+          }
+        }
+      ]
+    },
+    "code-wes-projects": {
+      "add": [
+        {
+          "package-ecosystem": "npm",
+          "directory": "/"
+        },
+        {
+          "package-ecosystem": "pip",
+          "directory": "/apps/piano-tool/backend"
+        },
+        {
+          "package-ecosystem": "pub",
+          "directory": "/apps/piano-tool"
+        },
+        {
+          "package-ecosystem": "gradle",
+          "directory": "/apps/piano-tool/android"
+        }
+      ]
+    },
+    "econ-os": {
+      "replace": [
+        {
+          "from": {
+            "package-ecosystem": "pip",
+            "directory": "/"
+          },
+          "to": {
+            "package-ecosystem": "uv",
+            "directory": "/"
+          }
+        }
+      ],
+      "add": [
+        {
+          "package-ecosystem": "docker",
+          "directory": "/"
+        },
+        {
+          "package-ecosystem": "docker-compose",
+          "directory": "/deploy"
+        }
+      ]
+    },
+    "clear-hash": {
+      "add": [
+        {
+          "package-ecosystem": "docker",
+          "directory": "/"
+        }
+      ]
+    },
+    "imc-prosperity": {
+      "add": [
+        {
+          "package-ecosystem": "npm",
+          "directory": "/e2e"
+        }
+      ],
+      "exclude": [
+        {
+          "package-ecosystem": "uv",
+          "directory": "/",
+          "reason": "Deploy-critical Python dependency resolution remains intentionally manual."
+        }
+      ]
+    },
+    "lease-lookout": {
+      "add": [
+        {
+          "package-ecosystem": "uv",
+          "directory": "/"
+        }
+      ]
+    },
+    "linux-bench-hub": {
+      "add": [
+        {
+          "package-ecosystem": "bundler",
+          "directory": "/website"
+        },
+        {
+          "package-ecosystem": "docker",
+          "directory": "/website"
+        }
+      ]
+    },
+    "med-core": {
+      "add": [
+        {
+          "package-ecosystem": "docker-compose",
+          "directory": "/"
+        }
+      ]
+    },
+    "meta-helper": {
+      "add": [
+        {
+          "package-ecosystem": "gradle",
+          "directory": "/"
+        },
+        {
+          "package-ecosystem": "docker",
+          "directory": "/backend"
+        }
+      ]
+    },
+    "micro-match": {
+      "replace": [
+        {
+          "from": {
+            "package-ecosystem": "npm",
+            "directory": "/"
+          },
+          "to": {
+            "package-ecosystem": "bun",
+            "directory": "/"
+          }
+        }
+      ]
+    },
+    "ocaml-limit": {
+      "add": [
+        {
+          "package-ecosystem": "npm",
+          "directory": "/e2e"
+        },
+        {
+          "package-ecosystem": "docker",
+          "directory": "/"
+        }
+      ]
+    },
+    "profile-assets": {
+      "add": [
+        {
+          "package-ecosystem": "uv",
+          "directory": "/"
+        },
+        {
+          "package-ecosystem": "pip",
+          "directory": "/assets/pfp/source"
+        }
+      ]
+    },
+    "quarry": {
+      "replace": [
+        {
+          "from": {
+            "package-ecosystem": "npm",
+            "directory": "/bot"
+          },
+          "to": {
+            "package-ecosystem": "bun",
+            "directory": "/bot"
+          }
+        },
+        {
+          "from": {
+            "package-ecosystem": "npm",
+            "directory": "/site"
+          },
+          "to": {
+            "package-ecosystem": "bun",
+            "directory": "/site"
+          }
+        }
+      ]
+    },
+    "staija": {
+      "add": [
+        {
+          "package-ecosystem": "npm",
+          "directory": "/functions"
+        }
+      ]
+    },
+    "study-sprint": {
+      "add": [
+        {
+          "package-ecosystem": "deno",
+          "directory": "/"
+        },
+        {
+          "package-ecosystem": "deno",
+          "directory": "/supabase/functions"
+        }
+      ]
+    }
+  }
+}
