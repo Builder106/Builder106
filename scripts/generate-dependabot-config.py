@@ -115,7 +115,7 @@ def render_entry(entry: dict, policy: dict, *, actions: bool = False) -> str:
         lines.extend(
             [
                 "    groups:",
-                f'      {group["name"]}:',
+                f"      {group['name']}:",
                 "        patterns:",
             ]
         )
@@ -170,7 +170,10 @@ jobs:
 def additions_for(repo_name: str, repo_dir: Path, policy: dict) -> list[dict]:
     repo_policy = policy.get("repositories", {}).get(repo_name, {})
     additions = list(repo_policy.get("add", []))
-    if policy["defaults"].get("github-actions") and (repo_dir / ".github/workflows").is_dir():
+    if (
+        policy["defaults"].get("github-actions")
+        and (repo_dir / ".github/workflows").is_dir()
+    ):
         additions.append({"package-ecosystem": "github-actions", "directory": "/"})
     return additions
 
@@ -204,14 +207,18 @@ def render_dependabot(
     if not missing:
         return migrated
     base = migrated.rstrip() + "\n\n"
-    return base + "\n\n".join(
-        render_entry(
-            entry,
-            policy,
-            actions=entry["package-ecosystem"] == "github-actions",
+    return (
+        base
+        + "\n\n".join(
+            render_entry(
+                entry,
+                policy,
+                actions=entry["package-ecosystem"] == "github-actions",
+            )
+            for entry in missing
         )
-        for entry in missing
-    ) + "\n"
+        + "\n"
+    )
 
 
 def write_or_check(path: Path, expected: str, check: bool) -> bool:
