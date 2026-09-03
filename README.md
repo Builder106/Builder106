@@ -16,13 +16,15 @@ Hi, I'm Olayinka, studying CS and Econ at Wesleyan. Below is an overview of my s
 
 ## GitHub Stats
 
+A compact snapshot of the activity and languages behind these projects:
+
 <p align="center">
-  <img src="https://github-readme-stats-fast.vercel.app/api?username=Builder106&show_icons=true&theme=radical" alt="GitHub stats for Builder106" height="180">
-  <img src="https://github-readme-stats-fast.vercel.app/api/streak?username=Builder106&theme=radical" alt="GitHub contribution streak for Builder106" height="180">
+  <a href="https://github.com/Builder106"><img src="https://github-readme-stats-fast.vercel.app/api?username=Builder106&show_icons=true&theme=radical" alt="GitHub stats for Builder106" width="49%"></a>
+  <a href="https://github.com/Builder106"><img src="https://github-readme-stats-fast.vercel.app/api/streak?username=Builder106&theme=radical" alt="GitHub contribution streak for Builder106" width="49%"></a>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Builder106&layout=compact&theme=radical" alt="Most-used programming languages for Builder106" height="180">
+  <a href="https://github.com/Builder106"><img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Builder106&layout=compact&theme=radical" alt="Most-used programming languages for Builder106" width="49%"></a>
 </p>
 
 ## The Elements
