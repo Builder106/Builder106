@@ -57,80 +57,17 @@ A compact snapshot of the activity and languages behind these projects:
 
 ## Flagships
 
-Six builds where systems, data, and product work meet:
+Six projects, three recurring questions: how fast, who does it serve, and what can be trusted?
 
-<table cellspacing="12" cellpadding="0" border="0">
-  <tr>
-    <td width="33%" valign="top" align="center">
-      <a href="https://github.com/Builder106/ocaml-limit">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/ocaml-limit-dark.svg">
-          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/ocaml-limit-light.svg">
-          <img src="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/ocaml-limit-dark.svg" alt="ocaml_limit flagship card: Quant project in OCaml, a high-speed stock trading engine with a live financial dashboard and sub-microsecond matching." width="100%">
-        </picture>
-      </a>
-      <br>
-      <sub><a href="https://github.com/Builder106/ocaml-limit">Repository</a> | <a href="https://ocaml-lob.vercel.app/">Live demo</a></sub>
-    </td>
-    <td width="33%" valign="top" align="center">
-      <a href="https://github.com/Builder106/med-core">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/med-core-dark.svg">
-          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/med-core-light.svg">
-          <img src="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/med-core-dark.svg" alt="MedCore flagship card: HealthTech project in React, an AI-assisted digital medical records platform for African clinics and winner of the Yale Africa Innovation Symposium IV." width="100%">
-        </picture>
-      </a>
-      <br>
-      <sub><a href="https://github.com/Builder106/med-core">Repository</a> | <a href="https://medcore-health.vercel.app">Live demo</a></sub>
-    </td>
-    <td width="33%" valign="top" align="center">
-      <a href="https://github.com/Builder106/clear-hash">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/clear-hash-dark.svg">
-          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/clear-hash-light.svg">
-          <img src="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/clear-hash-dark.svg" alt="ClearHash flagship card: Cybersec project in Rust, a byte-level software security scanner that catches tampering and malicious backdoors before release." width="100%">
-        </picture>
-      </a>
-      <br>
-      <sub><a href="https://github.com/Builder106/clear-hash">Repository</a> | <a href="https://clearhash.vercel.app/">Live demo</a></sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="33%" valign="top" align="center">
-      <a href="https://github.com/Builder106/capitol-alpha">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/capitol-alpha-dark.svg">
-          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/capitol-alpha-light.svg">
-          <img src="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/capitol-alpha-dark.svg" alt="CapitolAlpha flagship card: Analyst project in Python analyzing more than 16,000 Congressional stock trades from 2020 to 2024, with a 2.58 percent annual market edge." width="100%">
-        </picture>
-      </a>
-      <br>
-      <sub><a href="https://github.com/Builder106/capitol-alpha">Repository</a> | <a href="https://capitolalpha.vercel.app/">Live demo</a></sub>
-    </td>
-    <td width="33%" valign="top" align="center">
-      <a href="https://github.com/Builder106/datafest-2026">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/datafest-2026-dark.svg">
-          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/datafest-2026-light.svg">
-          <img src="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/datafest-2026-dark.svg" alt="datafest-2026 flagship card: Analyst project in R studying approximately 1 million patients and finding that unreliable transportation leads to three times more emergency room visits." width="100%">
-        </picture>
-      </a>
-      <br>
-      <sub><a href="https://github.com/Builder106/datafest-2026">Repository</a> | <a href="https://datafest-2026.vercel.app/">Live demo</a></sub>
-    </td>
-    <td width="33%" valign="top" align="center">
-      <a href="https://github.com/Builder106/linux-bench-hub">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/linux-bench-hub-dark.svg">
-          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/linux-bench-hub-light.svg">
-          <img src="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/linux-bench-hub-dark.svg" alt="LinuxBenchHub flagship card: Analyst project in Rails comparing major Linux systems side by side with automated speed tests on identical hardware." width="100%">
-        </picture>
-      </a>
-      <br>
-      <sub><a href="https://github.com/Builder106/linux-bench-hub">Repository</a> | <a href="https://linuxbenchhub.vercel.app/">Live demo</a></sub>
-    </td>
-  </tr>
-</table>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/flagships-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/flagships-light.svg">
+  <img src="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/flagships-dark.svg" alt="Visual index of six projects grouped into Performance, Health and evidence, and Security and markets." width="1200" height="760" loading="lazy">
+</picture>
+
+- **Performance** — [ocaml_limit](https://github.com/Builder106/ocaml-limit) ([demo](https://ocaml-lob.vercel.app/)) | [LinuxBenchHub](https://github.com/Builder106/linux-bench-hub) ([demo](https://linuxbenchhub.vercel.app/))
+- **Health and evidence** — [MedCore](https://github.com/Builder106/med-core) ([demo](https://medcore-health.vercel.app)) | [datafest-2026](https://github.com/Builder106/datafest-2026) ([demo](https://datafest-2026.vercel.app/))
+- **Security and markets** — [ClearHash](https://github.com/Builder106/clear-hash) ([demo](https://clearhash.vercel.app/)) | [CapitolAlpha](https://github.com/Builder106/capitol-alpha) ([demo](https://capitolalpha.vercel.app/))
 
 ## Stack
 
