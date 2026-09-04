@@ -55,12 +55,6 @@ Hi, I'm Olayinka, studying CS and Econ at Wesleyan. Below is an overview of my s
 
 ## Flagships
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/flagships-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/flagships-light.svg">
-  <img src="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/flagships-dark.svg" alt="Visual index of six projects grouped into Performance, Health and evidence, and Security and markets." width="1200" height="760" loading="lazy">
-</picture>
-
 - **Performance** — [ocaml_limit](https://github.com/Builder106/ocaml-limit) ([demo](https://ocaml-lob.vercel.app/)) | [LinuxBenchHub](https://github.com/Builder106/linux-bench-hub) ([demo](https://linuxbenchhub.vercel.app/))
 - **Health and evidence** — [MedCore](https://github.com/Builder106/med-core) ([demo](https://medcore-health.vercel.app)) | [datafest-2026](https://github.com/Builder106/datafest-2026) ([demo](https://datafest-2026.vercel.app/))
 - **Security and markets** — [ClearHash](https://github.com/Builder106/clear-hash) ([demo](https://clearhash.vercel.app/)) | [CapitolAlpha](https://github.com/Builder106/capitol-alpha) ([demo](https://capitolalpha.vercel.app/))
