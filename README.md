@@ -56,9 +56,6 @@ A compact snapshot of the activity and languages behind these projects:
 ![Tooling](https://img.shields.io/badge/Tooling-525960?style=flat-square) &nbsp; [ascii-arcade](https://github.com/Builder106/ascii-arcade)
 
 ## Flagships
-
-Six projects, three recurring questions: how fast, who does it serve, and what can be trusted?
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/flagships-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/flagships-light.svg">
