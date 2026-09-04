@@ -16,8 +16,6 @@ Hi, I'm Olayinka, studying CS and Econ at Wesleyan. Below is an overview of my s
 
 ## GitHub Stats
 
-A compact snapshot of the activity and languages behind these projects:
-
 <p align="center">
   <a href="https://github.com/Builder106"><img src="https://github-readme-stats-fast.vercel.app/api?username=Builder106&show_icons=true&theme=radical" alt="GitHub stats for Builder106" width="49%"></a>
   <a href="https://github.com/Builder106"><img src="https://github-readme-stats-fast.vercel.app/api/streak?username=Builder106&theme=radical" alt="GitHub contribution streak for Builder106" width="49%"></a>
@@ -56,6 +54,7 @@ A compact snapshot of the activity and languages behind these projects:
 ![Tooling](https://img.shields.io/badge/Tooling-525960?style=flat-square) &nbsp; [ascii-arcade](https://github.com/Builder106/ascii-arcade)
 
 ## Flagships
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/flagships-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/flagships-light.svg">
