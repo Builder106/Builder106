@@ -53,12 +53,6 @@ Hi, I'm Olayinka, studying CS and Econ at Wesleyan. Below is an overview of my s
 
 ![Tooling](https://img.shields.io/badge/Tooling-525960?style=flat-square) &nbsp; [ascii-arcade](https://github.com/Builder106/ascii-arcade)
 
-## Flagships
-
-- **Performance** — [ocaml_limit](https://github.com/Builder106/ocaml-limit) ([demo](https://ocaml-lob.vercel.app/)) | [LinuxBenchHub](https://github.com/Builder106/linux-bench-hub) ([demo](https://linuxbenchhub.vercel.app/))
-- **Health and evidence** — [MedCore](https://github.com/Builder106/med-core) ([demo](https://medcore-health.vercel.app)) | [datafest-2026](https://github.com/Builder106/datafest-2026) ([demo](https://datafest-2026.vercel.app/))
-- **Security and markets** — [ClearHash](https://github.com/Builder106/clear-hash) ([demo](https://clearhash.vercel.app/)) | [CapitolAlpha](https://github.com/Builder106/capitol-alpha) ([demo](https://capitolalpha.vercel.app/))
-
 ## Stack
 
 **Systems** &nbsp; ![OCaml](https://img.shields.io/badge/OCaml-92400c?style=flat-square&logo=ocaml&logoColor=white) ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) ![C](https://img.shields.io/badge/C-445a74?style=flat-square&logo=c&logoColor=white) ![Swift](https://img.shields.io/badge/Swift-ab220d?style=flat-square&logo=swift&logoColor=white)
