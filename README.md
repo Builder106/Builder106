@@ -43,19 +43,6 @@ Hi, I'm Olayinka, studying CS and Econ at Wesleyan. Below is an overview of my s
   </a>
 </p>
 
-
-## Flagships
-
-<picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/flagships-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/flagships-light.svg">
-  <img alt="Visual index of six flagship projects: ocaml_limit, ClearHash, datafest-2026, EconOS, halberd, and enclave" src="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/flagships-dark.svg" width="1200" loading="lazy">
-</picture>
-
-- **Quant** &nbsp; [ocaml_limit](https://github.com/Builder106/ocaml-limit) ([demo](https://ocaml-lob.vercel.app/)) | [EconOS](https://github.com/Builder106/econ-os) ([demo](https://econ-os.vercel.app))
-- **Cybersec** &nbsp; [halberd](https://github.com/Builder106/halberd) ([demo](https://halberd-keep.vercel.app)) | [ClearHash](https://github.com/Builder106/clear-hash) ([demo](https://clear-hash.vercel.app))
-- **AI/ML & Evidence** &nbsp; [enclave](https://github.com/Builder106/enclave) ([demo](https://enclave-iota.vercel.app)) | [datafest-2026](https://github.com/Builder106/datafest-2026) ([demo](https://datafest-2026.vercel.app/))
-
 ## The Elements
 
 <a href="https://github.com/Builder106?tab=repositories">
