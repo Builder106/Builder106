@@ -47,9 +47,9 @@ Hi, I'm Olayinka, studying CS and Econ at Wesleyan. Below is an overview of my s
 
 <a href="https://github.com/Builder106?tab=repositories">
   <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/Builder106/profile-assets/7f528aff614f88112a6c209051f80e3876780bee/assets/table-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/7f528aff614f88112a6c209051f80e3876780bee/assets/table-light.svg">
-    <img alt="Twenty projects in a periodic-table layout. Each transparent tile shows the project logo, name, technology, and track icon. Repository links follow below." src="https://raw.githubusercontent.com/Builder106/profile-assets/7f528aff614f88112a6c209051f80e3876780bee/assets/table-dark.svg" width="1152" loading="lazy">
+    <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/Builder106/profile-assets/27d08c624927a4198ca29e2d968bff6b187fe493/assets/table-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/27d08c624927a4198ca29e2d968bff6b187fe493/assets/table-light.svg">
+    <img alt="Twenty projects in a periodic-table layout. Each transparent tile shows the project logo, name, technology, and track icon. Repository links follow below." src="https://raw.githubusercontent.com/Builder106/profile-assets/27d08c624927a4198ca29e2d968bff6b187fe493/assets/table-dark.svg" width="1152" loading="lazy">
   </picture>
 </a>
 
