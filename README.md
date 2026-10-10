@@ -49,9 +49,9 @@ Twenty projects across quantitative systems, AI/ML, security, data analysis, sof
 
 <a href="https://github.com/Builder106?tab=repositories">
   <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/table-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/table-light.svg">
-    <img alt="Twenty projects in a periodic-table layout. Each transparent tile shows the project logo, name, technology, and track icon. Repository links follow below." src="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/table-dark.svg" width="1200" loading="lazy">
+    <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/Builder106/profile-assets/f87bfabb20db0d80085708b6325e4e5d169b926b/assets/table-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/f87bfabb20db0d80085708b6325e4e5d169b926b/assets/table-light.svg">
+    <img alt="Twenty projects in a periodic-table layout. Each transparent tile shows the project logo, name, technology, and track icon. Repository links follow below." src="https://raw.githubusercontent.com/Builder106/profile-assets/f87bfabb20db0d80085708b6325e4e5d169b926b/assets/table-dark.svg" width="1200" loading="lazy">
   </picture>
 </a>
 
