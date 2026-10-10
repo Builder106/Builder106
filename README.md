@@ -45,13 +45,11 @@ Hi, I'm Olayinka, studying CS and Econ at Wesleyan. Below is an overview of my s
 
 ## The Elements
 
-Twenty projects across quantitative systems, AI/ML, security, data analysis, software engineering, health technology, mobile, and tooling. Each tile pairs the project’s own artwork with its technology mark. The small corner icon identifies the track; the legend below the table explains the icons.
-
 <a href="https://github.com/Builder106?tab=repositories">
   <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/Builder106/profile-assets/f87bfabb20db0d80085708b6325e4e5d169b926b/assets/table-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/f87bfabb20db0d80085708b6325e4e5d169b926b/assets/table-light.svg">
-    <img alt="Twenty projects in a periodic-table layout. Each transparent tile shows the project logo, name, technology, and track icon. Repository links follow below." src="https://raw.githubusercontent.com/Builder106/profile-assets/f87bfabb20db0d80085708b6325e4e5d169b926b/assets/table-dark.svg" width="1200" loading="lazy">
+    <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/Builder106/profile-assets/7f528aff614f88112a6c209051f80e3876780bee/assets/table-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/7f528aff614f88112a6c209051f80e3876780bee/assets/table-light.svg">
+    <img alt="Twenty projects in a periodic-table layout. Each transparent tile shows the project logo, name, technology, and track icon. Repository links follow below." src="https://raw.githubusercontent.com/Builder106/profile-assets/7f528aff614f88112a6c209051f80e3876780bee/assets/table-dark.svg" width="1152" loading="lazy">
   </picture>
 </a>
 
