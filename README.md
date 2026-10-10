@@ -14,16 +14,32 @@
 
 Hi, I'm Olayinka, studying CS and Econ at Wesleyan. Below is an overview of my software engineering, machine learning, and quantitative systems projects.
 
-## GitHub Stats
+## Telemetry
 
 <p align="center">
-  <a href="https://github.com/Builder106"><img src="https://github-readme-stats-fast.vercel.app/api?username=Builder106&show_icons=true&theme=radical" alt="GitHub stats for Builder106" width="49%"></a>
-  <a href="https://github.com/Builder106"><img src="https://github-readme-stats-fast.vercel.app/api/streak?username=Builder106&theme=radical" alt="GitHub contribution streak for Builder106" width="49%"></a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/stats-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/stats-light.svg">
+    <img alt="Engineering telemetry: commits, verification, merged pull requests, and repositories" src="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/stats-dark.svg" width="49%">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/langs-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/langs-light.svg">
+    <img alt="Primary language distribution breakdown" src="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/langs-dark.svg" width="49%">
+  </picture>
 </p>
 
-<p align="center">
-  <a href="https://github.com/Builder106"><img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Builder106&layout=compact&theme=radical" alt="Most-used programming languages for Builder106" width="49%"></a>
-</p>
+## Flagships
+
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/flagships-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/flagships-light.svg">
+  <img alt="Visual index of six flagship projects: ocaml_limit, ClearHash, datafest-2026, EconOS, halberd, and enclave" src="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/flagships/flagships-dark.svg" width="1200" loading="lazy">
+</picture>
+
+- **Quant** &nbsp; [ocaml_limit](https://github.com/Builder106/ocaml-limit) ([demo](https://ocaml-lob.vercel.app/)) | [EconOS](https://github.com/Builder106/econ-os) ([demo](https://econ-os.vercel.app))
+- **Cybersec** &nbsp; [halberd](https://github.com/Builder106/halberd) ([demo](https://halberd-keep.vercel.app)) | [ClearHash](https://github.com/Builder106/clear-hash) ([demo](https://clear-hash.vercel.app))
+- **AI/ML & Evidence** &nbsp; [enclave](https://github.com/Builder106/enclave) ([demo](https://enclave-iota.vercel.app)) | [datafest-2026](https://github.com/Builder106/datafest-2026) ([demo](https://datafest-2026.vercel.app/))
 
 ## The Elements
 
