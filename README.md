@@ -14,20 +14,17 @@
 
 Hi, I'm Olayinka, studying CS and Econ at Wesleyan. Below is an overview of my software engineering, machine learning, and quantitative systems projects.
 
-## Telemetry
+## GitHub Stats
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/stats-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/stats-light.svg">
-    <img alt="Engineering telemetry: commits, verification, merged pull requests, and repositories" src="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/stats-dark.svg" width="49%">
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/langs-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/langs-light.svg">
-    <img alt="Primary language distribution breakdown" src="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/langs-dark.svg" width="49%">
-  </picture>
+  <a href="https://github.com/Builder106"><img src="https://github-readme-stats-fast.vercel.app/api?username=Builder106&show_icons=true&theme=radical" alt="GitHub stats for Builder106" width="49%"></a>
+  <a href="https://github.com/Builder106"><img src="https://github-readme-stats-fast.vercel.app/api/streak?username=Builder106&theme=radical" alt="GitHub contribution streak for Builder106" width="49%"></a>
 </p>
+
+<p align="center">
+  <a href="https://github.com/Builder106"><img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Builder106&layout=compact&theme=radical" alt="Most-used programming languages for Builder106" width="49%"></a>
+</p>
+
 
 ## Flagships
 
