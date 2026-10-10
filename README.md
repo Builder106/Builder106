@@ -17,12 +17,30 @@ Hi, I'm Olayinka, studying CS and Econ at Wesleyan. Below is an overview of my s
 ## GitHub Stats
 
 <p align="center">
-  <a href="https://github.com/Builder106"><img src="https://github-readme-stats-fast.vercel.app/api?username=Builder106&show_icons=true&theme=radical" alt="GitHub stats for Builder106" width="49%"></a>
-  <a href="https://github.com/Builder106"><img src="https://github-readme-stats-fast.vercel.app/api/streak?username=Builder106&theme=radical" alt="GitHub contribution streak for Builder106" width="49%"></a>
+  <a href="https://github.com/Builder106">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-fast.vercel.app/api?username=Builder106&amp;show_icons=true&amp;theme=radical">
+      <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-fast.vercel.app/api?username=Builder106&amp;show_icons=true&amp;theme=default">
+      <img src="https://github-readme-stats-fast.vercel.app/api?username=Builder106&amp;show_icons=true&amp;theme=default" alt="GitHub stats for Builder106" width="49%">
+    </picture>
+  </a>
+  <a href="https://github.com/Builder106">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-fast.vercel.app/api/streak?username=Builder106&amp;theme=radical">
+      <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-fast.vercel.app/api/streak?username=Builder106&amp;theme=default">
+      <img src="https://github-readme-stats-fast.vercel.app/api/streak?username=Builder106&amp;theme=default" alt="GitHub contribution streak for Builder106" width="49%">
+    </picture>
+  </a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Builder106"><img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Builder106&layout=compact&theme=radical" alt="Most-used programming languages for Builder106" width="49%"></a>
+  <a href="https://github.com/Builder106">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Builder106&amp;layout=compact&amp;theme=radical">
+      <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Builder106&amp;layout=compact&amp;theme=default">
+      <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Builder106&amp;layout=compact&amp;theme=default" alt="Most-used programming languages for Builder106" width="49%">
+    </picture>
+  </a>
 </p>
 
 
