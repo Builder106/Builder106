@@ -45,37 +45,34 @@ Hi, I'm Olayinka, studying CS and Econ at Wesleyan. Below is an overview of my s
 
 ## The Elements
 
+Twenty projects across quantitative systems, AI/ML, security, data analysis, software engineering, health technology, mobile, and tooling. Each tile pairs the project’s own artwork with its technology mark. The small corner icon identifies the track; the legend below the table explains the icons.
+
 <a href="https://github.com/Builder106?tab=repositories">
   <picture>
     <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/table-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/table-light.svg">
-    <img alt="Periodic-table layout of 20 projects, grouped by language and discipline. The same projects are listed as links under Repos below." src="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/table-dark.svg" width="1200" loading="lazy">
+    <img alt="Twenty projects in a periodic-table layout. Each transparent tile shows the project logo, name, technology, and track icon. Repository links follow below." src="https://raw.githubusercontent.com/Builder106/profile-assets/main/assets/table-dark.svg" width="1200" loading="lazy">
   </picture>
 </a>
 
-## Repos
+## Repositories
 
-![Quant](https://img.shields.io/badge/Quant-126512?style=flat-square) &nbsp; [ocaml_limit](https://github.com/Builder106/ocaml-limit) | [qforge](https://github.com/Builder106/qforge) | [EconOS](https://github.com/Builder106/econ-os)
-
-![AI/ML](https://img.shields.io/badge/AI%2FML-931a89?style=flat-square) &nbsp; [IMC_Prosperity](https://github.com/Builder106/imc-prosperity) | [enclave](https://github.com/Builder106/enclave) | [helm](https://github.com/Builder106/helm)
-
-![Cybersec](https://img.shields.io/badge/Cybersec-931a1a?style=flat-square) &nbsp; [ClearHash](https://github.com/Builder106/clear-hash) | [halberd](https://github.com/Builder106/halberd) | [quarry](https://github.com/Builder106/quarry)
-
-![Analyst](https://img.shields.io/badge/Analyst-6c5613?style=flat-square) &nbsp; [CapitolAlpha](https://github.com/Builder106/capitol-alpha) | [datafest-2026](https://github.com/Builder106/datafest-2026) | [LinuxBenchHub](https://github.com/Builder106/linux-bench-hub)
-
-![HealthTech](https://img.shields.io/badge/HealthTech-12634f?style=flat-square) &nbsp; [MedCore](https://github.com/Builder106/med-core)
-
-![SWE](https://img.shields.io/badge/SWE-1a5b93?style=flat-square) &nbsp; [STAIJA](https://github.com/Builder106/staija) | [StudySprint](https://github.com/Builder106/study-sprint) | [MicroMatch](https://github.com/Builder106/micro-match) | [portfolio](https://github.com/Builder106/builder106.github.io)
-
-![Mobile](https://img.shields.io/badge/Mobile-321a93?style=flat-square) &nbsp; [MetaHelper](https://github.com/Builder106/meta-helper) | [celestial-sanctum](https://github.com/Builder106/celestial-sanctum)
-
-![Tooling](https://img.shields.io/badge/Tooling-525960?style=flat-square) &nbsp; [ascii-arcade](https://github.com/Builder106/ascii-arcade)
+| Track | Projects |
+| --- | --- |
+| Quant | [OCaml Limit](https://github.com/Builder106/ocaml-limit), [qforge](https://github.com/Builder106/qforge), [EconOS](https://github.com/Builder106/econ-os) |
+| AI/ML | [IMC Prosperity](https://github.com/Builder106/imc-prosperity), [enclave](https://github.com/Builder106/enclave), [helm](https://github.com/Builder106/helm) |
+| Cybersecurity | [ClearHash](https://github.com/Builder106/clear-hash), [halberd](https://github.com/Builder106/halberd), [quarry](https://github.com/Builder106/quarry) |
+| Data analysis | [CapitolAlpha](https://github.com/Builder106/capitol-alpha), [datafest-2026](https://github.com/Builder106/datafest-2026), [LinuxBenchHub](https://github.com/Builder106/linux-bench-hub) |
+| Software engineering | [STAIJA](https://github.com/Builder106/staija), [StudySprint](https://github.com/Builder106/study-sprint), [MicroMatch](https://github.com/Builder106/micro-match), [portfolio](https://github.com/Builder106/builder106.github.io) |
+| Health technology | [MedCore](https://github.com/Builder106/med-core) |
+| Mobile | [Celestial Sanctum](https://github.com/Builder106/celestial-sanctum), [MetaHelper](https://github.com/Builder106/meta-helper) |
+| Tooling | [ASCII Arcade](https://github.com/Builder106/ascii-arcade) |
 
 ## Stack
 
 **Systems** &nbsp; ![OCaml](https://img.shields.io/badge/OCaml-92400c?style=flat-square&logo=ocaml&logoColor=white) ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) ![C](https://img.shields.io/badge/C-445a74?style=flat-square&logo=c&logoColor=white) ![Swift](https://img.shields.io/badge/Swift-ab220d?style=flat-square&logo=swift&logoColor=white)
 
-**Web** &nbsp; ![TypeScript](https://img.shields.io/badge/TypeScript-255a95?style=flat-square&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/React-03617b?style=flat-square&logo=react&logoColor=white) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![SvelteKit](https://img.shields.io/badge/SvelteKit-a82900?style=flat-square&logo=svelte&logoColor=white) ![Rails](https://img.shields.io/badge/Rails-b50000?style=flat-square&logo=rubyonrails&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white) ![Tailwind](https://img.shields.io/badge/Tailwind-036171?style=flat-square&logo=tailwindcss&logoColor=white)
+**Web** &nbsp; ![Angular](https://img.shields.io/badge/Angular-b3002d?style=flat-square&logo=angular&logoColor=white) ![Vue](https://img.shields.io/badge/Vue-12634f?style=flat-square&logo=vuedotjs&logoColor=white)  ![TypeScript](https://img.shields.io/badge/TypeScript-255a95?style=flat-square&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/React-03617b?style=flat-square&logo=react&logoColor=white) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![SvelteKit](https://img.shields.io/badge/SvelteKit-a82900?style=flat-square&logo=svelte&logoColor=white) ![Rails](https://img.shields.io/badge/Rails-b50000?style=flat-square&logo=rubyonrails&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white) ![Tailwind](https://img.shields.io/badge/Tailwind-036171?style=flat-square&logo=tailwindcss&logoColor=white)
 
 **Data** &nbsp; ![Python](https://img.shields.io/badge/Python-2b5b84?style=flat-square&logo=python&logoColor=white) ![R](https://img.shields.io/badge/R-20599f?style=flat-square&logo=r&logoColor=white) ![Jupyter](https://img.shields.io/badge/Jupyter-943f08?style=flat-square&logo=jupyter&logoColor=white) ![DuckDB](https://img.shields.io/badge/DuckDB-5e5900?style=flat-square&logo=duckdb&logoColor=white) ![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
 
