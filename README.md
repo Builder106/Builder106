@@ -47,9 +47,9 @@ Hi, I'm Olayinka, studying CS and Econ at Wesleyan. Below is an overview of my s
 
 <a href="https://github.com/Builder106?tab=repositories">
   <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/Builder106/profile-assets/610e8b6760011c9c23e0a1dd63bab7ffab125350/assets/table-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/610e8b6760011c9c23e0a1dd63bab7ffab125350/assets/table-light.svg">
-    <img alt="Twenty projects in a periodic-table layout. Each transparent tile shows the project logo, name, technology, and track icon. Repository links follow below." src="https://raw.githubusercontent.com/Builder106/profile-assets/610e8b6760011c9c23e0a1dd63bab7ffab125350/assets/table-dark.svg" width="1152" loading="lazy">
+    <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/Builder106/profile-assets/f8b6cf4d5842a39fc442dfec68a512ca52108b6d/assets/table-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/f8b6cf4d5842a39fc442dfec68a512ca52108b6d/assets/table-light.svg">
+    <img alt="Nineteen projects in a periodic-table layout. Each transparent tile shows the project logo, name, technology, and track icon. Repository links follow below." src="https://raw.githubusercontent.com/Builder106/profile-assets/f8b6cf4d5842a39fc442dfec68a512ca52108b6d/assets/table-dark.svg" width="1152" loading="lazy">
   </picture>
 </a>
 
@@ -63,7 +63,7 @@ Hi, I'm Olayinka, studying CS and Econ at Wesleyan. Below is an overview of my s
 | Data analysis | [CapitolAlpha](https://github.com/Builder106/capitol-alpha), [datafest-2026](https://github.com/Builder106/datafest-2026), [LinuxBenchHub](https://github.com/Builder106/linux-bench-hub) |
 | Software engineering | [STAIJA](https://github.com/Builder106/staija), [StudySprint](https://github.com/Builder106/study-sprint), [MicroMatch](https://github.com/Builder106/micro-match), [portfolio](https://github.com/Builder106/builder106.github.io) |
 | Health technology | [MedCore](https://github.com/Builder106/med-core) |
-| Mobile | [Celestial Sanctum](https://github.com/Builder106/celestial-sanctum), [MetaHelper](https://github.com/Builder106/meta-helper) |
+| Mobile | [MetaHelper](https://github.com/Builder106/meta-helper) |
 | Tooling | [ASCII Arcade](https://github.com/Builder106/ascii-arcade) |
 
 ## Stack
