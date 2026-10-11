@@ -43,7 +43,7 @@ Hi, I'm Olayinka, studying CS and Econ at Wesleyan. Below is an overview of my s
   </a>
 </p>
 
-## The Elements
+## Projects
 
 <p>
 <a href="https://github.com/Builder106/ocaml-limit" title="OCaml Limit"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/878fbb26c29107e854531dc4e1442c12eb78a75b/assets/project-cards/01-oc-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Builder106/profile-assets/878fbb26c29107e854531dc4e1442c12eb78a75b/assets/project-cards/01-oc-light.svg"><img src="https://raw.githubusercontent.com/Builder106/profile-assets/878fbb26c29107e854531dc4e1442c12eb78a75b/assets/project-cards/01-oc-light.svg" alt="OCaml Limit | OCaml | Quant" width="160" height="181"></picture></a>
