@@ -11,7 +11,6 @@
   <a href="https://yinkavaughan.me/"><img src="https://img.shields.io/badge/portfolio-yinkavaughan.me-015d8d" alt="Portfolio | yinkavaughan.me"></a>
   <a href="https://www.linkedin.com/in/yinka-vaughan"><img src="https://img.shields.io/badge/LinkedIn-Yinka_Vaughan-0958a7?logo=linkedin&amp;logoColor=white" alt="LinkedIn | Yinka Vaughan"></a>
   <a href="https://devpost.com/olayinkav"><img src="https://img.shields.io/badge/Devpost-olayinkav-003e54?logo=devpost&amp;logoColor=white" alt="Devpost | olayinkav"></a>
-  <a href="mailto:vaughanolayinka@gmail.com"><img src="https://img.shields.io/badge/email-vaughanolayinka-525960?logo=gmail&amp;logoColor=white" alt="Email | vaughanolayinka@gmail.com"></a>
 </p>
 
 Hi, I'm Olayinka, studying CS and Econ at Wesleyan. Below is an overview of my software engineering, machine learning, and quantitative systems projects.
