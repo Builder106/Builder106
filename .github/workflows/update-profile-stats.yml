@@ -19,6 +19,7 @@ jobs:
     timeout-minutes: 10
     permissions:
       contents: write
+      pull-requests: write
     steps:
       - uses: actions/checkout@v7
 
@@ -53,16 +54,30 @@ jobs:
               "profile/stats.svg",
               "profile/top-langs.svg",
             ];
+            const branchName = "chore/profile-stats";
             const { owner, repo } = context.repo;
-            const { data: ref } = await github.rest.git.getRef({
+            const { data: mainRef } = await github.rest.git.getRef({
               owner,
               repo,
               ref: "heads/main",
             });
+            let parentSha = mainRef.object.sha;
+            let branchExists = false;
+            try {
+              const { data: branchRef } = await github.rest.git.getRef({
+                owner,
+                repo,
+                ref: `heads/${branchName}`,
+              });
+              parentSha = branchRef.object.sha;
+              branchExists = true;
+            } catch (error) {
+              if (error.status !== 404) throw error;
+            }
             const { data: parent } = await github.rest.git.getCommit({
               owner,
               repo,
-              commit_sha: ref.object.sha,
+              commit_sha: parentSha,
             });
             const { data: baseTree } = await github.rest.git.getTree({
               owner,
@@ -92,32 +107,91 @@ jobs:
               });
             }
             if (tree.length === 0) {
-              core.info("Stats cards are already current.");
-              return;
+              if (!branchExists) {
+                core.info("Stats cards are already current.");
+                return;
+              }
+            } else {
+              const { data: nextTree } = await github.rest.git.createTree({
+                owner,
+                repo,
+                base_tree: parent.tree.sha,
+                tree,
+              });
+              const { data: commit } = await github.rest.git.createCommit({
+                owner,
+                repo,
+                message: "chore(profile): refresh GitHub stats cards",
+                tree: nextTree.sha,
+                parents: [parentSha],
+              });
+              if (!commit.verification?.verified) {
+                throw new Error(
+                  `GitHub did not verify the generated cards commit: ${commit.verification?.reason ?? "unknown reason"}`,
+                );
+              }
+              if (branchExists) {
+                await github.rest.git.updateRef({
+                  owner,
+                  repo,
+                  ref: `heads/${branchName}`,
+                  sha: commit.sha,
+                  force: false,
+                });
+              } else {
+                await github.rest.git.createRef({
+                  owner,
+                  repo,
+                  ref: `refs/heads/${branchName}`,
+                  sha: commit.sha,
+                });
+              }
+              parentSha = commit.sha;
             }
-            const { data: nextTree } = await github.rest.git.createTree({
+
+            const { data: openPullRequests } = await github.rest.pulls.list({
               owner,
               repo,
-              base_tree: parent.tree.sha,
-              tree,
+              state: "open",
+              head: `${owner}:${branchName}`,
+              base: "main",
             });
-            const { data: commit } = await github.rest.git.createCommit({
+            let pullRequest = openPullRequests[0];
+            if (!pullRequest) {
+              const { data } = await github.rest.pulls.create({
+                owner,
+                repo,
+                title: "chore(profile): refresh GitHub stats cards",
+                head: branchName,
+                base: "main",
+                body: "Refresh the generated stats and language cards in the profile README.",
+              });
+              pullRequest = data;
+            }
+
+            const { data: merge } = await github.rest.pulls.merge({
               owner,
               repo,
-              message: "chore(profile): refresh GitHub stats cards",
-              tree: nextTree.sha,
-              parents: [ref.object.sha],
+              pull_number: pullRequest.number,
+              merge_method: "squash",
+              sha: parentSha,
             });
-            if (!commit.verification?.verified) {
+            if (!merge.merged) {
+              throw new Error(`GitHub did not merge the stats pull request: ${merge.message}`);
+            }
+            const { data: mergeCommit } = await github.rest.git.getCommit({
+              owner,
+              repo,
+              commit_sha: merge.sha,
+            });
+            if (!mergeCommit.verification?.verified) {
               throw new Error(
-                `GitHub did not verify the generated cards commit: ${commit.verification?.reason ?? "unknown reason"}`,
+                `GitHub did not verify the merged cards commit: ${mergeCommit.verification?.reason ?? "unknown reason"}`,
               );
             }
-            await github.rest.git.updateRef({
+            await github.rest.git.deleteRef({
               owner,
               repo,
-              ref: "heads/main",
-              sha: commit.sha,
-              force: false,
+              ref: `heads/${branchName}`,
             });
-            core.info(`Published verified stats cards in ${commit.sha}.`);
+            core.info(`Published verified stats cards in ${merge.sha}.`);
