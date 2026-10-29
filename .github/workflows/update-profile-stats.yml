@@ -30,17 +30,35 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: "username=Builder106&show_icons=true&theme=transparent"
-          path: profile/stats.svg
+          options: "username=Builder106&show_icons=true&theme=default"
+          path: profile/stats-light.svg
           token: ${{ github.token }}
           fail_on_error: true
 
-      - name: Generate languages card
+      - name: Generate dark stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: "username=Builder106&show_icons=true&theme=dark"
+          path: profile/stats-dark.svg
+          token: ${{ github.token }}
+          fail_on_error: true
+
+      - name: Generate light languages card
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: "username=Builder106&layout=compact&langs_count=6&theme=transparent"
-          path: profile/top-langs.svg
+          options: "username=Builder106&layout=compact&langs_count=6&theme=default"
+          path: profile/top-langs-light.svg
+          token: ${{ github.token }}
+          fail_on_error: true
+
+      - name: Generate dark languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: "username=Builder106&layout=compact&langs_count=6&theme=dark"
+          path: profile/top-langs-dark.svg
           token: ${{ github.token }}
           fail_on_error: true
 
@@ -51,8 +69,10 @@ jobs:
           script: |
             const fs = require("fs");
             const paths = [
-              "profile/stats.svg",
-              "profile/top-langs.svg",
+              "profile/stats-light.svg",
+              "profile/stats-dark.svg",
+              "profile/top-langs-light.svg",
+              "profile/top-langs-dark.svg",
             ];
             const branchName = "chore/profile-stats";
             const { owner, repo } = context.repo;

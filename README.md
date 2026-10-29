@@ -19,16 +19,28 @@ Hi, I'm Olayinka, studying CS and Econ at Wesleyan. Below is an overview of my s
 
 <p align="center">
   <a href="https://github.com/Builder106">
-    <img src="./profile/stats.svg" alt="GitHub stats for Builder106" width="400">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./profile/stats-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="./profile/stats-light.svg">
+      <img src="./profile/stats-light.svg" alt="GitHub stats for Builder106" width="400">
+    </picture>
   </a>
   <a href="https://github.com/Builder106">
-    <img src="https://streak-stats.demolab.com?user=Builder106&amp;theme=default" alt="GitHub contribution streak for Builder106" width="400">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=Builder106&amp;theme=dark">
+      <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=Builder106&amp;theme=default">
+      <img src="https://streak-stats.demolab.com?user=Builder106&amp;theme=default" alt="GitHub contribution streak for Builder106" width="400">
+    </picture>
   </a>
 </p>
 
 <p align="center">
   <a href="https://github.com/Builder106">
-    <img src="./profile/top-langs.svg" alt="Most-used programming languages for Builder106" width="400">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./profile/top-langs-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="./profile/top-langs-light.svg">
+      <img src="./profile/top-langs-light.svg" alt="Most-used programming languages for Builder106" width="400">
+    </picture>
   </a>
 </p>
 
