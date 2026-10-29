@@ -1,0 +1,123 @@
+name: Update profile stats
+
+on:
+  schedule:
+    - cron: "17 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-stats
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Prepare card directory
+        run: mkdir -p profile
+
+      - name: Generate stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: "username=Builder106&show_icons=true&theme=transparent"
+          path: profile/stats.svg
+          token: ${{ github.token }}
+          fail_on_error: true
+
+      - name: Generate languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: "username=Builder106&layout=compact&langs_count=6&theme=transparent"
+          path: profile/top-langs.svg
+          token: ${{ github.token }}
+          fail_on_error: true
+
+      - name: Publish verified cards
+        uses: actions/github-script@v9
+        with:
+          github-token: ${{ github.token }}
+          script: |
+            const fs = require("fs");
+            const paths = [
+              "profile/stats.svg",
+              "profile/top-langs.svg",
+            ];
+            const { owner, repo } = context.repo;
+            const { data: ref } = await github.rest.git.getRef({
+              owner,
+              repo,
+              ref: "heads/main",
+            });
+            const { data: parent } = await github.rest.git.getCommit({
+              owner,
+              repo,
+              commit_sha: ref.object.sha,
+            });
+            const { data: baseTree } = await github.rest.git.getTree({
+              owner,
+              repo,
+              tree_sha: parent.tree.sha,
+              recursive: "true",
+            });
+            const tree = [];
+            for (const path of paths) {
+              const content = fs.readFileSync(path, "utf8");
+              const existing = baseTree.tree.find((entry) => entry.path === path);
+              if (existing?.type === "blob") {
+                const { data: blob } = await github.rest.git.getBlob({
+                  owner,
+                  repo,
+                  file_sha: existing.sha,
+                });
+                if (Buffer.from(blob.content, "base64").toString("utf8") === content) {
+                  continue;
+                }
+              }
+              tree.push({
+                path,
+                mode: "100644",
+                type: "blob",
+                content,
+              });
+            }
+            if (tree.length === 0) {
+              core.info("Stats cards are already current.");
+              return;
+            }
+            const { data: nextTree } = await github.rest.git.createTree({
+              owner,
+              repo,
+              base_tree: parent.tree.sha,
+              tree,
+            });
+            const { data: commit } = await github.rest.git.createCommit({
+              owner,
+              repo,
+              message: "chore(profile): refresh GitHub stats cards",
+              tree: nextTree.sha,
+              parents: [ref.object.sha],
+            });
+            if (!commit.verification?.verified) {
+              throw new Error(
+                `GitHub did not verify the generated cards commit: ${commit.verification?.reason ?? "unknown reason"}`,
+              );
+            }
+            await github.rest.git.updateRef({
+              owner,
+              repo,
+              ref: "heads/main",
+              sha: commit.sha,
+              force: false,
+            });
+            core.info(`Published verified stats cards in ${commit.sha}.`);
