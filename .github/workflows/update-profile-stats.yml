@@ -169,6 +169,8 @@ jobs:
               parentSha = commit.sha;
             }
 
+            const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
             const { data: openPullRequests } = await github.rest.pulls.list({
               owner,
               repo,
@@ -189,15 +191,45 @@ jobs:
               pullRequest = data;
             }
 
-            const { data: merge } = await github.rest.pulls.merge({
-              owner,
-              repo,
-              pull_number: pullRequest.number,
-              merge_method: "squash",
-              sha: parentSha,
-            });
-            if (!merge.merged) {
-              throw new Error(`GitHub did not merge the stats pull request: ${merge.message}`);
+            for (let i = 0; i < 5; i++) {
+              const { data: pr } = await github.rest.pulls.get({
+                owner,
+                repo,
+                pull_number: pullRequest.number,
+              });
+              if (pr.mergeable !== null) break;
+              await sleep(2000);
+            }
+
+            let merge;
+            for (let attempt = 1; attempt <= 5; attempt++) {
+              try {
+                const res = await github.rest.pulls.merge({
+                  owner,
+                  repo,
+                  pull_number: pullRequest.number,
+                  merge_method: "squash",
+                  sha: parentSha,
+                });
+                merge = res.data;
+                break;
+              } catch (error) {
+                const isBaseModified =
+                  error.status === 405 ||
+                  error.message?.includes("Base branch was modified") ||
+                  error.response?.data?.message?.includes("Base branch was modified");
+                if (isBaseModified && attempt < 5) {
+                  core.warning(
+                    `Attempt ${attempt}: Base branch was modified or merge check pending. Retrying in 3s...`,
+                  );
+                  await sleep(3000);
+                  continue;
+                }
+                throw error;
+              }
+            }
+            if (!merge?.merged) {
+              throw new Error(`GitHub did not merge the stats pull request: ${merge?.message}`);
             }
             const { data: mergeCommit } = await github.rest.git.getCommit({
               owner,
