@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Olayinka Vaughan&#39;s GitHub Stats, Rank: A-</title>
-        <desc id="descId">Total Stars Earned: 16, Total Commits  (last year) : 5777, Total PRs: 285, Total Issues: 52, Contributed to (last year): 24</desc>
+        <desc id="descId">Total Stars Earned: 16, Total Commits  (last year) : 5811, Total PRs: 285, Total Issues: 52, Contributed to (last year): 24</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 79.83345250813996;
+        stroke-dashoffset: 79.83345209132571;
       }
     }
   
